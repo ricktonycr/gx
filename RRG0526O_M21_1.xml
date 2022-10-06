@@ -1,0 +1,1842 @@
+<?xml version='1.0' encoding='iso-8859-1'?>
+<ExportFile>
+  <Model>
+    <Id>4</Id>
+    <Name>C #-SQLServer</Name>
+    <Type>Production</Type>
+    <Stdfunc>N</Stdfunc>
+    <AttLen>10</AttLen>
+    <TblLen>8</TblLen>
+    <ObjLen>30</ObjLen>
+    <NullsBehavior>8_OR_LESS</NullsBehavior>
+    <EmptyAsNullBehavior>8_OR_LESS</EmptyAsNullBehavior>
+  </Model>
+  <KMW>
+    <MajorVersion>2</MajorVersion>
+    <MinorVersion>2</MinorVersion>
+    <Path>C:\Tareas De Larrobla\Desarrollos Institucionales\Modelos\Modelo Local Gx 9</Path>
+    <MaxGxBuildSaved>2494</MaxGxBuildSaved>
+  </KMW>
+  <GXObject>
+    <Report>
+      <Info>
+        <Name>Rg0526O</Name>
+        <Description>Datos Inciales Préstamo</Description>
+        <Folder>RutiWeb</Folder>
+      </Info>
+      <ObjInfo>
+        <IsMain>Y</IsMain>
+      </ObjInfo>
+      <Documentation>
+        <Source><![CDATA[<P><SPAN lang=ES-MX style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: ES-MX" Caption="<">&lt;</SPAN><FONT size=2><FONT face=Arial>Historia&gt;<SPAN lang=ES-MX style="FONT-FAMILY: Arial; mso-ansi-language: ES-MX; mso-bidi-font-family: 'Times New Roman'" Caption='<?xml:namespace prefix = o ns = "urn:schemas-microsoft-com:office:office" />'><?xml:namespace prefix = "o" ns = "urn:schemas-microsoft-com:office:office" /><o:p></o:p></SPAN></FONT></FONT> </P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN lang=ES-MX style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: ES-MX" Caption="&nbsp;&nbsp;&nbsp; <Modificacion>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Fecha>6/10/08</Fecha>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Autor>Leslie Mitrani</Autor>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Solicitud></Solicitud>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Pais></Pais>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Cliente></Cliente>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Descripcion>&nbsp;Se agrega posibilidad de indicar Valor Cuota &nbsp;para una determinada cuota , en la tabla Fpp064 </Descripcion>&nbsp;&nbsp;&nbsp; </Modificacion>&nbsp;&nbsp;&nbsp;&nbsp; <Modificacion>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Fecha>8/10/08</Fecha>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Autor>Leslie Mitrani</Autor>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Solicitud></Solicitud>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Pais></Pais>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Cliente></Cliente>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Descripcion>&nbsp;Se&nbsp;agrega la posibilidad de las dos maneras de indicar&nbsp;cuotas extraordinarias&nbsp;</Descripcion>&nbsp;&nbsp;&nbsp; </Modificacion>&nbsp;</Historia>"><SPAN lang=ES-MX style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: ES-MX" Caption="&nbsp;&nbsp;&nbsp; <Modificacion>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Fecha>6/10/08</Fecha>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Autor>Leslie Mitrani</Autor>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Solicitud></Solicitud>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Pais></Pais>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Cliente></Cliente>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Descripcion>&nbsp;Se agrega posibilidad de indicar Valor Cuota &nbsp;para una determinada cuota , en la tabla Fpp064 </Descripcion>&nbsp;&nbsp;&nbsp; </Modificacion>&nbsp;&nbsp;&nbsp;&nbsp; <Modificacion>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Fecha>8/10/08</Fecha>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Autor>Leslie Mitrani</Autor>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Solicitud></Solicitud>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Pais></Pais>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Cliente></Cliente>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Descripcion>&nbsp;Se&nbsp;agrega la posibilidad de las dos maneras de indicar&nbsp;cuotas extraordinarias&nbsp;</Descripcion>&nbsp;&nbsp;&nbsp; </Modificacion>&nbsp;</Historia>"><SPAN lang=ES-MX style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: ES-MX" Caption="&nbsp;&nbsp;&nbsp; <Modificacion>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Fecha>6/10/08</Fecha>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Autor>Leslie Mitrani</Autor>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Solicitud></Solicitud>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Pais></Pais>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Cliente></Cliente>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Descripcion>&nbsp;Se agrega posibilidad de indicar Valor Cuota &nbsp;para una determinada cuota , en la tabla Fpp064 </Descripcion>&nbsp;&nbsp;&nbsp; </Modificacion>&nbsp;&nbsp;&nbsp;&nbsp; <Modificacion>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Fecha>8/10/08</Fecha>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Autor>Leslie Mitrani</Autor>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Solicitud></Solicitud>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Pais></Pais>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Cliente></Cliente>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Descripcion>&nbsp;Se&nbsp;agrega la posibilidad de las dos maneras de indicar&nbsp;cuotas extraordinarias&nbsp;</Descripcion>&nbsp;&nbsp;&nbsp; </Modificacion>&nbsp;</Historia>"><SPAN lang=ES-MX style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: ES-MX" Caption="&nbsp;&nbsp;&nbsp; <Modificacion>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Fecha>6/10/08</Fecha>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Autor>Leslie Mitrani</Autor>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Solicitud></Solicitud>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Pais></Pais>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Cliente></Cliente>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Descripcion>&nbsp;Se agrega posibilidad de indicar Valor Cuota &nbsp;para una determinada cuota , en la tabla Fpp064 </Descripcion>&nbsp;&nbsp;&nbsp; </Modificacion>&nbsp;&nbsp;&nbsp;&nbsp; <Modificacion>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Fecha>8/10/08</Fecha>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Autor>Leslie Mitrani</Autor>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Solicitud></Solicitud>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Pais></Pais>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Cliente></Cliente>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Descripcion>&nbsp;Se&nbsp;agrega la posibilidad de las dos maneras de indicar&nbsp;cuotas extraordinarias&nbsp;</Descripcion>&nbsp;&nbsp;&nbsp; </Modificacion>&nbsp;</Historia>">
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN lang=ES-MX style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: ES-MX" Caption=" "></SPAN></P><SPAN lang=ES-MX style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: ES-MX" Caption="&nbsp;&nbsp;&nbsp; <Modificacion>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Fecha>6/10/08</Fecha>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Autor>Leslie Mitrani</Autor>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Solicitud></Solicitud>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Pais></Pais>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Cliente></Cliente>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Descripcion>&nbsp;Se agrega posibilidad de indicar Valor Cuota &nbsp;para una determinada cuota , en la tabla Fpp064 </Descripcion>&nbsp;&nbsp;&nbsp; </Modificacion>&nbsp;&nbsp;&nbsp;&nbsp; <Modificacion>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Fecha>8/10/08</Fecha>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Autor>Leslie Mitrani</Autor>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Solicitud></Solicitud>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Pais></Pais>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Cliente></Cliente>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Descripcion>&nbsp;Se&nbsp;agrega la posibilidad de las dos maneras de indicar&nbsp;cuotas extraordinarias&nbsp;</Descripcion>&nbsp;&nbsp;&nbsp; </Modificacion>&nbsp;</Historia>"><SPAN lang=ES-MX style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: ES-MX" Caption="&nbsp;&nbsp;&nbsp; <Modificacion>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Fecha>6/10/08</Fecha>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Autor>Leslie Mitrani</Autor>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Solicitud></Solicitud>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Pais></Pais>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Cliente></Cliente>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Descripcion>&nbsp;Se agrega posibilidad de indicar Valor Cuota &nbsp;para una determinada cuota , en la tabla Fpp064 </Descripcion>&nbsp;&nbsp;&nbsp; </Modificacion>&nbsp;&nbsp;&nbsp;&nbsp; <Modificacion>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Fecha>8/10/08</Fecha>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Autor>Leslie Mitrani</Autor>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Solicitud></Solicitud>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Pais></Pais>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Cliente></Cliente>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Descripcion>&nbsp;Se&nbsp;agrega la posibilidad de las dos maneras de indicar&nbsp;cuotas extraordinarias&nbsp;</Descripcion>&nbsp;&nbsp;&nbsp; </Modificacion>&nbsp;</Historia>">
+<P></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN lang=ES-MX style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: ES-MX" Caption="&nbsp;&nbsp;&nbsp; <Modificacion>">&nbsp;&nbsp;&nbsp; &lt;Modificacion&gt;</SPAN><SPAN lang=ES-MX style="FONT-FAMILY: Arial; mso-ansi-language: ES-MX; mso-bidi-font-family: 'Times New Roman'" Caption=" "><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN lang=ES-MX style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: ES-MX" Caption="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Fecha>6/10/08</Fecha>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Fecha&gt;6/10/08&lt;/Fecha&gt;</SPAN><SPAN lang=ES-MX style="FONT-FAMILY: Arial; mso-ansi-language: ES-MX; mso-bidi-font-family: 'Times New Roman'" Caption=" "><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN lang=ES-MX style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: ES-MX" Caption="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Autor>Leslie Mitrani</Autor>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Autor&gt;Leslie Mitrani&lt;/Autor&gt;</SPAN><SPAN lang=ES-MX style="FONT-FAMILY: Arial; mso-ansi-language: ES-MX; mso-bidi-font-family: 'Times New Roman'" Caption=" "><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN lang=ES-MX style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: ES-MX" Caption="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Solicitud></Solicitud>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Solicitud&gt;&lt;/Solicitud&gt;</SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN lang=ES-MX style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: ES-MX" Caption=" "></SPAN><SPAN lang=ES-MX style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: ES-MX" Caption="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Pais></Pais>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Pais&gt;&lt;/Pais&gt;</SPAN><SPAN lang=ES-MX style="FONT-FAMILY: Arial; mso-ansi-language: ES-MX; mso-bidi-font-family: 'Times New Roman'" Caption=" "><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN lang=ES-MX style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: ES-MX" Caption="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Cliente></Cliente>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Cliente&gt;&lt;/Cliente&gt;</SPAN><SPAN lang=ES-MX style="FONT-FAMILY: Arial; mso-ansi-language: ES-MX; mso-bidi-font-family: 'Times New Roman'" Caption=" "><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN lang=ES-MX style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: ES-MX" Caption="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Descripcion>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Descripcion&gt;</SPAN><SPAN lang=ES-MX style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: ES-MX" Caption="&nbsp;Se agrega posibilidad de indicar Valor Cuota &nbsp;para una determinada cuota , en la tabla Fpp064 ">&nbsp;Se agrega posibilidad de indicar Valor Cuota &nbsp;para una determinada cuota , en la tabla Fpp064 </SPAN><SPAN lang=ES-MX style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: ES-MX" Caption="</Descripcion>">&lt;/Descripcion&gt;</SPAN><SPAN lang=ES-MX style="FONT-FAMILY: Arial; mso-ansi-language: ES-MX; mso-bidi-font-family: 'Times New Roman'" Caption=" "><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN lang=ES-MX style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: ES-MX" Caption="&nbsp;&nbsp;&nbsp; </Modificacion>">&nbsp;&nbsp;&nbsp; &lt;/Modificacion&gt;</SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN lang=ES-MX style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: ES-MX" Caption=" "></SPAN>&nbsp;</P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN lang=ES-MX style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: ES-MX" Caption="&nbsp;&nbsp;&nbsp; <Modificacion>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Fecha>8/10/08</Fecha>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Autor>Leslie Mitrani</Autor>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Solicitud></Solicitud>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Pais></Pais>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Cliente></Cliente>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Descripcion>&nbsp;Se&nbsp;agrega la posibilidad de las dos maneras de indicar&nbsp;cuotas extraordinarias&nbsp;</Descripcion>&nbsp;&nbsp;&nbsp; </Modificacion>">&nbsp;&nbsp;&nbsp; &lt;Modificacion&gt;<SPAN lang=ES-MX style="FONT-FAMILY: Arial; mso-ansi-language: ES-MX; mso-bidi-font-family: 'Times New Roman'" Caption=" "><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN lang=ES-MX style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: ES-MX" Caption="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Fecha>8/10/08</Fecha>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Fecha&gt;8/10/08&lt;/Fecha&gt;</SPAN><SPAN lang=ES-MX style="FONT-FAMILY: Arial; mso-ansi-language: ES-MX; mso-bidi-font-family: 'Times New Roman'" Caption=" "><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN lang=ES-MX style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: ES-MX" Caption="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Autor>Leslie Mitrani</Autor>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Autor&gt;Leslie Mitrani&lt;/Autor&gt;</SPAN><SPAN lang=ES-MX style="FONT-FAMILY: Arial; mso-ansi-language: ES-MX; mso-bidi-font-family: 'Times New Roman'" Caption=" "><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN lang=ES-MX style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: ES-MX" Caption="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Solicitud></Solicitud>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Solicitud&gt;&lt;/Solicitud&gt;</SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN lang=ES-MX style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: ES-MX" Caption=" "></SPAN><SPAN lang=ES-MX style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: ES-MX" Caption="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Pais></Pais>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Pais&gt;&lt;/Pais&gt;</SPAN><SPAN lang=ES-MX style="FONT-FAMILY: Arial; mso-ansi-language: ES-MX; mso-bidi-font-family: 'Times New Roman'" Caption=" "><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN lang=ES-MX style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: ES-MX" Caption="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Cliente></Cliente>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Cliente&gt;&lt;/Cliente&gt;</SPAN><SPAN lang=ES-MX style="FONT-FAMILY: Arial; mso-ansi-language: ES-MX; mso-bidi-font-family: 'Times New Roman'" Caption=" "><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN lang=ES-MX style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: ES-MX" Caption="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Descripcion>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Descripcion&gt;</SPAN><SPAN lang=ES-MX style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: ES-MX" Caption="&nbsp;Se&nbsp;agrega la posibilidad de las dos maneras de indicar&nbsp;cuotas extraordinarias&nbsp;">&nbsp;Se&nbsp;agrega la posibilidad de las dos maneras de indicar&nbsp;cuotas extraordinarias&nbsp;</SPAN><SPAN lang=ES-MX style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: ES-MX" Caption="</Descripcion>">&lt;/Descripcion&gt;</SPAN><SPAN lang=ES-MX style="FONT-FAMILY: Arial; mso-ansi-language: ES-MX; mso-bidi-font-family: 'Times New Roman'" Caption=" "><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN lang=ES-MX style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: ES-MX" Caption="&nbsp;&nbsp;&nbsp; </Modificacion>">&nbsp;&nbsp;&nbsp; &lt;/Modificacion&gt;</SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN lang=ES-MX style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: ES-MX" Caption="&nbsp;&nbsp;&nbsp; </Modificacion>">&nbsp;&nbsp;&nbsp; &lt;Modificacion&gt;<SPAN lang=ES-MX style="FONT-FAMILY: Arial; mso-ansi-language: ES-MX; mso-bidi-font-family: 'Times New Roman'" Caption=" "><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN lang=ES-MX style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: ES-MX" Caption="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Fecha>8/10/08</Fecha>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Fecha&gt;14/01/15&lt;/Fecha&gt;</SPAN><SPAN lang=ES-MX style="FONT-FAMILY: Arial; mso-ansi-language: ES-MX; mso-bidi-font-family: 'Times New Roman'" Caption=" "><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN lang=ES-MX style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: ES-MX" Caption="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Autor>Leslie Mitrani</Autor>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Autor&gt;Guillermo Garcia&lt;/Autor&gt;</SPAN><SPAN lang=ES-MX style="FONT-FAMILY: Arial; mso-ansi-language: ES-MX; mso-bidi-font-family: 'Times New Roman'" Caption=" "><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN lang=ES-MX style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: ES-MX" Caption="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Solicitud></Solicitud>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Solicitud&gt;70&lt;/Solicitud&gt;</SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN lang=ES-MX style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: ES-MX" Caption=" "></SPAN><SPAN lang=ES-MX style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: ES-MX" Caption="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Pais></Pais>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Pais&gt;Mexico&lt;/Pais&gt;</SPAN><SPAN lang=ES-MX style="FONT-FAMILY: Arial; mso-ansi-language: ES-MX; mso-bidi-font-family: 'Times New Roman'" Caption=" "><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN lang=ES-MX style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: ES-MX" Caption="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Cliente></Cliente>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Cliente&gt;Sabadell SOFOM&lt;/Cliente&gt;</SPAN><SPAN lang=ES-MX style="FONT-FAMILY: Arial; mso-ansi-language: ES-MX; mso-bidi-font-family: 'Times New Roman'" Caption=" "><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN lang=ES-MX style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: ES-MX" Caption="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Descripcion>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Descripcion&gt;</SPAN><SPAN lang=ES-MX style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: ES-MX" Caption="&nbsp;Se&nbsp;agrega la posibilidad de las dos maneras de indicar&nbsp;cuotas extraordinarias&nbsp;">&nbsp;Se cargan porcentajes de amortizacion de capital se el credito tiene tipo de amortizacion aleman</SPAN><SPAN lang=ES-MX style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: ES-MX" Caption="</Descripcion>">&lt;/Descripcion&gt;</SPAN><SPAN lang=ES-MX style="FONT-FAMILY: Arial; mso-ansi-language: ES-MX; mso-bidi-font-family: 'Times New Roman'" Caption=" "><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN lang=ES-MX style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: ES-MX" Caption="&nbsp;&nbsp;&nbsp; </Modificacion>">&nbsp;&nbsp;&nbsp; &lt;/Modificacion&gt;</SPAN></P></SPAN></SPAN>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN lang=ES-MX style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: ES-MX" Caption=" "></SPAN>&nbsp;</P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN lang=ES-MX style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: ES-MX" Caption=" ">&nbsp;&nbsp;&nbsp; &lt;Modificacion&gt; <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Fecha&gt;14/02/2017&lt;/Fecha&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Autor&gt;V.Actis&lt;/Autor&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Solicitud&gt;&lt;/Solicitud&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Pais&gt;Genérico&lt;/Pais&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Cliente&gt;Genérico&lt;/Cliente&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Descripcion&gt;Se agregan orders.&lt;/Descripcion&gt;<BR>&nbsp;&nbsp; &lt;/Modificacion&gt;<BR><BR>&nbsp;&lt;Modificacion&gt; <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Fecha&gt;1/04/2019&lt;/Fecha&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Autor&gt;LMitrani&lt;/Autor&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Solicitud&gt;WI 67&lt;/Solicitud&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Pais&gt;Chile&lt;/Pais&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Cliente&gt;Forum&lt;/Cliente&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Descripcion&gt;Al ingresar a tabla Fpp064 con Pp063tipo = 2 se ignoran registros con valor cuota cero &lt;/Descripcion&gt;<BR>&nbsp;&nbsp; &lt;/Modificacion&gt;</SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN lang=ES-MX style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: ES-MX" Caption=" "></SPAN>&nbsp;</P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN lang=ES-MX style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: ES-MX" Caption=" ">&nbsp; &lt;Modificacion&gt; <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Fecha&gt;22/10/2019&lt;/Fecha&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Autor&gt;WValdez&lt;/Autor&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Solicitud&gt;WI 113&lt;/Solicitud&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Pais&gt;Chile&lt;/Pais&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Cliente&gt;Forum&lt;/Cliente&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Descripcion&gt;Obtengo la ultima que es el cuotón (Producto especial - compra inteligente), cuando se reestructura se debe mantener &lt;/Descripcion&gt;<BR>&nbsp;&nbsp; &lt;/Modificacion&gt;<BR></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN lang=ES-MX style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: ES-MX" Caption=" "><SPAN lang=ES-MX style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: ES-MX" Caption=" ">&nbsp; &lt;Modificacion&gt; <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Fecha&gt;07/09/20&lt;/Fecha&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Autor&gt;ICaraballo&lt;/Autor&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Solicitud&gt;176344&lt;/Solicitud&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Pais&gt;&lt;/Pais&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Cliente&gt;Fundea&lt;/Cliente&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Descripcion&gt;En caso de reestructura y opcion 1281 prendida se toman los cambios de tasa desde la fecha valor de la cuota correspondiente/inicializo &amp;HayTasaIni en N&lt;/Descripcion&gt;<BR>&nbsp;&nbsp; &lt;/Modificacion&gt;<BR><BR></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN lang=ES-MX style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: ES-MX" Caption=" "><SPAN lang=ES-MX style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: ES-MX" Caption=" ">&nbsp; &lt;Modificacion&gt; <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Fecha&gt;21/07/21&lt;/Fecha&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Autor&gt;LMitrani&lt;/Autor&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Solicitud&gt;WI 16&lt;/Solicitud&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Pais&gt;Peru&lt;/Pais&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Cliente&gt;MAF&lt;/Cliente&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Descripcion&gt;Se aceptan Cuotas Extraordinarias de tipo % (cuota doble) y cuotas extraordinarias de valor fijo simultaneamente&lt;/Descripcion&gt;<BR>&nbsp;&nbsp; &lt;/Modificacion&gt;</SPAN><BR></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"></SPAN></SPAN><BR></P></SPAN>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN lang=ES-MX style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: ES-MX" Caption=" "><SPAN lang=ES-MX style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: ES-MX" Caption=" "><SPAN lang=ES-MX style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: ES-MX" Caption=" "><SPAN lang=ES-MX style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: ES-MX" Caption=" "><SPAN lang=ES-MX style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: ES-MX" Caption=" "><SPAN lang=ES-MX style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: ES-MX" Caption=" ">
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN lang=ES-MX style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: ES-MX" Caption=" "></SPAN></P></SPAN></SPAN></SPAN></SPAN></SPAN><SPAN lang=ES-MX style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: ES-MX" Caption=" "></SPAN>
+<P></P></SPAN>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN lang=ES-MX style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: ES-MX" Caption="</Historia>">&lt;/Historia&gt;</SPAN></P></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>]]></Source>
+      </Documentation>
+      <LastUpdate>2021-07-21 21:57:24GMT</LastUpdate>
+      <Variable>
+        <Id>-55</Id>
+        <Name>CambTasaMCuota</Name>
+        <Title>Camb Tasa MCuota</Title>
+        <Type>Character</Type>
+        <Length>1</Length>
+        <Decimals>0</Decimals>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-47</Id>
+        <Name>CamTasa</Name>
+        <Title>Cam Tasa</Title>
+        <Length>11</Length>
+        <Decimals>6</Decimals>
+        <Picture>ZZZ9.999999</Picture>
+        <BasedOn>Aotasa</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-48</Id>
+        <Name>CamTTas</Name>
+        <Title>Cam TTas</Title>
+        <Length>1</Length>
+        <Decimals>0</Decimals>
+        <Picture>9</Picture>
+        <BasedOn>Aottas</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-63</Id>
+        <Name>CompInteligente</Name>
+        <Title>Comp Inteligente</Title>
+        <Type>Character</Type>
+        <Length>1</Length>
+        <Decimals>0</Decimals>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-59</Id>
+        <Name>CompraInteligente</Name>
+        <Title>Compra Inteligente</Title>
+        <Type>Character</Type>
+        <Length>1</Length>
+        <Decimals>0</Decimals>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-8</Id>
+        <Name>EntCapCap</Name>
+        <Title>EntCapCap</Title>
+        <Length>18</Length>
+        <Sign>Y</Sign>
+        <Picture>ZZZ,ZZZ,ZZZ,ZZZ,ZZ9.99</Picture>
+        <Rows>99</Rows>
+        <BasedOn>Scsdo</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-9</Id>
+        <Name>EntCapFech</Name>
+        <Title>EntCapFech</Title>
+        <Type>Date</Type>
+        <Length>8</Length>
+        <Decimals>0</Decimals>
+        <Picture>99/99/99</Picture>
+        <Rows>99</Rows>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>99/99/99</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-10</Id>
+        <Name>EntCapMod</Name>
+        <Title>EntCapMod</Title>
+        <Type>Character</Type>
+        <Length>1</Length>
+        <Decimals>0</Decimals>
+        <Rows>99</Rows>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-50</Id>
+        <Name>FCamTasa</Name>
+        <Title>FCam Tasa</Title>
+        <Type>Date</Type>
+        <Length>8</Length>
+        <Decimals>0</Decimals>
+        <Picture>99/99/99</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>99/99/99</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-11</Id>
+        <Name>Fecha</Name>
+        <Title>Fecha</Title>
+        <Type>Date</Type>
+        <Length>8</Length>
+        <Decimals>0</Decimals>
+        <Picture>99/99/99</Picture>
+        <BasedOn>_Fecha</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-12</Id>
+        <Name>FecReestr</Name>
+        <Title>FecReestr</Title>
+        <Type>Date</Type>
+        <Length>8</Length>
+        <Decimals>0</Decimals>
+        <Picture>99/99/99</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>99/99/99</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-13</Id>
+        <Name>Filler</Name>
+        <Title>Filler</Title>
+        <Type>Character</Type>
+        <Length>30</Length>
+        <Decimals>0</Decimals>
+        <Rows>999</Rows>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-14</Id>
+        <Name>Flujo</Name>
+        <Title>Flujo</Title>
+        <Type>Character</Type>
+        <Length>1</Length>
+        <Decimals>0</Decimals>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-15</Id>
+        <Name>GracModal</Name>
+        <Title>GracModal</Title>
+        <Type>Character</Type>
+        <Length>1</Length>
+        <Decimals>0</Decimals>
+        <Rows>999</Rows>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-16</Id>
+        <Name>GracTipo</Name>
+        <Title>GracTipo</Title>
+        <Type>Character</Type>
+        <Length>1</Length>
+        <Decimals>0</Decimals>
+        <Rows>999</Rows>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-49</Id>
+        <Name>HayCamTasa</Name>
+        <Title>Hay Cam Tasa</Title>
+        <Type>Character</Type>
+        <Length>1</Length>
+        <Decimals>0</Decimals>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-17</Id>
+        <Name>HayEntregaP</Name>
+        <Title>HayEntregaP</Title>
+        <Type>Character</Type>
+        <Length>1</Length>
+        <Decimals>0</Decimals>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-54</Id>
+        <Name>HayTasaIni</Name>
+        <Title>Hay Tasa Ini</Title>
+        <Type>Character</Type>
+        <Length>1</Length>
+        <Decimals>0</Decimals>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-18</Id>
+        <Name>I</Name>
+        <Title>I</Title>
+        <Length>4</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-19</Id>
+        <Name>K</Name>
+        <Title>K</Title>
+        <Length>4</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-4</Id>
+        <Name>Line</Name>
+        <Title>Line</Title>
+        <Length>6</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-20</Id>
+        <Name>ModoCalculo</Name>
+        <Title>ModoCalculo</Title>
+        <Length>2</Length>
+        <Decimals>0</Decimals>
+        <Picture>Z9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>Z9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-21</Id>
+        <Name>Msg</Name>
+        <Title>Msg</Title>
+        <Type>Character</Type>
+        <Length>70</Length>
+        <Decimals>0</Decimals>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-56</Id>
+        <Name>Opgcod</Name>
+        <Title>Código de opción general</Title>
+        <Length>5</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZ9</Picture>
+        <BasedOn>OpgCod</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-5</Id>
+        <Name>Output</Name>
+        <Title>Output</Title>
+        <Type>Character</Type>
+        <Length>3</Length>
+        <Decimals>0</Decimals>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-3</Id>
+        <Name>Page</Name>
+        <Title>Page</Title>
+        <Length>6</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-22</Id>
+        <Name>Paocta</Name>
+        <Title>Paocta</Title>
+        <Length>9</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZZZZ9</Picture>
+        <BasedOn>Aocta</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-23</Id>
+        <Name>Paofval</Name>
+        <Title>Paofval</Title>
+        <Type>Date</Type>
+        <Length>8</Length>
+        <Decimals>0</Decimals>
+        <Picture>99/99/99</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>99/99/99</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-24</Id>
+        <Name>Paomda</Name>
+        <Title>Paomda</Title>
+        <Length>4</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZ9</Picture>
+        <BasedOn>Aomda</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-25</Id>
+        <Name>Paomod</Name>
+        <Title>Paomod</Title>
+        <Length>5</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZ9</Picture>
+        <BasedOn>Aomod</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-26</Id>
+        <Name>Paooper</Name>
+        <Title>Paooper</Title>
+        <Length>9</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZZZZ9</Picture>
+        <BasedOn>Aooper</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-27</Id>
+        <Name>Paopap</Name>
+        <Title>Paopap</Title>
+        <Length>6</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZ9</Picture>
+        <BasedOn>Aopap</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-28</Id>
+        <Name>Paosbop</Name>
+        <Title>Paosbop</Title>
+        <Length>5</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZ9</Picture>
+        <BasedOn>Aosbop</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-29</Id>
+        <Name>Paosuc</Name>
+        <Title>Paosuc</Title>
+        <Length>5</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZ9</Picture>
+        <BasedOn>Aosuc</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-30</Id>
+        <Name>Paotdia</Name>
+        <Title>Paotdia</Title>
+        <Length>1</Length>
+        <Decimals>0</Decimals>
+        <Picture>9</Picture>
+        <BasedOn>Aotdia</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-31</Id>
+        <Name>Paotope</Name>
+        <Title>Paotope</Title>
+        <Length>3</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZ9</Picture>
+        <BasedOn>Aotope</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-32</Id>
+        <Name>Paotvto</Name>
+        <Title>Paotvto</Title>
+        <Type>Character</Type>
+        <Length>1</Length>
+        <Decimals>0</Decimals>
+        <ValRange>'A' 'P' 'N'</ValRange>
+        <Picture>@!</Picture>
+        <BasedOn>Aotvto</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-33</Id>
+        <Name>Pfecnul</Name>
+        <Title>Pfecnul</Title>
+        <Type>Date</Type>
+        <Length>8</Length>
+        <Decimals>0</Decimals>
+        <Picture>99/99/99</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>99/99/99</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-57</Id>
+        <Name>Pgclte</Name>
+        <Title>Codigo de cliente de  dl &amp; a</Title>
+        <Length>5</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZ9</Picture>
+        <BasedOn>Pgclte</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-7</Id>
+        <Name>Pgmdesc</Name>
+        <Title>Pgmdesc</Title>
+        <Type>Character</Type>
+        <Length>30</Length>
+        <Decimals>0</Decimals>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-6</Id>
+        <Name>Pgmname</Name>
+        <Title>Pgmname</Title>
+        <Type>Character</Type>
+        <Length>31</Length>
+        <Decimals>0</Decimals>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-58</Id>
+        <Name>Pgpais</Name>
+        <Title>País de la Instalación</Title>
+        <Type>Character</Type>
+        <Length>2</Length>
+        <Decimals>0</Decimals>
+        <Picture>@!</Picture>
+        <BasedOn>Pgpais</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-39</Id>
+        <Name>Pp063Tipo</Name>
+        <Title>Tipo (1= Mes 2=Cuota Inicial)</Title>
+        <Length>2</Length>
+        <Decimals>0</Decimals>
+        <Picture>Z9</Picture>
+        <BasedOn>Pp063Tipo</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-34</Id>
+        <Name>Ppgcod</Name>
+        <Title>Código</Title>
+        <Length>3</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZ9</Picture>
+        <BasedOn>PPgcod</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-53</Id>
+        <Name>TasaIni</Name>
+        <Title>Tasa Ini</Title>
+        <Length>11</Length>
+        <Decimals>6</Decimals>
+        <Picture>ZZZ9.999999</Picture>
+        <BasedOn>Aotasa</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-35</Id>
+        <Name>TasaPer</Name>
+        <Title>TasaPer</Title>
+        <Length>5</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZ9</Picture>
+        <Rows>99</Rows>
+        <BasedOn>XllAoPer</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-38</Id>
+        <Name>TasaTasa</Name>
+        <Title>TasaTasa</Title>
+        <Length>11</Length>
+        <Decimals>6</Decimals>
+        <Picture>ZZZ9.999999</Picture>
+        <Rows>99</Rows>
+        <BasedOn>Aotasa</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-2</Id>
+        <Name>Time</Name>
+        <Title>Time</Title>
+        <Type>Character</Type>
+        <Length>8</Length>
+        <Decimals>0</Decimals>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-46</Id>
+        <Name>TipoAmort</Name>
+        <Title>Tipo Amort</Title>
+        <Length>2</Length>
+        <Decimals>0</Decimals>
+        <Picture>Z9</Picture>
+        <BasedOn>XllTipoPre</BasedOn>
+      </Variable>
+      <Variable>
+        <Name>Today</Name>
+        <Title>Today</Title>
+        <Type>Date</Type>
+        <Length>8</Length>
+        <Decimals>0</Decimals>
+        <Picture>99/99/99</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>99/99/99</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-36</Id>
+        <Name>TopeEntCap</Name>
+        <Title>TopeEntCap</Title>
+        <Length>4</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-41</Id>
+        <Name>TopeMesExt</Name>
+        <Title>Tope Mes Ext</Title>
+        <Length>4</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-37</Id>
+        <Name>TopeTasa</Name>
+        <Title>TopeTasa</Title>
+        <Length>4</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-60</Id>
+        <Name>TpcodCI</Name>
+        <Title>Código de valor</Title>
+        <Length>5</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-62</Id>
+        <Name>Tpcorr_fin</Name>
+        <Title>Correlativo</Title>
+        <Length>3</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-61</Id>
+        <Name>Tpcorr_ini</Name>
+        <Title>Correlativo</Title>
+        <Length>3</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-52</Id>
+        <Name>Txreng</Name>
+        <Title>Renglon</Title>
+        <Length>3</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZ9</Picture>
+        <BasedOn>Txreng</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-51</Id>
+        <Name>Txtext</Name>
+        <Title>Texto</Title>
+        <Type>Character</Type>
+        <Length>65</Length>
+        <Decimals>0</Decimals>
+        <BasedOn>Txtext</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-44</Id>
+        <Name>VecCEFech</Name>
+        <Title>Vec CEFech</Title>
+        <Type>Date</Type>
+        <Length>8</Length>
+        <Decimals>0</Decimals>
+        <Picture>99/99/99</Picture>
+        <Rows>99</Rows>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>99/99/99</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-43</Id>
+        <Name>VecCEImp</Name>
+        <Title>Vec CEImp</Title>
+        <Length>18</Length>
+        <Sign>Y</Sign>
+        <Picture>ZZZ,ZZZ,ZZZ,ZZZ,ZZ9.99</Picture>
+        <Rows>99</Rows>
+        <BasedOn>Scsdo</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-40</Id>
+        <Name>VecCEMes</Name>
+        <Title>Vec CEMes</Title>
+        <Length>2</Length>
+        <Decimals>0</Decimals>
+        <Picture>Z9</Picture>
+        <Rows>99</Rows>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>Z9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-42</Id>
+        <Name>VecCEPorc</Name>
+        <Title>Vec CEPorc</Title>
+        <Length>11</Length>
+        <Decimals>6</Decimals>
+        <Picture>ZZZ9.999999</Picture>
+        <Rows>99</Rows>
+        <BasedOn>Pp064Porc</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-45</Id>
+        <Name>VecCETipo</Name>
+        <Title>Vec CETipo</Title>
+        <Length>2</Length>
+        <Decimals>0</Decimals>
+        <Picture>Z9</Picture>
+        <Rows>99</Rows>
+        <BasedOn>Pp063Tipo</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-64</Id>
+        <Name>FDesdeCuo</Name>
+        <Title>FDesde Cuo</Title>
+        <Type>Date</Type>
+        <Length>8</Length>
+        <Decimals>0</Decimals>
+        <Picture>99/99/99</Picture>
+        <BasedOn>Aofvto</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-65</Id>
+        <Name>FecDesdeEv</Name>
+        <Title>Fec Desde Ev</Title>
+        <Type>Date</Type>
+        <Length>8</Length>
+        <Decimals>0</Decimals>
+        <Picture>99/99/99</Picture>
+        <BasedOn>Aofvto</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-66</Id>
+        <Name>FAux</Name>
+        <Title>FAux</Title>
+        <Type>Date</Type>
+        <Length>8</Length>
+        <Decimals>0</Decimals>
+        <Picture>99/99/99</Picture>
+        <BasedOn>Aofvto</BasedOn>
+      </Variable>
+      <Layout>
+        <NextControlID>65</NextControlID>
+        <FormInfo>
+          <FormId>1</FormId>
+          <FormClass>Graphic</FormClass>
+          <IsDefault>N</IsDefault>
+          <Att_Font>
+            <Name>Courier New</Name>
+            <Size>9</Size>
+          </Att_Font>
+          <Txt_Font>
+            <Bold>Y</Bold>
+          </Txt_Font>
+          <GridWidth>13</GridWidth>
+          <GridHeight>13</GridHeight>
+          <TemplateBased>N</TemplateBased>
+        </FormInfo>
+        <Block>
+          <CodeBlock>
+            <left>71</left>
+            <top>2</top>
+            <right>743</right>
+            <bottom>28</bottom>
+            <Brush>Y</Brush>
+            <ColorInfo>
+              <Foreground>Lime</Foreground>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <ForeColor>-2147483642</ForeColor>
+            <BackColor>-2147483633</BackColor>
+            <BorderWidth>0</BorderWidth>
+            <Shape>Frame</Shape>
+            <OutStyle>Single</OutStyle>
+            <GSGridWidth>7</GSGridWidth>
+            <GSGridHeight>15</GSGridHeight>
+            <DataLeft>0</DataLeft>
+            <DataTop>0</DataTop>
+            <DataRight>0</DataRight>
+            <DataBottom>0</DataBottom>
+            <Source><![CDATA[&Pfecnul = YMDtoD(0,0,0)
+
+&EntCapFech() = &Pfecnul
+&EntCapCap()  = 0
+&EntCapMod()  = ''
+
+//--GGarcia WI 69 Sabadell 14/01/15
+For Each //--FST017
+Where Pgcod = &Ppgcod
+Defined By Pgfape
+    &Pgclte = Pgclte
+    &Pgpais = Pgpais
+EndFor              
+
+
+&CompInteligente = &Filler(10) //WValdez - WI 113 FORUM -17/10/19: Obtengo productos de compra inteligente
+
+If &Flujo <> 'E'  // Si no es reestructura
+   // Entrega de Capital
+   Do 'Entrega de Capital Operacion'
+Else
+   &HayEntregaP = 'N'
+   &TopeEntCap  =  0   
+EndIf
+
+// Períodos de Gracia
+&GracModal() = ''
+&GracTipo()  = ''
+If &Flujo <> 'E'  // Si no es reestructura
+   Do 'Periodos de Gracia Operacion'
+EndIf
+
+// Preseteo de tasas
+
+&TasaPer() = 0
+&TasaTasa()= 0
+If &Flujo <> 'E'
+   Do 'Preseteo de Tasas Operacion'
+EndIf
+
+
+&VecCEMes()   = 0    &VecCETipo() = 0
+&VecCEPorc()  = 0    &VecCEImp()  = 0  &TopeMesExt = 0
+
+If (&TipoAmort = 1 Or &TipoAmort = 3) 
+   Do 'Cuotas Extraordinarias'
+Else
+    If &TipoAmort = 2    //--GGarcia WI 69 Sabadell 14/01/15 Se cargan porcentajes de amortizacion de capital
+        &Pp063Tipo = 4
+        Do 'Cuotas Extraordinarias'
+    EndIf 
+EndIf
+
+If &Flujo = 'E' And (&TipoAmort = 1 Or &TipoAmort = 3) 
+   // Cambio tasa a mitad de una cuota para frances
+   &CambTasaMCuota = 'N'   &OpgCod = 1281   
+   For Each // FST200
+       Where Pgcod  = &PPgcod    
+  	   Where OpgCod = &OpgCod
+	   Defined By OpgVal
+	   &CambTasaMCuota = OpgVal
+   EndFor
+
+   If &CambTasaMCuota = 'S'
+
+      //ICaraballo 07/09/20 SGR 176344_Agrego acceso a fsd601:En caso de reestructura y opcion 1281 prendida se toman los cambios de tasa desde la fecha valor de la cuota correspondiente
+      &FDesdeCuo = NullValue(&FDesdeCuo)   &FAux = &FecReestr + 365
+      For Each Order Pgcod, Ppmod, Ppsuc, Ppmda, Pppap, Ppcta, Ppoper, Ppsbop, Pptope, Ppfpag, Pptipo// FSD601
+		  Where Pgcod   = &Ppgcod
+		  Where Ppmod   = &Paomod
+		  Where Ppsuc   = &Paosuc
+		  Where Ppmda   = &Paomda
+		  Where Pppap   = &Paopap
+		  Where Ppcta   = &Paocta
+		  Where Ppoper  = &Paooper
+		  Where Ppsbop  = &Paosbop
+		  Where Pptope  = &Paotope    
+		  Where Ppfpag  > &FecReestr
+          Where Ppfpag <= &FAux
+		  Where D601co  = 'S'
+		  Defined By D601co
+          &FDesdeCuo = Ppfval
+          Exit
+      EndFor   
+    
+      If Null(&FDesdeCuo)
+         &FecDesdeEv = &FecReestr
+      Else
+         &FecDesdeEv = &FDesdeCuo
+      EndIf
+
+      &HayCamTasa =  'N'  &HayTasaIni = 'N'//ICaraballo 07/09/20 SGR 176344_inicializo en N. Si no hay fsd012 antes del último cambio que tome el aotasa
+      For Each Pgcod,Aomod,Aosuc,Aomda,Aopap,Aocta,Aooper,Aosbop,Aotope,Evcorr // FSD012
+          Where Pgcod  = &Ppgcod
+          Where Aomod  = &Paomod
+          Where Aosuc  = &Paosuc
+          Where Aomda  = &Paomda
+          Where Aopap  = &Paopap
+          Where Aocta  = &Paocta
+          Where Aooper = &Paooper
+          Where Aosbop = &Paosbop
+          Where Aotope = &Paotope
+          Where Evtipo =  3
+          Where D012co = 'S'       
+          Defined By Evimp
+          If Evfval > &FecDesdeEv//&FecReestr
+             &CamTasa    = Evtasa        // Tasa
+             &CamTTas    = Evttas        // Tipo de Tasa           
+             &FCamTasa   = Evfval
+             &HayCamTasa = 'S'
+          Else
+            &TasaIni = Evtasa
+            &HayTasaIni = 'S'
+          EndIf
+      EndFor 
+      If &HayCamTasa = 'S'
+         &Filler(1) = 'X'
+         &Filler(2) = Str(&CamTasa,11,6)
+         &Filler(3) = DtoC(&FCamTasa)
+
+         If &HayTasaIni = 'N'
+            For Each // FSD010
+                Where Pgcod  = &Ppgcod
+                Where Aomod  = &Paomod
+                Where Aosuc  = &Paosuc
+                Where Aomda  = &Paomda
+                Where Aopap  = &Paopap
+                Where Aocta  = &Paocta
+                Where Aooper = &Paooper
+                Where Aosbop = &Paosbop
+                Where Aotope = &Paotope
+                Defined By Aoimp
+                &TasaIni = Aotasa
+            EndFor
+         EndIf
+         &Filler(4) = Str(&TasaIni,11,6)
+      EndIf
+   EndIf
+EndIf
+
+//******************************************************************************************************************************
+//******************************************************************************************************************************
+//******************************************************************************************************************************
+Sub 'Preseteo de Tasas Operacion'
+
+&TopeTasa = 0
+For Each XllPgcod,XllAomod,XllAosuc,XllAomda,XllAopap,XllAocta,XllAooper,XllAosbop,XllAotop,XllAoPer // X054026
+    Where XllAomod  = &Paomod
+    Where XllAotop  = &Paotope
+    Where XllAopap  = &Paopap
+    Where XllAomda  = &Paomda
+    Where XllPgcod  = &PPgcod
+    Where XllAosuc  = &Paosuc
+    Where XllAocta  = &Paocta
+    Where XllAooper = &Paooper
+    Where XllAosbop = &Paosbop
+    Where XllAotop  = &Paotope
+    Defined By XllAoPer
+    &TopeTasa           = &TopeTasa + 1
+    &TasaPer(&TopeTasa) = XllAoPer
+    &TasaTasa(&TopeTasa)= XllAotasa
+EndFor
+
+EndSub // 'Preseteo de Tasas Operacion'
+
+//******************************************************************************************************************************
+Sub 'Entrega de Capital Operacion'
+
+&HayEntregaP = 'N'
+
+&TopeEntCap = 0
+For Each XllPgcod,XllAomod,XllAosuc,XllAomda,XllAopap,XllAocta,XllAooper,XllAosbop,XllAotop,XllAoCDias // X054033
+    Where XllPgcod  = &Ppgcod
+    Where XllAomod  = &Paomod
+    Where XllAosuc  = &Paosuc
+    Where XllAomda  = &Paomda
+    Where XllAopap  = &Paopap
+    Where XllAocta  = &Paocta
+    Where XllAooper = &Paooper
+    Where XllAosbop = &Paosbop
+    Where XllAotop  = &Paotope
+    Defined By XllAoCap
+    &TopeEntCap = &TopeEntCap + 1
+
+    // Calculo Fecha a partir del plazo desde la fecha valor
+    &Fecha = &Pfecnul
+    Call(RRg0003,&PPgcod,&Paosuc,&Paofval,&Fecha,XllAoCDias,&Paotdia,&Paotvto)
+
+    &EntCapFech(&TopeEntCap) = &Fecha     // Fecha
+    &EntCapCap(&TopeEntCap)  = XllAoCap   // Capital
+    &EntCapMod(&TopeEntCap)  = XllAomodo  // Modo 
+             // 'C' - Reduce el capital de las cuotas posteriores a la fecha de entrega de capital, manteniendo el plazo original.
+             // 'P' - Mantiene el capital de las cuotas posteriores, reduciendo el plazo. 
+             // ' ' - Idem C, pero ajustando el valor de cuotas anteriores y posteriores a la fecha de entrega de capital.
+    //If &ModoCalculo >= 1 .And. &ModoCalculo <= 3 .And. XllAomodo = 'P'
+    If  XllAomodo = 'P'
+       &HayEntregaP = 'S'
+    EndIf
+EndFor
+
+EndSub // 'Entrega de Capital Operacion'
+//******************************************************************************************************************************
+Sub 'Periodos de Gracia Operacion'
+
+// Solo veo gracia standard aqui , la gracia mes fijo la veo en la rutina Rrg0526b
+For Each XllPgcod,XllAomod,XllAosuc,XllAomda,XllAopap,XllAocta,XllAooper,XllAosbop,XllAotop,XllAoPeri // X054032
+    Where XllPgcod  = &PPgcod
+    Where XllAomod  = &Paomod
+    Where XllAosuc  = &Paosuc
+    Where XllAomda  = &Paomda        
+    Where XllAopap  = &Paopap       
+    Where XllAocta  = &Paocta
+    Where XllAooper = &Paooper
+    Where XllAosbop = &Paosbop
+    Where XllAotop  = &Paotope
+    Where XllAoCntP <> 0
+    Defined By XllAoTipo    
+
+    &K = XllAoPeri            // Cuota inicial gracia
+
+    &I = 1
+    Do While &I <= XllAoCntP  // Cantidad de cuotas de duración de la gracia
+
+       &GracTipo(&K)  = XllAoTipo     // Indica si la gracia corresponde a capital (K), interés (I) o a ambos conceptos (A). 
+       &GracModal(&K) = XllAoModal    // Con el valor C, se indica que se capitalizan los intereses del período de gracia.  
+                                      // Con E, se expande el plazo de la operación, y con N no se altera la estructura. 
+       &K = &K + 1
+       &I = &I + 1
+    EndDo   
+EndFor   
+   
+EndSub 
+//******************************************************************************************************************************
+Sub 'Cuotas Extraordinarias'
+
+If &TipoAmort <> 2
+    &Pp063Tipo = 1  // Porcentaje de Valor Cuota
+EndIf//--GGarcia
+
+For Each Pgcod,Aomod,Aosuc,Aomda,Aopap,Aocta,Aooper,Aosbop,Aotope,Pp063Tipo,Pp063Ini // Fpp064: Cuotas Extraordinarias (Operacion)
+    Where Pgcod     = &PpgCod 
+    Where Aomod     = &Paomod 
+    Where Aosuc     = &PAosuc 
+    Where Aomda     = &Paomda 
+    Where Aopap     = &Paopap 
+    Where Aocta     = &Paocta 
+	Where Aooper    = &Paooper 
+    Where Aosbop    = &Paosbop 
+    Where Aotope    = &Paotope 
+    Where Pp063Tipo = &Pp063Tipo
+    Defined By  Pp064Aux1
+
+    &TopeMesExt           = &TopeMesExt + 1
+    If &Pp063Tipo = 4  // Esto es porque &VecCEMes() es N(2)
+       &VecCEImp(&TopeMesExt)  = Pp063Ini
+    Else
+       &VecCEMes(&TopeMesExt)  = Pp063Ini
+    EndIf
+
+    &VecCEPorc(&TopeMesExt) = Pp064Porc
+    &VecCETipo(&TopeMesExt) = &Pp063Tipo
+EndFor
+
+//If &TopeMesExt = 0
+
+   If &Flujo <> 'E' Or &CompInteligente = 'S'   
+      &Pp063Tipo   = 2  // Valor Cuota Fijo
+      For Each Pgcod,Aomod,Aosuc,Aomda,Aopap,Aocta,Aooper,Aosbop,Aotope,Pp063Tipo,Pp063Ini // Fpp064: Cuotas Extraordinarias (Operacion)
+          Where Pgcod     = &PpgCod 
+          Where Aomod     = &Paomod 
+          Where Aosuc     = &PAosuc 
+          Where Aomda     = &Paomda 
+          Where Aopap     = &Paopap 
+          Where Aocta     = &Paocta 
+          Where Aooper    = &Paooper 
+          Where Aosbop    = &Paosbop 
+          Where Aotope    = &Paotope 
+          Where Pp063Tipo = &Pp063Tipo
+          Where Pp064Mto <> 0              // WI 67 Forum LM 1/04/19 , el valor cuota puede ser cero  
+          Defined By  Pp064Aux1
+
+          &TopeMesExt             = &TopeMesExt + 1
+          &VecCEMes(&TopeMesExt)  = Pp063Ini
+          &VecCEImp(&TopeMesExt)  = Pp064Mto
+          &VecCETipo(&TopeMesExt) = &Pp063Tipo
+          
+          //-- WValdez - Forum - WI 113 - 21/10/19: Si existe mas de una cuota extraordinaria, 
+          //-- Obtengo la ultima que es el cuotón (Producto especial - compra inteligente), cuando se reestructura se debe mantener
+          If &CompInteligente = 'S' and &Flujo = 'E'
+             &TopeMesExt = 1
+             &VecCEMes(&TopeMesExt)  = Pp063Ini
+             &VecCEImp(&TopeMesExt)  = Pp064Mto
+             &VecCETipo(&TopeMesExt) = &Pp063Tipo
+          EndIf
+      EndFor
+   EndIf
+//EndIf
+
+
+EndSub
+]]></Source>
+          </CodeBlock>
+        </Block>
+        <Block>
+          <PrintBlockVer8>
+            <left>71</left>
+            <top>2</top>
+            <right>743</right>
+            <bottom>28</bottom>
+            <Brush>Y</Brush>
+            <ColorInfo>
+              <Foreground>Black</Foreground>
+              <Background>White</Background>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <ForeColor>-2147483642</ForeColor>
+            <BackColor>-2147483633</BackColor>
+            <Shape>Frame</Shape>
+            <OutStyle>Single</OutStyle>
+            <GSGridWidth>7</GSGridWidth>
+            <GSGridHeight>15</GSGridHeight>
+            <DataLeft>0</DataLeft>
+            <DataTop>0</DataTop>
+            <DataRight>0</DataRight>
+            <DataBottom>0</DataBottom>
+            <CommandLine>[Unreferenced]</CommandLine>
+            <PBPos>1</PBPos>
+          </PrintBlockVer8>
+        </Block>
+        <Block>
+          <CodeBlockVer8>
+            <left>71</left>
+            <top>2</top>
+            <right>743</right>
+            <bottom>28</bottom>
+            <Brush>Y</Brush>
+            <ColorInfo>
+              <Foreground>Lime</Foreground>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <ForeColor>-2147483642</ForeColor>
+            <BackColor>-2147483633</BackColor>
+            <BorderWidth>0</BorderWidth>
+            <Shape>Frame</Shape>
+            <OutStyle>Single</OutStyle>
+            <GSGridWidth>7</GSGridWidth>
+            <GSGridHeight>15</GSGridHeight>
+            <DataLeft>0</DataLeft>
+            <DataTop>0</DataTop>
+            <DataRight>0</DataRight>
+            <DataBottom>0</DataBottom>
+          </CodeBlockVer8>
+        </Block>
+        <Paper>
+          <PaperId>A4</PaperId>
+          <SizeX>11906</SizeX>
+          <SizeY>16838</SizeY>
+          <RightIndent>1811</RightIndent>
+        </Paper>
+      </Layout>
+      <Rules><![CDATA[Parm(In: &Ppgcod,In: &Paomod,In: &Paosuc,In: &Paomda,In: &Paopap,In: &Paocta,In: &Paooper,In: &Paosbop,In: &Paotope,In: &Flujo,
+     In: &ModoCalculo,In: &FecReestr,In: &Paofval,In: &Paotdia,In: &Paotvto, In: &TipoAmort,Out: &TopeTasa,Out: &TasaPer(),Out: &TasaTasa(),
+     Out: &TopeEntCap,Out: &EntCapCap(),Out:&EntCapFech(),Out: &EntCapMod(),Out: &HayEntregaP,Out: &GracTipo(),Out: &GracModal(),
+     Out: &TopeMesExt,Out: &VecCEMes(),Out: &VecCEPorc(),Out: &VecCEImp(),Out: &VecCEFech(),Out: &VecCETipo(),InOut: &Filler());
+]]></Rules>
+      <Conditions><![CDATA[// -- HASH:b27c0c16ba7fafd3a66f130b6f93754f767daa13;
+]]></Conditions>
+    </Report>
+  </GXObject>
+  <Attributes>
+    <GXAtt>
+      <Attribute>
+        <Id>2268</Id>
+        <Name>Aotasa</Name>
+        <Title>Tasa</Title>
+        <Length>11</Length>
+        <Decimals>6</Decimals>
+        <Picture>ZZZ9.999999</Picture>
+        <LastUpdate>2012-03-07 13:06:54GMT</LastUpdate>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZ9.999999</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>2267</Id>
+        <Name>Aottas</Name>
+        <Title>Tipo de Tasa</Title>
+        <Picture>9</Picture>
+        <LastUpdate>2012-03-07 13:06:54GMT</LastUpdate>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>9</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>2311</Id>
+        <Name>Scsdo</Name>
+        <Title>Saldo</Title>
+        <Length>18</Length>
+        <Decimals>2</Decimals>
+        <Sign>Y</Sign>
+        <Picture>ZZZ,ZZZ,ZZZ,ZZZ,ZZ9.99</Picture>
+        <LastUpdate>2018-07-25 20:18:38GMT</LastUpdate>
+      </Attribute>
+      <AttInfo>
+        <Domain>Importe</Domain>
+        <ControlInfoFromDomain>Y</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZ,ZZZ,ZZZ,ZZZ,ZZ9.99</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>4</Id>
+        <Name>_Importe</Name>
+        <Title>Importe</Title>
+        <Length>18</Length>
+        <Decimals>2</Decimals>
+        <Sign>Y</Sign>
+        <Picture>ZZZ,ZZZ,ZZZ,ZZZ,ZZ9.99</Picture>
+        <LastUpdate>2021-07-14 17:00:48GMT</LastUpdate>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZ,ZZZ,ZZZ,ZZZ,ZZ9.99</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>2</Id>
+        <Name>_Fecha</Name>
+        <Title>Fecha</Title>
+        <Type>Date</Type>
+        <Length>8</Length>
+        <LastUpdate>2021-07-08 19:34:38GMT</LastUpdate>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>idDATEFORMAT</Name>
+          <Value>idDATEFORMAT_SHORT</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>1061</Id>
+        <Name>OpgCod</Name>
+        <Title>Código de opción general</Title>
+        <Length>5</Length>
+        <Picture>ZZZZ9</Picture>
+        <LastUpdate>2012-03-07 13:02:30GMT</LastUpdate>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZ9</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>2260</Id>
+        <Name>Aocta</Name>
+        <Title>Cuenta</Title>
+        <Length>9</Length>
+        <LastUpdate>2021-04-27 03:14:52GMT</LastUpdate>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZZZZZ9</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>2258</Id>
+        <Name>Aomda</Name>
+        <Title>Moneda</Title>
+        <Length>4</Length>
+        <LastUpdate>2021-04-27 03:14:52GMT</LastUpdate>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZ9</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>2256</Id>
+        <Name>Aomod</Name>
+        <Title>Modulo</Title>
+        <Length>5</Length>
+        <LastUpdate>2021-04-27 03:14:52GMT</LastUpdate>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZ9</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>2261</Id>
+        <Name>Aooper</Name>
+        <Title>Operacion</Title>
+        <Length>9</Length>
+        <LastUpdate>2021-04-27 03:14:52GMT</LastUpdate>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZZZZZ9</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>2259</Id>
+        <Name>Aopap</Name>
+        <Title>Aopap</Title>
+        <Length>6</Length>
+        <LastUpdate>2021-04-27 03:14:52GMT</LastUpdate>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZZ9</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>2262</Id>
+        <Name>Aosbop</Name>
+        <Title>Sub-operac.</Title>
+        <Length>5</Length>
+        <LastUpdate>2021-04-27 03:14:52GMT</LastUpdate>
+      </Attribute>
+      <AttInfo>
+        <Domain>dScsbop</Domain>
+        <ControlInfoFromDomain>Y</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZ9</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>10317</Id>
+        <Name>_dScsbop</Name>
+        <Title>Dominio Suboperación</Title>
+        <Length>5</Length>
+        <LastUpdate>2012-10-04 16:34:18GMT</LastUpdate>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>2257</Id>
+        <Name>Aosuc</Name>
+        <Title>Sucursal</Title>
+        <Length>5</Length>
+        <LastUpdate>2021-04-27 03:14:52GMT</LastUpdate>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZ9</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>2272</Id>
+        <Name>Aotdia</Name>
+        <Title>Tipo de dias</Title>
+        <LastUpdate>2012-03-07 13:06:54GMT</LastUpdate>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>2263</Id>
+        <Name>Aotope</Name>
+        <Title>Tipo operac.</Title>
+        <Length>3</Length>
+        <Picture>ZZ9</Picture>
+        <LastUpdate>2021-04-27 03:14:52GMT</LastUpdate>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZ9</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>2273</Id>
+        <Name>Aotvto</Name>
+        <Title>Tipo de ajuste en vencto.</Title>
+        <Type>Character</Type>
+        <ValRange>'A' 'P' 'N'</ValRange>
+        <Picture>@!</Picture>
+        <LastUpdate>2012-03-07 13:06:54GMT</LastUpdate>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>@!</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>601</Id>
+        <Name>Pgclte</Name>
+        <Title>Codigo de cliente de  dl &amp; a</Title>
+        <Length>5</Length>
+        <Picture>ZZZZ9</Picture>
+        <LastUpdate>2012-03-07 13:02:28GMT</LastUpdate>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZ9</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>624</Id>
+        <Name>Pgpais</Name>
+        <Title>País de la Instalación</Title>
+        <Type>Character</Type>
+        <Length>2</Length>
+        <Picture>@!</Picture>
+        <LastUpdate>2012-03-07 13:02:28GMT</LastUpdate>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>@!</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>5652</Id>
+        <Name>Pp063Tipo</Name>
+        <Title>Tipo (1= Mes 2=Cuota Inicial)</Title>
+        <Length>2</Length>
+        <LastUpdate>2012-03-07 13:11:28GMT</LastUpdate>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>897</Id>
+        <Name>PPgcod</Name>
+        <Title>Código</Title>
+        <Length>3</Length>
+        <Picture>ZZ9</Picture>
+        <LastUpdate>2012-03-07 13:11:50GMT</LastUpdate>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZ9</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>246</Id>
+        <Name>XllAoPer</Name>
+        <Title>XllAoPer</Title>
+        <Length>5</Length>
+        <Picture>ZZZZ9</Picture>
+        <LastUpdate>2012-03-07 13:10:34GMT</LastUpdate>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZ9</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>206</Id>
+        <Name>XllTipoPre</Name>
+        <Title>XllTipoPresP</Title>
+        <Length>2</Length>
+        <LastUpdate>2012-03-07 12:50:34GMT</LastUpdate>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>8485</Id>
+        <Name>Txreng</Name>
+        <Title>Renglon</Title>
+        <Length>3</Length>
+        <Picture>ZZ9</Picture>
+        <LastUpdate>2012-05-02 20:21:12GMT</LastUpdate>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZ9</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>8484</Id>
+        <Name>Txtext</Name>
+        <Title>Texto</Title>
+        <Type>Character</Type>
+        <Length>65</Length>
+        <LastUpdate>2012-05-02 20:12:54GMT</LastUpdate>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>5664</Id>
+        <Name>Pp064Porc</Name>
+        <Title>Porcentaje sobre Valor Cuota</Title>
+        <Length>11</Length>
+        <Decimals>6</Decimals>
+        <LastUpdate>2012-03-07 13:11:30GMT</LastUpdate>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>2265</Id>
+        <Name>Aofvto</Name>
+        <Title>F/vto</Title>
+        <Type>Date</Type>
+        <Length>8</Length>
+        <LastUpdate>2012-03-07 13:06:20GMT</LastUpdate>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+      </AttDoc>
+    </GXAtt>
+  </Attributes>
+  <GXObject>
+    <Folder>
+      <Info>
+        <Name>RutiWeb</Name>
+        <Description>RutiWeb</Description>
+        <Folder>TrnDefWeb</Folder>
+      </Info>
+      <ObjInfo>
+      </ObjInfo>
+      <LastUpdate>2021-07-21 21:57:22GMT</LastUpdate>
+    </Folder>
+  </GXObject>
+  <GXObject>
+    <Folder>
+      <Info>
+        <Name>TrnDefWeb</Name>
+        <Description>Trn Def Web</Description>
+        <Folder>BTWeb</Folder>
+      </Info>
+      <ObjInfo>
+      </ObjInfo>
+      <LastUpdate>2021-07-14 17:00:54GMT</LastUpdate>
+    </Folder>
+  </GXObject>
+  <GXObject>
+    <Folder>
+      <Info>
+        <Name>BTWeb</Name>
+        <Description>Bantotal Web</Description>
+      </Info>
+      <ObjInfo>
+      </ObjInfo>
+      <LastUpdate>2021-07-14 17:00:54GMT</LastUpdate>
+    </Folder>
+  </GXObject>
+</ExportFile>

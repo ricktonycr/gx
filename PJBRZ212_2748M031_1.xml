@@ -1,0 +1,3111 @@
+<?xml version='1.0' encoding='iso-8859-1'?>
+<ExportFile>
+  <Model>
+    <Id>3</Id>
+    <Name>JavaOracle [Q]</Name>
+    <Type>Production</Type>
+    <Stdfunc>N</Stdfunc>
+    <AttLen>10</AttLen>
+    <TblLen>8</TblLen>
+    <ObjLen>30</ObjLen>
+    <NullsBehavior>8_OR_LESS</NullsBehavior>
+    <EmptyAsNullBehavior>8_OR_LESS</EmptyAsNullBehavior>
+  </Model>
+  <KMW>
+    <MajorVersion>2</MajorVersion>
+    <MinorVersion>2</MinorVersion>
+    <Path>C:\Users\RCRUZ\OneDrive - dlya\Documentos\workspace\KBs\ActivasGx9-BROU</Path>
+    <MaxGxBuildSaved>2494</MaxGxBuildSaved>
+  </KMW>
+  <GXObject>
+    <Procedure>
+      <Info>
+        <Name>JBRZ212</Name>
+        <Description>Ajuste de saldos de pos y val</Description>
+        <DWHTrn>4</DWHTrn>
+      </Info>
+      <ObjInfo>
+        <IsMain>Y</IsMain>
+      </ObjInfo>
+      <Documentation>
+        <Source><![CDATA[<P>&lt;Historia&gt;<BR>&nbsp;&nbsp;&nbsp; &lt;Nuevo&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Fecha&gt;19/11/2020&lt;/Fecha&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Autor&gt;Pablo Rodriguez&lt;/Autor&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Solicitud&gt;DPD98139&lt;/Solicitud&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;País&gt;Uruguay&lt;/País&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Cliente&gt;BROU Uruguay&lt;/Cliente&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Descripción&gt;DPD 98139: Recorrer FSD011 y tomar todos los saldos que correspondan al rubro de posición y su subop difiera de 0. Cada saldo extornarlo e imputarlo con subop. = 0.Esto se debe a que el programa que lo procesa previamente los deja abiertos por subop. por temas de paralelizaciones y concurrencias&lt;/Descripción&gt;<BR>&nbsp;&nbsp;&nbsp; &lt;/Nuevo&gt;</P>
+<P>&nbsp;&nbsp; &lt;Modificación&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Fecha&gt;03/11/2021&lt;/Fecha&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Autor&gt;RCRUZ&lt;/Autor&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Solicitud&gt;DPD 98139 &lt;/Solicitud&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;País&gt;Uruguay&lt;/País&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Cliente&gt;BROU Uruguay&lt;/Cliente&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Descripción&gt;Se trasladan los saldos desde los rubros temporales rel 731 de los rubros de valuación y posición a los rubros originales&lt;/Descripción&gt;<BR>&nbsp;&nbsp;&nbsp; &lt;/Modificación&gt;</P>
+<P>&lt;/Historia&gt;</P>
+<P>&nbsp;</P>]]></Source>
+      </Documentation>
+      <LastUpdate>2021-11-04 22:49:08GMT</LastUpdate>
+      <Variable>
+        <Id>-21</Id>
+        <Name>aContabilizar</Name>
+        <Title>a Contabilizar</Title>
+        <Type>Character</Type>
+        <Length>100</Length>
+        <Decimals>0</Decimals>
+      </Variable>
+      <Variable>
+        <Id>-54</Id>
+        <Name>aitmod</Name>
+        <Title>aitmod</Title>
+        <Length>5</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-56</Id>
+        <Name>aitnrel</Name>
+        <Title>aitnrel</Title>
+        <Length>9</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZZZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZZZZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-75</Id>
+        <Name>aitor2</Name>
+        <Title>aitor2</Title>
+        <Length>3</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-59</Id>
+        <Name>aitord</Name>
+        <Title>aitord</Title>
+        <Length>3</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-60</Id>
+        <Name>aitsbor</Name>
+        <Title>aitsbor</Title>
+        <Length>3</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-53</Id>
+        <Name>aitsuc</Name>
+        <Title>aitsuc</Title>
+        <Length>5</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-55</Id>
+        <Name>aittran</Name>
+        <Title>aittran</Title>
+        <Length>5</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-57</Id>
+        <Name>aItuing</Name>
+        <Title>Usuario que ing.</Title>
+        <Type>ShortVarChar</Type>
+        <Length>30</Length>
+        <Decimals>0</Decimals>
+        <BasedOn>Ituing</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-58</Id>
+        <Name>aItwing</Name>
+        <Title>Estacion de ingreso</Title>
+        <Type>ShortVarChar</Type>
+        <Length>60</Length>
+        <Decimals>0</Decimals>
+        <BasedOn>Itwing</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-72</Id>
+        <Name>amncod</Name>
+        <Title>amncod</Title>
+        <Length>5</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-91</Id>
+        <Name>aRubPos</Name>
+        <Title>a Rub Pos</Title>
+        <Length>16</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZZZZZZZZZZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZZZZZZZZZZZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-93</Id>
+        <Name>aRubPosO</Name>
+        <Title>a Rub PosO</Title>
+        <Length>16</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZZZZZZZZZZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZZZZZZZZZZZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-90</Id>
+        <Name>aRubVal</Name>
+        <Title>a Rub Val</Title>
+        <Length>16</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZZZZZZZZZZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZZZZZZZZZZZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-92</Id>
+        <Name>aRubValO</Name>
+        <Title>a Rub ValO</Title>
+        <Length>16</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZZZZZZZZZZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZZZZZZZZZZZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-47</Id>
+        <Name>contador</Name>
+        <Title>contador</Title>
+        <Length>9</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZZZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZZZZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-95</Id>
+        <Name>DBG</Name>
+        <Title>DBG</Title>
+        <Type>Character</Type>
+        <Length>100</Length>
+        <Decimals>0</Decimals>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-30</Id>
+        <Name>DbgMsg</Name>
+        <Title>Dbg Msg</Title>
+        <Type>Character</Type>
+        <Length>100</Length>
+        <Decimals>0</Decimals>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-99</Id>
+        <Name>ESTADO</Name>
+        <Title>Estado del dueño del plástico</Title>
+        <Type>Character</Type>
+        <Length>100</Length>
+        <Decimals>0</Decimals>
+      </Variable>
+      <Variable>
+        <Id>-4</Id>
+        <Name>Line</Name>
+        <Title>Line</Title>
+        <Length>6</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-98</Id>
+        <Name>MnIdiom</Name>
+        <Title>MnIdiom</Title>
+        <Type>Character</Type>
+        <Length>2</Length>
+        <Decimals>0</Decimals>
+      </Variable>
+      <Variable>
+        <Id>-5</Id>
+        <Name>Output</Name>
+        <Title>Output</Title>
+        <Type>Character</Type>
+        <Length>3</Length>
+        <Decimals>0</Decimals>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-3</Id>
+        <Name>Page</Name>
+        <Title>Page</Title>
+        <Length>6</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-73</Id>
+        <Name>payer</Name>
+        <Title>payer</Title>
+        <Type>Date</Type>
+        <Length>8</Length>
+        <Decimals>0</Decimals>
+        <Picture>99/99/99</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>99/99/99</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-74</Id>
+        <Name>pcontab</Name>
+        <Title>pcontab</Title>
+        <Type>Character</Type>
+        <Length>1</Length>
+        <Decimals>0</Decimals>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-97</Id>
+        <Name>Pgfape</Name>
+        <Title>Fecha de apertura</Title>
+        <Type>Date</Type>
+        <Length>8</Length>
+        <Decimals>0</Decimals>
+        <Picture>99/99/99</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>99/99/99</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-7</Id>
+        <Name>Pgmdesc</Name>
+        <Title>Pgmdesc</Title>
+        <Type>Character</Type>
+        <Length>30</Length>
+        <Decimals>0</Decimals>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-6</Id>
+        <Name>Pgmname</Name>
+        <Title>Pgmname</Title>
+        <Type>Character</Type>
+        <Length>31</Length>
+        <Decimals>0</Decimals>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-39</Id>
+        <Name>pHoy</Name>
+        <Title>p Hoy</Title>
+        <Type>Date</Type>
+        <Length>8</Length>
+        <Decimals>0</Decimals>
+        <Picture>99/99/99</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>99/99/99</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-43</Id>
+        <Name>pImpreso</Name>
+        <Title>p Impreso</Title>
+        <Type>Character</Type>
+        <Length>100</Length>
+        <Decimals>0</Decimals>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-77</Id>
+        <Name>PP006</Name>
+        <Title>PP006</Title>
+        <Type>Character</Type>
+        <Length>5</Length>
+        <Decimals>0</Decimals>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-41</Id>
+        <Name>pPbnsec</Name>
+        <Title>Número de secuencia</Title>
+        <Length>5</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-42</Id>
+        <Name>pPbthread</Name>
+        <Title>Thread</Title>
+        <Length>3</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-37</Id>
+        <Name>pPgcod</Name>
+        <Title>Código</Title>
+        <Length>3</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-80</Id>
+        <Name>Ppgnom</Name>
+        <Title>Ppgnom</Title>
+        <Type>Character</Type>
+        <Length>50</Length>
+        <Decimals>0</Decimals>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-76</Id>
+        <Name>PRG0010</Name>
+        <Title>PRG0010</Title>
+        <Type>Character</Type>
+        <Length>7</Length>
+        <Decimals>0</Decimals>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-83</Id>
+        <Name>pRrCod</Name>
+        <Title>Código de Relación</Title>
+        <Length>1</Length>
+        <Decimals>0</Decimals>
+        <Picture>9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-84</Id>
+        <Name>Prrnom</Name>
+        <Title>Prrnom</Title>
+        <Length>2</Length>
+        <Decimals>0</Decimals>
+        <Picture>Z9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>Z9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-82</Id>
+        <Name>Pscnom</Name>
+        <Title>Pscnom</Title>
+        <Type>Character</Type>
+        <Length>30</Length>
+        <Decimals>0</Decimals>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-81</Id>
+        <Name>Psucurs</Name>
+        <Title>Psucurs</Title>
+        <Length>5</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-88</Id>
+        <Name>RelFin</Name>
+        <Title>Rel Fin</Title>
+        <Length>9</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZZZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZZZZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-87</Id>
+        <Name>RelIni</Name>
+        <Title>Rel Ini</Title>
+        <Length>9</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZZZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZZZZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-94</Id>
+        <Name>Rrcod</Name>
+        <Title>Cod.relacion de rubros</Title>
+        <Length>3</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-51</Id>
+        <Name>RubFin</Name>
+        <Title>Rub Fin</Title>
+        <Length>16</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZZZZZZZZZZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZZZZZZZZZZZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-50</Id>
+        <Name>RubIni</Name>
+        <Title>Rub Ini</Title>
+        <Length>16</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZZZZZZZZZZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZZZZZZZZZZZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-89</Id>
+        <Name>RubTemp</Name>
+        <Title>Rub Temp</Title>
+        <Type>Character</Type>
+        <Length>1</Length>
+        <Decimals>0</Decimals>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-52</Id>
+        <Name>SubCero</Name>
+        <Title>Sub Cero</Title>
+        <Length>5</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-48</Id>
+        <Name>SucDesde</Name>
+        <Title>Suc Desde</Title>
+        <Length>5</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-49</Id>
+        <Name>SucHasta</Name>
+        <Title>Suc Hasta</Title>
+        <Length>5</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-2</Id>
+        <Name>Time</Name>
+        <Title>Time</Title>
+        <Type>Character</Type>
+        <Length>8</Length>
+        <Decimals>0</Decimals>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-96</Id>
+        <Name>title</Name>
+        <Title>title</Title>
+        <Type>Character</Type>
+        <Length>100</Length>
+        <Decimals>0</Decimals>
+      </Variable>
+      <Variable>
+        <Name>Today</Name>
+        <Title>Today</Title>
+        <Type>Date</Type>
+        <Length>8</Length>
+        <Decimals>0</Decimals>
+        <Picture>99/99/99</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>99/99/99</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-78</Id>
+        <Name>tp1cod</Name>
+        <Title>Pgcod</Title>
+        <Length>3</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-79</Id>
+        <Name>tp1cod1</Name>
+        <Title>Guía</Title>
+        <Length>9</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZZZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZZZZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-86</Id>
+        <Name>Version</Name>
+        <Title>Version</Title>
+        <Type>Date</Type>
+        <Length>8</Length>
+        <Decimals>0</Decimals>
+        <Picture>99/99/9999</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>idDATEFORMAT</Name>
+          <Value>idDATEFORMAT_LONG</Value>
+        </Property>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>99/99/9999</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-71</Id>
+        <Name>XDbHa</Name>
+        <Title>XDb Ha</Title>
+        <Length>1</Length>
+        <Decimals>0</Decimals>
+        <Picture>9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-68</Id>
+        <Name>XFVa</Name>
+        <Title>XFVa</Title>
+        <Type>Date</Type>
+        <Length>8</Length>
+        <Decimals>0</Decimals>
+        <Picture>99/99/99</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>99/99/99</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-69</Id>
+        <Name>XFVto</Name>
+        <Title>XFVto</Title>
+        <Type>Date</Type>
+        <Length>8</Length>
+        <Decimals>0</Decimals>
+        <Picture>99/99/99</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>99/99/99</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-65</Id>
+        <Name>XMda</Name>
+        <Title>XMda</Title>
+        <Length>4</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-61</Id>
+        <Name>XMod</Name>
+        <Title>XMod</Title>
+        <Length>5</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-66</Id>
+        <Name>XPap</Name>
+        <Title>XPap</Title>
+        <Length>6</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-64</Id>
+        <Name>XRub</Name>
+        <Title>XRub</Title>
+        <Length>16</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZZZZZZZZZZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZZZZZZZZZZZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-70</Id>
+        <Name>XSdo</Name>
+        <Title>XSdo</Title>
+        <Length>18</Length>
+        <Sign>Y</Sign>
+        <Picture>ZZZZZZZZZZZZZZ9.99</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZZZZZZZZZZZ9.99</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-67</Id>
+        <Name>XSub</Name>
+        <Title>XSub</Title>
+        <Length>5</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-63</Id>
+        <Name>XSuc</Name>
+        <Title>XSuc</Title>
+        <Length>5</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-62</Id>
+        <Name>Xtop</Name>
+        <Title>Xtop</Title>
+        <Length>3</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZ9</Value>
+        </Property>
+      </Variable>
+      <Property>
+        <Type>string</Type>
+        <Name>OUTPUT</Name>
+        <Value>FIL</Value>
+        <Rule>Output('FIL')</Rule>
+      </Property>
+      <Property>
+        <Type>string</Type>
+        <Name>USER_METADATA</Name>
+        <Value>&lt;extra-info format=&quot;compressed64&quot;&gt;H4sIAP8RZ/gA/7MpKMovKLazKVDITLFV8g8NCQgNUVJIt1UqKSpNVVIosFVy8/RRUtC3s9GHqAQAsbULXjEAAAA=&lt;/extra-info&gt;</Value>
+      </Property>
+      <Layout>
+        <NextControlID>113</NextControlID>
+        <FormInfo>
+          <FormId>1</FormId>
+          <FormClass>Text</FormClass>
+          <IsGraphic>N</IsGraphic>
+          <IsDefault>N</IsDefault>
+          <HasGrid>Y</HasGrid>
+          <Att_Font>
+            <Name>Courier New</Name>
+            <Size>9</Size>
+          </Att_Font>
+          <Txt_Font>
+            <Bold>Y</Bold>
+          </Txt_Font>
+          <GridWidth>13</GridWidth>
+          <GridHeight>13</GridHeight>
+          <TemplateBased>N</TemplateBased>
+        </FormInfo>
+        <Block>
+          <CodeBlock>
+            <left>71</left>
+            <top>2</top>
+            <right>1246</right>
+            <bottom>154</bottom>
+            <Brush>Y</Brush>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+              <Foreground>Lime</Foreground>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <ForeColor>-2147483642</ForeColor>
+            <BackColor>-2147483633</BackColor>
+            <BorderWidth>0</BorderWidth>
+            <Shape>Frame</Shape>
+            <OutStyle>Single</OutStyle>
+            <GSGridWidth>7</GSGridWidth>
+            <GSGridHeight>15</GSGridHeight>
+            <DataLeft>0</DataLeft>
+            <DataTop>0</DataTop>
+            <DataRight>0</DataRight>
+            <DataBottom>0</DataBottom>
+            <Source><![CDATA[//-- Recorrer FSD011 y tomar todos los saldos que correspondan al rubro de posición y su subop difiera de 0
+// Cada saldo extornarlo e imputarlo con subop. = 0
+// Esto se debe a que el programa que lo procesa previamente los deja abiertos por subop. por temas de paralelizaciones y concurrencias
+// <>
+
+Pl 50
+
+//print Prueba
+&Version = YMDTOD(2021,11,03)
+&aitmod = 99
+&aittran = 986
+&RelIni = 0
+&RelFin = 0
+
+// RCRUZ - 0110/2021 - DPD 97831 - Nuevo proceso en cadena y performance en pnu00217 - Se obtienen nuevos rubros temporales para Valuación y Posición
+For Each    // -- FST017: Empresa
+Where Pgcod = &pPgcod
+Defined By Pgnom
+    &aRubValO = Pgpomn      // Valuación
+    &aRubPosO = Pgpome      // Posición
+    &Pgfape   = Pgfape
+EndFor  // FST017
+&Rrcod   = 731
+&RubTemp = 'N'
+&aRubVal = 0
+&aRubPos = 0
+For Each // Fsr014: Fsr014
+Where Rubro = &aRubValO
+Where Rrcod = &Rrcod
+Defined By Rrrubr
+	&aRubVal = Rrrubr
+EndFor
+For Each // Fsr014: Fsr014
+Where Rubro = &aRubPosO
+Where Rrcod = &Rrcod
+Defined By Rrrubr
+	&aRubPos = Rrrubr
+EndFor
+
+If &aRubVal <> 0 And &aRubPos <> 0
+    &RubTemp = 'S'
+EndIf
+
+
+// Toma rango de sucursales para vía actual
+&SucDesde = 0
+&SucHasta = 99999
+For Each    // -- FSR101: Thread's de Proceso
+    Where Pbcod    = &pPgCod
+    Where Pbnsec   = &pPbNSec   
+    Where PbThread = &pPbThread 
+    Defined By PbPath 
+    &SucDesde = PbD1
+    &SucHasta = PbH1
+EndFor
+
+&title = 'AJUSTE DE SALDOS DE POSICION Y VALUACION - ' + Trim(DtoC(&pHoy))
+
+Header
+]]></Source>
+          </CodeBlock>
+        </Block>
+        <Block>
+          <PrintBlock>
+            <left>71</left>
+            <top>2</top>
+            <right>1246</right>
+            <bottom>154</bottom>
+            <Brush>Y</Brush>
+            <CtrlName>Cabez1</CtrlName>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+              <Foreground>Black</Foreground>
+              <Background>White</Background>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <ForeColor>0</ForeColor>
+            <BackColor>-2147483633</BackColor>
+            <Shape>Frame</Shape>
+            <OutStyle>Single</OutStyle>
+            <GSGridWidth>7</GSGridWidth>
+            <GSGridHeight>15</GSGridHeight>
+            <DataLeft>0</DataLeft>
+            <DataTop>0</DataTop>
+            <DataRight>0</DataRight>
+            <DataBottom>0</DataBottom>
+            <CommandLine>    Print Cabez1</CommandLine>
+            <PBPos>1</PBPos>
+          </PrintBlock>
+          <Edit>
+            <left>1088</left>
+            <top>0</top>
+            <right>1151</right>
+            <bottom>16</bottom>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+              <Default>N</Default>
+              <Foreground>Black</Foreground>
+              <Background>White</Background>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <BackColor>16777215</BackColor>
+            <OutStyle>None</OutStyle>
+            <Dynamic>N</Dynamic>
+            <Font>
+              <Name>Courier New</Name>
+              <Size>10</Size>
+              <Underline>Y</Underline>
+            </Font>
+            <Id>-1</Id>
+            <Name>Today</Name>
+            <EditInfo>
+            </EditInfo>
+            <Align>0</Align>
+          </Edit>
+          <Edit>
+            <left>1088</left>
+            <top>17</top>
+            <right>1151</right>
+            <bottom>33</bottom>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+              <Default>N</Default>
+              <Foreground>Black</Foreground>
+              <Background>White</Background>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <BackColor>16777215</BackColor>
+            <OutStyle>None</OutStyle>
+            <Dynamic>N</Dynamic>
+            <Font>
+              <Name>Courier New</Name>
+              <Size>10</Size>
+              <Underline>Y</Underline>
+            </Font>
+            <Id>-2</Id>
+            <Name>Time</Name>
+            <EditInfo>
+            </EditInfo>
+            <Align>0</Align>
+          </Edit>
+          <Text>
+            <left>8</left>
+            <top>85</top>
+            <right>423</right>
+            <bottom>101</bottom>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <BackColor>-2147483643</BackColor>
+            <Text>Transacciones a generar: Módulo 99 / Transacción 986</Text>
+            <Source><![CDATA[Transacciones a generar: Módulo 99 / Transacción 986]]></Source>
+            <Font>
+              <Name>Courier New</Name>
+              <Size>10</Size>
+            </Font>
+          </Text>
+          <Edit>
+            <left>1088</left>
+            <top>34</top>
+            <right>1135</right>
+            <bottom>50</bottom>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+              <Default>N</Default>
+              <Foreground>Black</Foreground>
+              <Background>White</Background>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <BackColor>16777215</BackColor>
+            <OutStyle>None</OutStyle>
+            <Dynamic>N</Dynamic>
+            <Font>
+              <Name>Courier New</Name>
+              <Size>10</Size>
+              <Underline>Y</Underline>
+            </Font>
+            <Id>-3</Id>
+            <Name>Page</Name>
+            <EditInfo>
+            </EditInfo>
+            <Align>2</Align>
+          </Edit>
+          <Text>
+            <left>1008</left>
+            <top>0</top>
+            <right>1071</right>
+            <bottom>16</bottom>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <BackColor>-2147483643</BackColor>
+            <Text>Fecha  :</Text>
+            <Source><![CDATA[Fecha  :]]></Source>
+            <Font>
+              <Name>Courier New</Name>
+              <Size>10</Size>
+            </Font>
+          </Text>
+          <Text>
+            <left>1008</left>
+            <top>17</top>
+            <right>1071</right>
+            <bottom>33</bottom>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <BackColor>-2147483643</BackColor>
+            <Text>Hora   :</Text>
+            <Source><![CDATA[Hora   :]]></Source>
+            <Font>
+              <Name>Courier New</Name>
+              <Size>10</Size>
+            </Font>
+          </Text>
+          <Text>
+            <left>1008</left>
+            <top>34</top>
+            <right>1071</right>
+            <bottom>50</bottom>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <BackColor>-2147483643</BackColor>
+            <Text>Página :</Text>
+            <Source><![CDATA[Página :]]></Source>
+            <Font>
+              <Name>Courier New</Name>
+              <Size>10</Size>
+            </Font>
+          </Text>
+          <Text>
+            <left>16</left>
+            <top>34</top>
+            <right>79</right>
+            <bottom>50</bottom>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <BackColor>-2147483643</BackColor>
+            <Text>Versión:</Text>
+            <Source><![CDATA[Versión:]]></Source>
+            <Font>
+              <Name>Courier New</Name>
+              <Size>10</Size>
+            </Font>
+          </Text>
+          <Edit>
+            <left>88</left>
+            <top>34</top>
+            <right>167</right>
+            <bottom>50</bottom>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <OutStyle>None</OutStyle>
+            <Dynamic>N</Dynamic>
+            <Font>
+              <Name>Courier New</Name>
+              <Size>10</Size>
+              <Underline>Y</Underline>
+            </Font>
+            <Id>-86</Id>
+            <Name>Version</Name>
+            <EditInfo>
+            </EditInfo>
+            <Align>0</Align>
+          </Edit>
+          <Text>
+            <left>472</left>
+            <top>85</top>
+            <right>527</right>
+            <bottom>101</bottom>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <BackColor>-2147483643</BackColor>
+            <Text>Thread:</Text>
+            <Source><![CDATA[Thread:]]></Source>
+            <Font>
+              <Name>Courier New</Name>
+              <Size>10</Size>
+            </Font>
+          </Text>
+          <Edit>
+            <left>536</left>
+            <top>85</top>
+            <right>559</right>
+            <bottom>101</bottom>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+              <Default>N</Default>
+              <Foreground>Black</Foreground>
+              <Background>White</Background>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <BackColor>16777215</BackColor>
+            <OutStyle>None</OutStyle>
+            <Font>
+              <Name>Courier New</Name>
+              <Size>10</Size>
+              <Underline>Y</Underline>
+            </Font>
+            <Id>-42</Id>
+            <Name>pPbthread</Name>
+            <EditInfo>
+            </EditInfo>
+            <Align>2</Align>
+          </Edit>
+          <Text>
+            <left>8</left>
+            <top>0</top>
+            <right>87</right>
+            <bottom>16</bottom>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <Text>Programa: </Text>
+            <Source><![CDATA[Programa: ]]></Source>
+            <Font>
+              <Name>Courier New</Name>
+              <Size>10</Size>
+            </Font>
+          </Text>
+          <Edit>
+            <left>88</left>
+            <top>0</top>
+            <right>335</right>
+            <bottom>16</bottom>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+              <Default>N</Default>
+              <Foreground>Black</Foreground>
+              <Background>White</Background>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <BackColor>16777215</BackColor>
+            <OutStyle>None</OutStyle>
+            <Font>
+              <Name>Courier New</Name>
+              <Size>10</Size>
+              <Underline>Y</Underline>
+            </Font>
+            <Id>-6</Id>
+            <Name>Pgmname</Name>
+            <EditInfo>
+            </EditInfo>
+            <Align>0</Align>
+          </Edit>
+          <Text>
+            <left>8</left>
+            <top>102</top>
+            <right>127</right>
+            <bottom>118</bottom>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <Text>Desde Sucursal </Text>
+            <Source><![CDATA[Desde Sucursal ]]></Source>
+            <Font>
+              <Name>Courier New</Name>
+              <Size>10</Size>
+            </Font>
+          </Text>
+          <Text>
+            <left>8</left>
+            <top>119</top>
+            <right>127</right>
+            <bottom>135</bottom>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <Text>Hasta Sucursal </Text>
+            <Source><![CDATA[Hasta Sucursal ]]></Source>
+            <Font>
+              <Name>Courier New</Name>
+              <Size>10</Size>
+            </Font>
+          </Text>
+          <Edit>
+            <left>128</left>
+            <top>102</top>
+            <right>167</right>
+            <bottom>118</bottom>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+              <Default>N</Default>
+              <Foreground>Black</Foreground>
+              <Background>White</Background>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <BackColor>16777215</BackColor>
+            <OutStyle>None</OutStyle>
+            <Font>
+              <Name>Courier New</Name>
+              <Size>10</Size>
+              <Underline>Y</Underline>
+            </Font>
+            <Id>-48</Id>
+            <Name>SucDesde</Name>
+            <EditInfo>
+            </EditInfo>
+            <Align>2</Align>
+          </Edit>
+          <Edit>
+            <left>128</left>
+            <top>119</top>
+            <right>167</right>
+            <bottom>135</bottom>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+              <Default>N</Default>
+              <Foreground>Black</Foreground>
+              <Background>White</Background>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <BackColor>16777215</BackColor>
+            <OutStyle>None</OutStyle>
+            <Font>
+              <Name>Courier New</Name>
+              <Size>10</Size>
+              <Underline>Y</Underline>
+            </Font>
+            <Id>-49</Id>
+            <Name>SucHasta</Name>
+            <EditInfo>
+            </EditInfo>
+            <Align>2</Align>
+          </Edit>
+          <Edit>
+            <left>264</left>
+            <top>51</top>
+            <right>1063</right>
+            <bottom>67</bottom>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+              <Default>N</Default>
+              <Foreground>Black</Foreground>
+              <Background>White</Background>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <BackColor>16777215</BackColor>
+            <OutStyle>None</OutStyle>
+            <Font>
+              <Name>Courier New</Name>
+              <Size>10</Size>
+              <Underline>Y</Underline>
+            </Font>
+            <Id>-96</Id>
+            <Name>title</Name>
+            <EditInfo>
+            </EditInfo>
+            <Align>0</Align>
+          </Edit>
+        </Block>
+        <Block>
+          <CodeBlock>
+            <left>71</left>
+            <top>2</top>
+            <right>1246</right>
+            <bottom>154</bottom>
+            <Brush>Y</Brush>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+              <Foreground>Lime</Foreground>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <ForeColor>-2147483642</ForeColor>
+            <BackColor>-2147483633</BackColor>
+            <BorderWidth>0</BorderWidth>
+            <Shape>Frame</Shape>
+            <OutStyle>Single</OutStyle>
+            <GSGridWidth>7</GSGridWidth>
+            <GSGridHeight>15</GSGridHeight>
+            <DataLeft>0</DataLeft>
+            <DataTop>0</DataTop>
+            <DataRight>0</DataRight>
+            <DataBottom>0</DataBottom>
+          </CodeBlock>
+        </Block>
+        <Block>
+          <PrintBlock>
+            <left>71</left>
+            <top>158</top>
+            <right>1246</right>
+            <bottom>191</bottom>
+            <Brush>Y</Brush>
+            <CtrlName>H</CtrlName>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+              <Foreground>Black</Foreground>
+              <Background>White</Background>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <ForeColor>0</ForeColor>
+            <BackColor>-2147483633</BackColor>
+            <Shape>Frame</Shape>
+            <OutStyle>Single</OutStyle>
+            <GSGridWidth>7</GSGridWidth>
+            <GSGridHeight>15</GSGridHeight>
+            <DataLeft>0</DataLeft>
+            <DataTop>0</DataTop>
+            <DataRight>0</DataRight>
+            <DataBottom>0</DataBottom>
+            <CommandLine>    Print H</CommandLine>
+            <PBPos>2</PBPos>
+          </PrintBlock>
+          <Text>
+            <left>16</left>
+            <top>0</top>
+            <right>71</right>
+            <bottom>16</bottom>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <Text>Empresa</Text>
+            <Source><![CDATA[Empresa]]></Source>
+            <Font>
+              <Name>Courier New</Name>
+              <Size>10</Size>
+            </Font>
+          </Text>
+          <Text>
+            <left>88</left>
+            <top>0</top>
+            <right>151</right>
+            <bottom>16</bottom>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <Text>Sucursal</Text>
+            <Source><![CDATA[Sucursal]]></Source>
+            <Font>
+              <Name>Courier New</Name>
+              <Size>10</Size>
+            </Font>
+          </Text>
+          <Text>
+            <left>248</left>
+            <top>0</top>
+            <right>279</right>
+            <bottom>16</bottom>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <Text>Trn.</Text>
+            <Source><![CDATA[Trn.]]></Source>
+            <Font>
+              <Name>Courier New</Name>
+              <Size>10</Size>
+            </Font>
+          </Text>
+          <Text>
+            <left>168</left>
+            <top>0</top>
+            <right>215</right>
+            <bottom>16</bottom>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <Text>Módulo</Text>
+            <Source><![CDATA[Módulo]]></Source>
+            <Font>
+              <Name>Courier New</Name>
+              <Size>10</Size>
+            </Font>
+          </Text>
+          <Text>
+            <left>320</left>
+            <top>0</top>
+            <right>391</right>
+            <bottom>16</bottom>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <Text>Nro. Rel.</Text>
+            <Source><![CDATA[Nro. Rel.]]></Source>
+            <Font>
+              <Name>Courier New</Name>
+              <Size>10</Size>
+            </Font>
+          </Text>
+          <Text>
+            <left>424</left>
+            <top>0</top>
+            <right>511</right>
+            <bottom>16</bottom>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <Text>Cod. Estado</Text>
+            <Source><![CDATA[Cod. Estado]]></Source>
+            <Font>
+              <Name>Courier New</Name>
+              <Size>10</Size>
+            </Font>
+          </Text>
+          <Text>
+            <left>544</left>
+            <top>0</top>
+            <right>591</right>
+            <bottom>16</bottom>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <Text>Estado</Text>
+            <Source><![CDATA[Estado]]></Source>
+            <Font>
+              <Name>Courier New</Name>
+              <Size>10</Size>
+            </Font>
+          </Text>
+          <Text>
+            <left>16</left>
+            <top>17</top>
+            <right>991</right>
+            <bottom>33</bottom>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <Text>--------------------------------------------------------------------------------------------------------------------------</Text>
+            <Source><![CDATA[--------------------------------------------------------------------------------------------------------------------------]]></Source>
+            <Font>
+              <Name>Courier New</Name>
+              <Size>10</Size>
+            </Font>
+          </Text>
+        </Block>
+        <Block>
+          <CodeBlock>
+            <left>71</left>
+            <top>2</top>
+            <right>1246</right>
+            <bottom>154</bottom>
+            <Brush>Y</Brush>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+              <Foreground>Lime</Foreground>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <ForeColor>-2147483642</ForeColor>
+            <BackColor>-2147483633</BackColor>
+            <BorderWidth>0</BorderWidth>
+            <Shape>Frame</Shape>
+            <OutStyle>Single</OutStyle>
+            <GSGridWidth>7</GSGridWidth>
+            <GSGridHeight>15</GSGridHeight>
+            <DataLeft>0</DataLeft>
+            <DataTop>0</DataTop>
+            <DataRight>0</DataRight>
+            <DataBottom>0</DataBottom>
+            <Source><![CDATA[End
+
+// Sucursal de contabilizacion
+For Each // fsdt017
+    Where Pgcod = &pPgcod
+    Defined By Pgmnac
+    &aitsuc = Pgsuc
+EndFor
+
+&aItuing = UserId('Server')
+&aItwing = WrkSt()
+
+&RubIni = 596000000
+&RubFin = 597999999
+&SubCero = 0
+&aitnrel = 0
+&aitord = 10
+&aitsbor = 1
+&aitor2 = 12
+
+&PRG0010 = 'PRG0010'
+&PP006 = 'PP006'
+
+If &RubTemp = 'S'
+    // Toma saldos a procesar
+    &RubIni = &aRubVal
+    &RubFin = &aRubVal + 99
+    &contador = 0
+    &DBG = 'Rubro desde: ' + Str(&RubIni)
+]]></Source>
+          </CodeBlock>
+        </Block>
+        <Block>
+          <PrintBlock>
+            <left>71</left>
+            <top>256</top>
+            <right>1246</right>
+            <bottom>289</bottom>
+            <Brush>Y</Brush>
+            <CtrlName>DBG</CtrlName>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+              <Foreground>Black</Foreground>
+              <Background>White</Background>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <ForeColor>0</ForeColor>
+            <BackColor>-2147483633</BackColor>
+            <Shape>Frame</Shape>
+            <OutStyle>Single</OutStyle>
+            <GSGridWidth>7</GSGridWidth>
+            <GSGridHeight>15</GSGridHeight>
+            <DataLeft>0</DataLeft>
+            <DataTop>0</DataTop>
+            <DataRight>0</DataRight>
+            <DataBottom>0</DataBottom>
+            <CommandLine>    Print DBG</CommandLine>
+            <PBPos>5</PBPos>
+          </PrintBlock>
+          <Edit>
+            <left>0</left>
+            <top>0</top>
+            <right>799</right>
+            <bottom>16</bottom>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+              <Default>N</Default>
+              <Foreground>Black</Foreground>
+              <Background>White</Background>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <BackColor>16777215</BackColor>
+            <OutStyle>None</OutStyle>
+            <Font>
+              <Name>Courier New</Name>
+              <Size>10</Size>
+              <Underline>Y</Underline>
+            </Font>
+            <Id>-95</Id>
+            <Name>DBG</Name>
+            <EditInfo>
+            </EditInfo>
+            <Align>0</Align>
+          </Edit>
+        </Block>
+        <Block>
+          <CodeBlock>
+            <left>71</left>
+            <top>2</top>
+            <right>1246</right>
+            <bottom>154</bottom>
+            <Brush>Y</Brush>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+              <Foreground>Lime</Foreground>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <ForeColor>-2147483642</ForeColor>
+            <BackColor>-2147483633</BackColor>
+            <BorderWidth>0</BorderWidth>
+            <Shape>Frame</Shape>
+            <OutStyle>Single</OutStyle>
+            <GSGridWidth>7</GSGridWidth>
+            <GSGridHeight>15</GSGridHeight>
+            <DataLeft>0</DataLeft>
+            <DataTop>0</DataTop>
+            <DataRight>0</DataRight>
+            <DataBottom>0</DataBottom>
+            <Source><![CDATA[    &DBG = 'Rubro hasta: ' + Str(&RubFin)
+]]></Source>
+          </CodeBlock>
+        </Block>
+        <Block>
+          <PrintBlock>
+            <left>71</left>
+            <top>256</top>
+            <right>1246</right>
+            <bottom>289</bottom>
+            <Brush>Y</Brush>
+            <CtrlName>DBG</CtrlName>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+              <Foreground>Black</Foreground>
+              <Background>White</Background>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <ForeColor>0</ForeColor>
+            <BackColor>-2147483633</BackColor>
+            <Shape>Frame</Shape>
+            <OutStyle>Single</OutStyle>
+            <GSGridWidth>7</GSGridWidth>
+            <GSGridHeight>15</GSGridHeight>
+            <DataLeft>0</DataLeft>
+            <DataTop>0</DataTop>
+            <DataRight>0</DataRight>
+            <DataBottom>0</DataBottom>
+            <CommandLine>    Print DBG</CommandLine>
+            <PBPos>5</PBPos>
+          </PrintBlock>
+          <Edit>
+            <left>0</left>
+            <top>0</top>
+            <right>799</right>
+            <bottom>16</bottom>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+              <Default>N</Default>
+              <Foreground>Black</Foreground>
+              <Background>White</Background>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <BackColor>16777215</BackColor>
+            <OutStyle>None</OutStyle>
+            <Font>
+              <Name>Courier New</Name>
+              <Size>10</Size>
+              <Underline>Y</Underline>
+            </Font>
+            <Id>-95</Id>
+            <Name>DBG</Name>
+            <EditInfo>
+            </EditInfo>
+            <Align>0</Align>
+          </Edit>
+        </Block>
+        <Block>
+          <CodeBlock>
+            <left>71</left>
+            <top>2</top>
+            <right>1246</right>
+            <bottom>154</bottom>
+            <Brush>Y</Brush>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+              <Foreground>Lime</Foreground>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <ForeColor>-2147483642</ForeColor>
+            <BackColor>-2147483633</BackColor>
+            <BorderWidth>0</BorderWidth>
+            <Shape>Frame</Shape>
+            <OutStyle>Single</OutStyle>
+            <GSGridWidth>7</GSGridWidth>
+            <GSGridHeight>15</GSGridHeight>
+            <DataLeft>0</DataLeft>
+            <DataTop>0</DataTop>
+            <DataRight>0</DataRight>
+            <DataBottom>0</DataBottom>
+            <Source><![CDATA[    For Each Pgcod Scrub Sccta // fsd011
+        Where Pgcod = &pPgcod
+        Where (Scrub >= &RubIni And Scrub <= &RubFin) Or (Scrub = &aRubPos)
+//        Where Scrub < &RubFin
+        Where Scsuc >= &SucDesde
+        Where Scsuc <= &SucHasta
+        Where Scsbop <> &SubCero
+        Where Scsdo <> 0
+        Defined By Scfulm
+        &XMod = Scmod
+        &Xtop = Sctope
+        &XSuc = Scsuc
+        &XRub = Scrub
+        &XMda = Scmda
+        &XPap = Scpap
+        &XSub = Scsbop
+        &XFVa = Scfval
+        &XFVto = Scfvto
+        &XSdo = Scsdo
+        &XDbHa = 1 // si está al haber entonces debe imputar al debe
+        If &XSdo < 0
+            &XSdo = &XSdo * (-1)
+            &XDbHa = 2 // si es negativo está al debe por lo que debe imputar al haber
+        EndIf 
+        If &Contador = 0
+            Call(&PRG0010,&pPgcod,&aItsuc,&aItmod,&aIttran,&aItnrel)            
+            If &aItnrel <> 0
+                If &RelIni = 0
+                    &RelIni = &aItnrel
+                EndIf
+                &RelFin = &aItnrel
+                New // Fsd015: Fsd015 - Movimientos
+                    Pgcod  = &pPgcod
+                    Itsuc  = &aItsuc
+                    Itmod  = &aItmod
+                    Ittran = &aIttran
+                    Itnrel = &aItnrel
+                    Itfcon = &pHoy
+                    Itfvc  = &pHoy
+                    Ituing = &aItuing
+                    Itwing = &aItwing
+                    Ithora = &Time
+                    Itcont = 'B' 
+                EndNew
+            EndIf
+        EndIf 
+        New // Fsd016: Fsd016 - Movimientos
+            Pgcod  = &pPgcod
+            Itsuc  = &aItsuc
+            Itmod  = &aItmod
+            Ittran = &aIttran
+            Itnrel = &aItnrel
+            Itord  = &aItord
+            Itsbor = &aItsbor
+            Modulo = &XMod 
+            Ittope = &Xtop
+            Itsucd = &XSuc  
+            Rubro  = &XRub
+            Moneda = &XMda
+            Papel  = &XPap
+            CTNRO  = 0
+            Itoper = 0 
+            Itsubo = &XSub                       
+            Itfval = &XFVa                        
+            Itfvto = &XFVto            
+            Itimp1 = &XSdo
+            Itdbha = &XDbHa
+            Itanu  = 'N'
+        EndNew
+        If &XDbHa = 1
+            &XDbHa = 2
+        Else
+            &XDbHa = 1
+        EndIf
+        If &XRub = &aRubPos
+            // Se graba el rubro de posición original
+            &XRub = &aRubPosO
+        Else
+            // Se graba el rubro de valuación original respetando la moneda
+            &XRub = &XRub - &aRubVal
+            &XRub = &aRubValO + &XRub
+        EndIf
+        New // Fsd016: Fsd016 - Movimientos
+            Pgcod  = &pPgcod
+            Itsuc  = &aItsuc
+            Itmod  = &aItmod
+            Ittran = &aIttran
+            Itnrel = &aItnrel
+            Itord  = &aitor2
+            Itsbor = &aItsbor
+            Modulo = &XMod 
+            Ittope = &Xtop
+            Itsucd = &XSuc  
+            Rubro  = &XRub
+            Moneda = &XMda
+            Papel  = &XPap
+            CTNRO  = 0
+            Itoper = 0 
+            Itsubo = &SubCero // se contabiliza en sunoperación 0                       
+            Itfval = &XFVa                        
+            Itfvto = &XFVto            
+            Itimp1 = &XSdo
+            Itdbha = &XDbHa
+            Itanu  = 'N'
+        EndNew
+        &contador = &contador + 1
+        If &contador > 200 // contabiliza y comienza a generar un nuevo asiento
+            &contador = 0 
+            &aitsbor = 0
+            If &pcontab = 'S'
+                &aMncod = 0
+                Call(&PP006,&pPgcod,&aItsuc,&aItmod,&aIttran,&aItnrel,&aMncod)
+                Commit
+                
+                &ESTADO = ''
+                If &aMncod <> 0
+                    &MnIdiom = 'ES'
+                    For Each // Fst702: T0231
+                    Where MnIdiom = &MnIdiom
+                    Where MnCod   = &aMncod
+                    Defined By MnTxt
+                        &ESTADO = MnTxt
+                    EndFor
+                Else
+                    &ESTADO = 'Contabilizado'
+                EndIf
+]]></Source>
+          </CodeBlock>
+        </Block>
+        <Block>
+          <PrintBlock>
+            <left>71</left>
+            <top>195</top>
+            <right>1246</right>
+            <bottom>211</bottom>
+            <Brush>Y</Brush>
+            <CtrlName>C</CtrlName>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+              <Foreground>Black</Foreground>
+              <Background>White</Background>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <ForeColor>0</ForeColor>
+            <BackColor>-2147483633</BackColor>
+            <Shape>Frame</Shape>
+            <OutStyle>Single</OutStyle>
+            <GSGridWidth>7</GSGridWidth>
+            <GSGridHeight>15</GSGridHeight>
+            <DataLeft>0</DataLeft>
+            <DataTop>0</DataTop>
+            <DataRight>0</DataRight>
+            <DataBottom>0</DataBottom>
+            <CommandLine>                Print C</CommandLine>
+            <PBPos>3</PBPos>
+          </PrintBlock>
+          <Edit>
+            <left>16</left>
+            <top>0</top>
+            <right>39</right>
+            <bottom>16</bottom>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+              <Default>N</Default>
+              <Foreground>Black</Foreground>
+              <Background>White</Background>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <BackColor>16777215</BackColor>
+            <OutStyle>None</OutStyle>
+            <Font>
+              <Name>Courier New</Name>
+              <Size>10</Size>
+              <Underline>Y</Underline>
+            </Font>
+            <Id>-37</Id>
+            <Name>pPgcod</Name>
+            <EditInfo>
+            </EditInfo>
+            <Align>2</Align>
+          </Edit>
+          <Edit>
+            <left>88</left>
+            <top>0</top>
+            <right>127</right>
+            <bottom>16</bottom>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+              <Default>N</Default>
+              <Foreground>Black</Foreground>
+              <Background>White</Background>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <BackColor>16777215</BackColor>
+            <OutStyle>None</OutStyle>
+            <Font>
+              <Name>Courier New</Name>
+              <Size>10</Size>
+              <Underline>Y</Underline>
+            </Font>
+            <Id>-53</Id>
+            <Name>aitsuc</Name>
+            <EditInfo>
+            </EditInfo>
+            <Align>2</Align>
+          </Edit>
+          <Edit>
+            <left>168</left>
+            <top>0</top>
+            <right>207</right>
+            <bottom>16</bottom>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+              <Default>N</Default>
+              <Foreground>Black</Foreground>
+              <Background>White</Background>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <BackColor>16777215</BackColor>
+            <OutStyle>None</OutStyle>
+            <Font>
+              <Name>Courier New</Name>
+              <Size>10</Size>
+              <Underline>Y</Underline>
+            </Font>
+            <Id>-54</Id>
+            <Name>aitmod</Name>
+            <EditInfo>
+            </EditInfo>
+            <Align>2</Align>
+          </Edit>
+          <Edit>
+            <left>248</left>
+            <top>0</top>
+            <right>287</right>
+            <bottom>16</bottom>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+              <Default>N</Default>
+              <Foreground>Black</Foreground>
+              <Background>White</Background>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <BackColor>16777215</BackColor>
+            <OutStyle>None</OutStyle>
+            <Font>
+              <Name>Courier New</Name>
+              <Size>10</Size>
+              <Underline>Y</Underline>
+            </Font>
+            <Id>-55</Id>
+            <Name>aittran</Name>
+            <EditInfo>
+            </EditInfo>
+            <Align>2</Align>
+          </Edit>
+          <Edit>
+            <left>320</left>
+            <top>0</top>
+            <right>391</right>
+            <bottom>16</bottom>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+              <Default>N</Default>
+              <Foreground>Black</Foreground>
+              <Background>White</Background>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <BackColor>16777215</BackColor>
+            <OutStyle>None</OutStyle>
+            <Font>
+              <Name>Courier New</Name>
+              <Size>10</Size>
+              <Underline>Y</Underline>
+            </Font>
+            <Id>-56</Id>
+            <Name>aitnrel</Name>
+            <EditInfo>
+            </EditInfo>
+            <Align>2</Align>
+          </Edit>
+          <Edit>
+            <left>424</left>
+            <top>0</top>
+            <right>463</right>
+            <bottom>16</bottom>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+              <Default>N</Default>
+              <Foreground>Black</Foreground>
+              <Background>White</Background>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <BackColor>16777215</BackColor>
+            <OutStyle>None</OutStyle>
+            <Font>
+              <Name>Courier New</Name>
+              <Size>10</Size>
+              <Underline>Y</Underline>
+            </Font>
+            <Id>-72</Id>
+            <Name>amncod</Name>
+            <EditInfo>
+            </EditInfo>
+            <Align>2</Align>
+          </Edit>
+        </Block>
+        <Block>
+          <CodeBlock>
+            <left>71</left>
+            <top>2</top>
+            <right>1246</right>
+            <bottom>154</bottom>
+            <Brush>Y</Brush>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+              <Foreground>Lime</Foreground>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <ForeColor>-2147483642</ForeColor>
+            <BackColor>-2147483633</BackColor>
+            <BorderWidth>0</BorderWidth>
+            <Shape>Frame</Shape>
+            <OutStyle>Single</OutStyle>
+            <GSGridWidth>7</GSGridWidth>
+            <GSGridHeight>15</GSGridHeight>
+            <DataLeft>0</DataLeft>
+            <DataTop>0</DataTop>
+            <DataRight>0</DataRight>
+            <DataBottom>0</DataBottom>
+            <Source><![CDATA[            EndIf
+        EndIf
+        &aitsbor = &aitsbor + 1
+    EndFor
+Else
+    // Toma saldos a procesar
+    &contador = 0
+    For Each Pgcod Scrub Sccta // fsd011
+        Where Pgcod = &pPgcod
+        Where Scrub > &RubIni
+        Where Scrub < &RubFin
+        Where Scsuc >= &SucDesde
+        Where Scsuc <= &SucHasta
+        Where Scsbop <> &SubCero
+        Where Scsdo <> 0
+        Defined By Scfulm
+        &XMod = Scmod
+        &Xtop = Sctope
+        &XSuc = Scsuc
+        &XRub = Scrub
+        &XMda = Scmda
+        &XPap = Scpap
+        &XSub = Scsbop
+        &XFVa = Scfval
+        &XFVto = Scfvto
+        &XSdo = Scsdo
+        &XDbHa = 1 // si está al haber entonces debe imputar al debe
+        If &XSdo < 0
+            &XSdo = &XSdo * (-1)
+            &XDbHa = 2 // si es negativo está al debe por lo que debe imputar al haber
+        EndIf 
+        If &Contador = 0
+            Call(&PRG0010,&pPgcod,&aItsuc,&aItmod,&aIttran,&aItnrel)            
+            If &aItnrel <> 0
+                If &RelIni = 0
+                    &RelIni = &aItnrel
+                EndIf
+                &RelFin = &aItnrel
+                New // Fsd015: Fsd015 - Movimientos
+                    Pgcod  = &pPgcod
+                    Itsuc  = &aItsuc
+                    Itmod  = &aItmod
+                    Ittran = &aIttran
+                    Itnrel = &aItnrel
+                    Itfcon = &pHoy
+                    Itfvc  = &pHoy
+                    Ituing = &aItuing
+                    Itwing = &aItwing
+                    Ithora = &Time
+                    Itcont = 'B' 
+                EndNew
+            EndIf
+        EndIf 
+        New // Fsd016: Fsd016 - Movimientos
+            Pgcod  = &pPgcod
+            Itsuc  = &aItsuc
+            Itmod  = &aItmod
+            Ittran = &aIttran
+            Itnrel = &aItnrel
+            Itord  = &aItord
+            Itsbor = &aItsbor
+            Modulo = &XMod 
+            Ittope = &Xtop
+            Itsucd = &XSuc  
+            Rubro  = &XRub
+            Moneda = &XMda
+            Papel  = &XPap
+            CTNRO  = 0
+            Itoper = 0 
+            Itsubo = &XSub                       
+            Itfval = &XFVa                        
+            Itfvto = &XFVto            
+            Itimp1 = &XSdo
+            Itdbha = &XDbHa
+            Itanu  = 'N'
+        EndNew
+        If &XDbHa = 1
+            &XDbHa = 2
+        Else
+            &XDbHa = 1
+        EndIf
+        New // Fsd016: Fsd016 - Movimientos
+            Pgcod  = &pPgcod
+            Itsuc  = &aItsuc
+            Itmod  = &aItmod
+            Ittran = &aIttran
+            Itnrel = &aItnrel
+            Itord  = &aitor2
+            Itsbor = &aItsbor
+            Modulo = &XMod 
+            Ittope = &Xtop
+            Itsucd = &XSuc  
+            Rubro  = &XRub
+            Moneda = &XMda
+            Papel  = &XPap
+            CTNRO  = 0
+            Itoper = 0 
+            Itsubo = &SubCero // se contabiliza en sunoperación 0                       
+            Itfval = &XFVa                        
+            Itfvto = &XFVto            
+            Itimp1 = &XSdo
+            Itdbha = &XDbHa
+            Itanu  = 'N'
+        EndNew
+        &contador = &contador + 1
+        If &contador > 200 // contabiliza y comienza a generar un nuevo asiento
+            &contador = 0 
+            &aitsbor = 0
+            If &pcontab = 'S'
+                &aMncod = 0
+                Call(&PP006,&pPgcod,&aItsuc,&aItmod,&aIttran,&aItnrel,&aMncod)
+                Commit
+
+                &ESTADO = ''
+                If &aMncod <> 0
+                    &MnIdiom = 'ES'
+                    For Each // Fst702: T0231
+                    Where MnIdiom = &MnIdiom
+                    Where MnCod   = &aMncod
+                    Defined By MnTxt
+                        &ESTADO = MnTxt
+                    EndFor
+                Else
+                    &ESTADO = 'Contabilizado'
+                EndIf
+]]></Source>
+          </CodeBlock>
+        </Block>
+        <Block>
+          <PrintBlock>
+            <left>71</left>
+            <top>195</top>
+            <right>1246</right>
+            <bottom>211</bottom>
+            <Brush>Y</Brush>
+            <CtrlName>C</CtrlName>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+              <Foreground>Black</Foreground>
+              <Background>White</Background>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <ForeColor>0</ForeColor>
+            <BackColor>-2147483633</BackColor>
+            <Shape>Frame</Shape>
+            <OutStyle>Single</OutStyle>
+            <GSGridWidth>7</GSGridWidth>
+            <GSGridHeight>15</GSGridHeight>
+            <DataLeft>0</DataLeft>
+            <DataTop>0</DataTop>
+            <DataRight>0</DataRight>
+            <DataBottom>0</DataBottom>
+            <CommandLine>                Print C</CommandLine>
+            <PBPos>3</PBPos>
+          </PrintBlock>
+          <Edit>
+            <left>16</left>
+            <top>0</top>
+            <right>39</right>
+            <bottom>16</bottom>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+              <Default>N</Default>
+              <Foreground>Black</Foreground>
+              <Background>White</Background>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <BackColor>16777215</BackColor>
+            <OutStyle>None</OutStyle>
+            <Font>
+              <Name>Courier New</Name>
+              <Size>10</Size>
+              <Underline>Y</Underline>
+            </Font>
+            <Id>-37</Id>
+            <Name>pPgcod</Name>
+            <EditInfo>
+            </EditInfo>
+            <Align>2</Align>
+          </Edit>
+          <Edit>
+            <left>88</left>
+            <top>0</top>
+            <right>127</right>
+            <bottom>16</bottom>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+              <Default>N</Default>
+              <Foreground>Black</Foreground>
+              <Background>White</Background>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <BackColor>16777215</BackColor>
+            <OutStyle>None</OutStyle>
+            <Font>
+              <Name>Courier New</Name>
+              <Size>10</Size>
+              <Underline>Y</Underline>
+            </Font>
+            <Id>-53</Id>
+            <Name>aitsuc</Name>
+            <EditInfo>
+            </EditInfo>
+            <Align>2</Align>
+          </Edit>
+          <Edit>
+            <left>168</left>
+            <top>0</top>
+            <right>207</right>
+            <bottom>16</bottom>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+              <Default>N</Default>
+              <Foreground>Black</Foreground>
+              <Background>White</Background>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <BackColor>16777215</BackColor>
+            <OutStyle>None</OutStyle>
+            <Font>
+              <Name>Courier New</Name>
+              <Size>10</Size>
+              <Underline>Y</Underline>
+            </Font>
+            <Id>-54</Id>
+            <Name>aitmod</Name>
+            <EditInfo>
+            </EditInfo>
+            <Align>2</Align>
+          </Edit>
+          <Edit>
+            <left>248</left>
+            <top>0</top>
+            <right>287</right>
+            <bottom>16</bottom>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+              <Default>N</Default>
+              <Foreground>Black</Foreground>
+              <Background>White</Background>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <BackColor>16777215</BackColor>
+            <OutStyle>None</OutStyle>
+            <Font>
+              <Name>Courier New</Name>
+              <Size>10</Size>
+              <Underline>Y</Underline>
+            </Font>
+            <Id>-55</Id>
+            <Name>aittran</Name>
+            <EditInfo>
+            </EditInfo>
+            <Align>2</Align>
+          </Edit>
+          <Edit>
+            <left>320</left>
+            <top>0</top>
+            <right>391</right>
+            <bottom>16</bottom>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+              <Default>N</Default>
+              <Foreground>Black</Foreground>
+              <Background>White</Background>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <BackColor>16777215</BackColor>
+            <OutStyle>None</OutStyle>
+            <Font>
+              <Name>Courier New</Name>
+              <Size>10</Size>
+              <Underline>Y</Underline>
+            </Font>
+            <Id>-56</Id>
+            <Name>aitnrel</Name>
+            <EditInfo>
+            </EditInfo>
+            <Align>2</Align>
+          </Edit>
+          <Edit>
+            <left>424</left>
+            <top>0</top>
+            <right>463</right>
+            <bottom>16</bottom>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+              <Default>N</Default>
+              <Foreground>Black</Foreground>
+              <Background>White</Background>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <BackColor>16777215</BackColor>
+            <OutStyle>None</OutStyle>
+            <Font>
+              <Name>Courier New</Name>
+              <Size>10</Size>
+              <Underline>Y</Underline>
+            </Font>
+            <Id>-72</Id>
+            <Name>amncod</Name>
+            <EditInfo>
+            </EditInfo>
+            <Align>2</Align>
+          </Edit>
+        </Block>
+        <Block>
+          <CodeBlock>
+            <left>71</left>
+            <top>2</top>
+            <right>1246</right>
+            <bottom>154</bottom>
+            <Brush>Y</Brush>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+              <Foreground>Lime</Foreground>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <ForeColor>-2147483642</ForeColor>
+            <BackColor>-2147483633</BackColor>
+            <BorderWidth>0</BorderWidth>
+            <Shape>Frame</Shape>
+            <OutStyle>Single</OutStyle>
+            <GSGridWidth>7</GSGridWidth>
+            <GSGridHeight>15</GSGridHeight>
+            <DataLeft>0</DataLeft>
+            <DataTop>0</DataTop>
+            <DataRight>0</DataRight>
+            <DataBottom>0</DataBottom>
+            <Source><![CDATA[            EndIf
+        EndIf
+        &aitsbor = &aitsbor + 1
+    EndFor
+EndIf
+
+
+If &contador < 200 // contabiliza último asiento
+    If &pcontab = 'S'
+        &aMncod = 0
+        Call(&PP006,&pPgcod,&aItsuc,&aItmod,&aIttran,&aItnrel,&aMncod)
+        Commit
+
+        &ESTADO = ''
+        If &aMncod <> 0
+            &MnIdiom = 'ES'
+            For Each // Fst702: T0231
+            Where MnIdiom = &MnIdiom
+            Where MnCod   = &aMncod
+            Defined By MnTxt
+                &ESTADO = MnTxt
+            EndFor
+        Else
+            &ESTADO = 'Contabilizado'
+        EndIf
+]]></Source>
+          </CodeBlock>
+        </Block>
+        <Block>
+          <PrintBlock>
+            <left>71</left>
+            <top>195</top>
+            <right>1246</right>
+            <bottom>211</bottom>
+            <Brush>Y</Brush>
+            <CtrlName>C</CtrlName>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+              <Foreground>Black</Foreground>
+              <Background>White</Background>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <ForeColor>0</ForeColor>
+            <BackColor>-2147483633</BackColor>
+            <Shape>Frame</Shape>
+            <OutStyle>Single</OutStyle>
+            <GSGridWidth>7</GSGridWidth>
+            <GSGridHeight>15</GSGridHeight>
+            <DataLeft>0</DataLeft>
+            <DataTop>0</DataTop>
+            <DataRight>0</DataRight>
+            <DataBottom>0</DataBottom>
+            <CommandLine>        Print C</CommandLine>
+            <PBPos>3</PBPos>
+          </PrintBlock>
+          <Edit>
+            <left>16</left>
+            <top>0</top>
+            <right>39</right>
+            <bottom>16</bottom>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+              <Default>N</Default>
+              <Foreground>Black</Foreground>
+              <Background>White</Background>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <BackColor>16777215</BackColor>
+            <OutStyle>None</OutStyle>
+            <Font>
+              <Name>Courier New</Name>
+              <Size>10</Size>
+              <Underline>Y</Underline>
+            </Font>
+            <Id>-37</Id>
+            <Name>pPgcod</Name>
+            <EditInfo>
+            </EditInfo>
+            <Align>2</Align>
+          </Edit>
+          <Edit>
+            <left>88</left>
+            <top>0</top>
+            <right>127</right>
+            <bottom>16</bottom>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+              <Default>N</Default>
+              <Foreground>Black</Foreground>
+              <Background>White</Background>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <BackColor>16777215</BackColor>
+            <OutStyle>None</OutStyle>
+            <Font>
+              <Name>Courier New</Name>
+              <Size>10</Size>
+              <Underline>Y</Underline>
+            </Font>
+            <Id>-53</Id>
+            <Name>aitsuc</Name>
+            <EditInfo>
+            </EditInfo>
+            <Align>2</Align>
+          </Edit>
+          <Edit>
+            <left>168</left>
+            <top>0</top>
+            <right>207</right>
+            <bottom>16</bottom>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+              <Default>N</Default>
+              <Foreground>Black</Foreground>
+              <Background>White</Background>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <BackColor>16777215</BackColor>
+            <OutStyle>None</OutStyle>
+            <Font>
+              <Name>Courier New</Name>
+              <Size>10</Size>
+              <Underline>Y</Underline>
+            </Font>
+            <Id>-54</Id>
+            <Name>aitmod</Name>
+            <EditInfo>
+            </EditInfo>
+            <Align>2</Align>
+          </Edit>
+          <Edit>
+            <left>248</left>
+            <top>0</top>
+            <right>287</right>
+            <bottom>16</bottom>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+              <Default>N</Default>
+              <Foreground>Black</Foreground>
+              <Background>White</Background>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <BackColor>16777215</BackColor>
+            <OutStyle>None</OutStyle>
+            <Font>
+              <Name>Courier New</Name>
+              <Size>10</Size>
+              <Underline>Y</Underline>
+            </Font>
+            <Id>-55</Id>
+            <Name>aittran</Name>
+            <EditInfo>
+            </EditInfo>
+            <Align>2</Align>
+          </Edit>
+          <Edit>
+            <left>320</left>
+            <top>0</top>
+            <right>391</right>
+            <bottom>16</bottom>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+              <Default>N</Default>
+              <Foreground>Black</Foreground>
+              <Background>White</Background>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <BackColor>16777215</BackColor>
+            <OutStyle>None</OutStyle>
+            <Font>
+              <Name>Courier New</Name>
+              <Size>10</Size>
+              <Underline>Y</Underline>
+            </Font>
+            <Id>-56</Id>
+            <Name>aitnrel</Name>
+            <EditInfo>
+            </EditInfo>
+            <Align>2</Align>
+          </Edit>
+          <Edit>
+            <left>424</left>
+            <top>0</top>
+            <right>463</right>
+            <bottom>16</bottom>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+              <Default>N</Default>
+              <Foreground>Black</Foreground>
+              <Background>White</Background>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <BackColor>16777215</BackColor>
+            <OutStyle>None</OutStyle>
+            <Font>
+              <Name>Courier New</Name>
+              <Size>10</Size>
+              <Underline>Y</Underline>
+            </Font>
+            <Id>-72</Id>
+            <Name>amncod</Name>
+            <EditInfo>
+            </EditInfo>
+            <Align>2</Align>
+          </Edit>
+        </Block>
+        <Block>
+          <CodeBlock>
+            <left>71</left>
+            <top>2</top>
+            <right>1246</right>
+            <bottom>154</bottom>
+            <Brush>Y</Brush>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+              <Foreground>Lime</Foreground>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <ForeColor>-2147483642</ForeColor>
+            <BackColor>-2147483633</BackColor>
+            <BorderWidth>0</BorderWidth>
+            <Shape>Frame</Shape>
+            <OutStyle>Single</OutStyle>
+            <GSGridWidth>7</GSGridWidth>
+            <GSGridHeight>15</GSGridHeight>
+            <DataLeft>0</DataLeft>
+            <DataTop>0</DataTop>
+            <DataRight>0</DataRight>
+            <DataBottom>0</DataBottom>
+            <Source><![CDATA[    EndIf
+EndIf
+]]></Source>
+          </CodeBlock>
+        </Block>
+        <Block>
+          <PrintBlock>
+            <left>71</left>
+            <top>219</top>
+            <right>1246</right>
+            <bottom>252</bottom>
+            <Brush>Y</Brush>
+            <CtrlName>Cabez2</CtrlName>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+              <Foreground>Black</Foreground>
+              <Background>White</Background>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <ForeColor>0</ForeColor>
+            <BackColor>-2147483633</BackColor>
+            <Shape>Frame</Shape>
+            <OutStyle>Single</OutStyle>
+            <GSGridWidth>7</GSGridWidth>
+            <GSGridHeight>15</GSGridHeight>
+            <DataLeft>0</DataLeft>
+            <DataTop>0</DataTop>
+            <DataRight>0</DataRight>
+            <DataBottom>0</DataBottom>
+            <CommandLine>Print Cabez2</CommandLine>
+            <PBPos>4</PBPos>
+          </PrintBlock>
+          <Text>
+            <left>8</left>
+            <top>0</top>
+            <right>143</right>
+            <bottom>16</bottom>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <BackColor>-2147483643</BackColor>
+            <Text>Relación Inicial:</Text>
+            <Source><![CDATA[Relación Inicial:]]></Source>
+            <Font>
+              <Name>Courier New</Name>
+              <Size>10</Size>
+            </Font>
+          </Text>
+          <Text>
+            <left>8</left>
+            <top>17</top>
+            <right>127</right>
+            <bottom>33</bottom>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <BackColor>-2147483643</BackColor>
+            <Text>Relación Final:</Text>
+            <Source><![CDATA[Relación Final:]]></Source>
+            <Font>
+              <Name>Courier New</Name>
+              <Size>10</Size>
+            </Font>
+          </Text>
+          <Edit>
+            <left>152</left>
+            <top>0</top>
+            <right>223</right>
+            <bottom>16</bottom>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+              <Default>N</Default>
+              <Foreground>Black</Foreground>
+              <Background>White</Background>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <BackColor>16777215</BackColor>
+            <OutStyle>None</OutStyle>
+            <Font>
+              <Name>Courier New</Name>
+              <Size>10</Size>
+              <Underline>Y</Underline>
+            </Font>
+            <Id>-87</Id>
+            <Name>RelIni</Name>
+            <EditInfo>
+            </EditInfo>
+            <Align>2</Align>
+          </Edit>
+          <Edit>
+            <left>152</left>
+            <top>17</top>
+            <right>223</right>
+            <bottom>33</bottom>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+              <Default>N</Default>
+              <Foreground>Black</Foreground>
+              <Background>White</Background>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <BackColor>16777215</BackColor>
+            <OutStyle>None</OutStyle>
+            <Font>
+              <Name>Courier New</Name>
+              <Size>10</Size>
+              <Underline>Y</Underline>
+            </Font>
+            <Id>-88</Id>
+            <Name>RelFin</Name>
+            <EditInfo>
+            </EditInfo>
+            <Align>2</Align>
+          </Edit>
+        </Block>
+        <Block>
+          <CodeBlock>
+            <left>71</left>
+            <top>2</top>
+            <right>1246</right>
+            <bottom>154</bottom>
+            <Brush>Y</Brush>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+              <Foreground>Lime</Foreground>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <ForeColor>-2147483642</ForeColor>
+            <BackColor>-2147483633</BackColor>
+            <BorderWidth>0</BorderWidth>
+            <Shape>Frame</Shape>
+            <OutStyle>Single</OutStyle>
+            <GSGridWidth>7</GSGridWidth>
+            <GSGridHeight>15</GSGridHeight>
+            <DataLeft>0</DataLeft>
+            <DataTop>0</DataTop>
+            <DataRight>0</DataRight>
+            <DataBottom>0</DataBottom>
+            <Source><![CDATA[
+]]></Source>
+          </CodeBlock>
+        </Block>
+        <Paper>
+          <PaperId>A4</PaperId>
+          <SizeX>11906</SizeX>
+          <SizeY>16838</SizeY>
+          <RightIndent>56274</RightIndent>
+        </Paper>
+      </Layout>
+      <Rules><![CDATA[Parm(&pPgcod, &pAyer, &pHoy, &pContab, &pImpreso, &pPbnsec, &pPbthread);
+
+
+
+Output_File(&pImpreso, 'TXT');
+
+
+Printer('QPrint15' ) ;
+]]></Rules>
+    </Procedure>
+  </GXObject>
+  <Attributes>
+    <GXAtt>
+      <Attribute>
+        <Id>2420</Id>
+        <Name>Ituing</Name>
+        <Title>Usuario que ing.</Title>
+        <Type>ShortVarChar</Type>
+        <Length>30</Length>
+        <LastUpdate>2014-11-14 17:06:28GMT</LastUpdate>
+      </Attribute>
+      <AttInfo>
+        <Domain>dUbuser15</Domain>
+        <ControlInfoFromDomain>Y</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>10819</Id>
+        <Name>_dUbuser15</Name>
+        <Title>Código Usuario</Title>
+        <Type>ShortVarChar</Type>
+        <Length>30</Length>
+        <LastUpdate>2014-11-14 17:05:58GMT</LastUpdate>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>2421</Id>
+        <Name>Itwing</Name>
+        <Title>Estacion de ingreso</Title>
+        <Type>ShortVarChar</Type>
+        <Length>60</Length>
+        <LastUpdate>2014-11-14 17:06:28GMT</LastUpdate>
+      </Attribute>
+      <AttInfo>
+        <Domain>dWkSt15</Domain>
+        <ControlInfoFromDomain>Y</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>10820</Id>
+        <Name>_dWkSt15</Name>
+        <Title>WorkStation 2</Title>
+        <Type>ShortVarChar</Type>
+        <Length>60</Length>
+        <LastUpdate>2014-11-14 17:06:06GMT</LastUpdate>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+      </AttDoc>
+    </GXAtt>
+  </Attributes>
+</ExportFile>

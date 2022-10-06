@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<ExportFile>
+  <Model>
+    <Id>5</Id>
+    <Name>JavaAs400 [Q]</Name>
+    <Type>Production</Type>
+    <Stdfunc>N</Stdfunc>
+    <AttLen>10</AttLen>
+    <TblLen>8</TblLen>
+    <ObjLen>30</ObjLen>
+    <NullsBehavior>8_OR_LESS</NullsBehavior>
+    <EmptyAsNullBehavior>8_OR_LESS</EmptyAsNullBehavior>
+  </Model>
+  <KMW>
+    <MajorVersion>2</MajorVersion>
+    <MinorVersion>2</MinorVersion>
+    <Path>C:\Users\RCRUZ\OneDrive - dlya\Documentos\workspace\KBs\ActivasGx9</Path>
+    <MaxGxBuildSaved>2494</MaxGxBuildSaved>
+  </KMW>
+  <GXObject>
+    <Procedure>
+      <Info>
+        <Name>JCMA223</Name>
+        <Description>Borrar correlativo</Description>
+        <DWHTrn>4</DWHTrn>
+      </Info>
+      <ObjInfo>
+        <IsMain>Y</IsMain>
+      </ObjInfo>
+      <Documentation>
+        <Source><![CDATA[<P><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; COLOR: #993366" Caption="<Historia>"> </P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 8pt; LINE-HEIGHT: 50%; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><FONT color=#000000><SPAN lang=ES-MX style='FONT-SIZE: 10pt; FONT-FAMILY: "Tahoma",sans-serif; LINE-HEIGHT: 50%; mso-ansi-language: ES-MX; mso-fareast-font-family: "Times New Roman"' Caption="<">&lt;</SPAN><SPAN lang=ES-PE style='FONT-SIZE: 10pt; FONT-FAMILY: "Tahoma",sans-serif; LINE-HEIGHT: 50%; mso-ansi-language: ES-PE; mso-fareast-font-family: "Times New Roman"' Caption='Historia> <?xml:namespace prefix = "o" ns = "urn:schemas-microsoft-com:office:office" />'>Historia&gt; <?xml:namespace prefix = "o" ns = "urn:schemas-microsoft-com:office:office" /><o:p></o:p></SPAN></FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 8pt; LINE-HEIGHT: 50%; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN lang=ES-MX style='FONT-SIZE: 10pt; FONT-FAMILY: "Tahoma",sans-serif; LINE-HEIGHT: 50%; mso-ansi-language: ES-MX; mso-fareast-font-family: "Times New Roman"' Caption="&nbsp;&nbsp;&nbsp; <Nuevo>"><FONT color=#000000>&nbsp;&nbsp;&nbsp; &lt;Nuevo&gt;<o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 8pt; LINE-HEIGHT: 50%; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN lang=ES-MX style='FONT-SIZE: 10pt; FONT-FAMILY: "Tahoma",sans-serif; LINE-HEIGHT: 50%; mso-ansi-language: ES-MX; mso-fareast-font-family: "Times New Roman"' Caption="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Fecha>16/04/21</Fecha>"><FONT color=#000000>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Fecha&gt;05/11/21&lt;/Fecha&gt;<o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 8pt; LINE-HEIGHT: 50%; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN lang=ES-MX style='FONT-SIZE: 10pt; FONT-FAMILY: "Tahoma",sans-serif; LINE-HEIGHT: 50%; mso-ansi-language: ES-MX; mso-fareast-font-family: "Times New Roman"' Caption="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Autor>PCampana</Autor>"><FONT color=#000000>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Autor&gt;RCRUZ&lt;/Autor&gt;<o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 8pt; LINE-HEIGHT: 50%; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN lang=ES-MX style='FONT-SIZE: 10pt; FONT-FAMILY: "Tahoma",sans-serif; LINE-HEIGHT: 50%; mso-ansi-language: ES-MX; mso-fareast-font-family: "Times New Roman"' Caption="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Solicitud></Solicitud>"><FONT color=#000000>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Solicitud&gt;WEB 198.840&lt;/Solicitud&gt;<o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 8pt; LINE-HEIGHT: 50%; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN lang=ES-MX style='FONT-SIZE: 10pt; FONT-FAMILY: "Tahoma",sans-serif; LINE-HEIGHT: 50%; mso-ansi-language: ES-MX; mso-fareast-font-family: "Times New Roman"' Caption="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Pais>Peru</Pais>"><FONT color=#000000>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Pais&gt;Peru&lt;/Pais&gt;<o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 8pt; LINE-HEIGHT: 50%; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN lang=ES-MX style='FONT-SIZE: 10pt; FONT-FAMILY: "Tahoma",sans-serif; LINE-HEIGHT: 50%; mso-ansi-language: ES-MX; mso-fareast-font-family: "Times New Roman"' Caption="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Cliente>Compartamos</Cliente>"><FONT color=#000000>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Cliente&gt;Compartamos&lt;/Cliente&gt;<o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 8pt; LINE-HEIGHT: 50%; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN lang=ES-MX style='FONT-SIZE: 10pt; FONT-FAMILY: "Tahoma",sans-serif; LINE-HEIGHT: 50%; mso-ansi-language: ES-MX; mso-fareast-font-family: "Times New Roman"' Caption="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Descripcion>RTE que actualiza el uso de datos del cliente</Descripcion>"><FONT color=#000000>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Descripcion&gt;Proceso que elimina correlativos temporales&lt;/Descripcion&gt;<o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 8pt; LINE-HEIGHT: 50%; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN lang=ES-MX style='FONT-SIZE: 10pt; FONT-FAMILY: "Tahoma",sans-serif; LINE-HEIGHT: 50%; mso-ansi-language: ES-MX; mso-fareast-font-family: "Times New Roman"' Caption="&nbsp;&nbsp;&nbsp; </Nuevo>"><FONT color=#000000>&nbsp;&nbsp;&nbsp; &lt;/Nuevo&gt;<o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 8pt; LINE-HEIGHT: 50%; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN lang=ES-MX style='FONT-SIZE: 10pt; FONT-FAMILY: "Tahoma",sans-serif; LINE-HEIGHT: 50%; mso-ansi-language: ES-MX; mso-fareast-font-family: "Times New Roman"' Caption="</Historia>"><FONT color=#000000>&lt;/Historia&gt;</FONT></SPAN><SPAN lang=ES-MX style='FONT-SIZE: 10pt; FONT-FAMILY: "Arial",sans-serif; LINE-HEIGHT: 50%; mso-ansi-language: ES-MX; mso-fareast-font-family: "Times New Roman"' Caption=" "><o:p></o:p></SPAN></P>
+<P></SPAN>&nbsp;</P>]]></Source>
+      </Documentation>
+      <LastUpdate>2021-11-05 17:31:16GMT</LastUpdate>
+      <Variable>
+        <Id>-8</Id>
+        <Name>JCMA418COR</Name>
+        <Title>Correlativo Temporal</Title>
+        <Length>4</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZ9</Picture>
+      </Variable>
+      <Variable>
+        <Id>-4</Id>
+        <Name>Line</Name>
+        <Title>Line</Title>
+        <Length>6</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-5</Id>
+        <Name>Output</Name>
+        <Title>Output</Title>
+        <Type>Character</Type>
+        <Length>3</Length>
+        <Decimals>0</Decimals>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value />
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-3</Id>
+        <Name>Page</Name>
+        <Title>Page</Title>
+        <Length>6</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-7</Id>
+        <Name>Pgmdesc</Name>
+        <Title>Pgmdesc</Title>
+        <Type>Character</Type>
+        <Length>30</Length>
+        <Decimals>0</Decimals>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value />
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-6</Id>
+        <Name>Pgmname</Name>
+        <Title>Pgmname</Title>
+        <Type>Character</Type>
+        <Length>31</Length>
+        <Decimals>0</Decimals>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value />
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-2</Id>
+        <Name>Time</Name>
+        <Title>Time</Title>
+        <Type>Character</Type>
+        <Length>8</Length>
+        <Decimals>0</Decimals>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value />
+        </Property>
+      </Variable>
+      <Variable>
+        <Name>Today</Name>
+        <Title>Today</Title>
+        <Type>Date</Type>
+        <Length>8</Length>
+        <Decimals>0</Decimals>
+        <Picture>99/99/99</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>99/99/99</Value>
+        </Property>
+      </Variable>
+      <Layout>
+        <NextControlID>5</NextControlID>
+        <FormInfo>
+          <FormId>1</FormId>
+          <FormClass>Graphic</FormClass>
+          <IsDefault>N</IsDefault>
+          <Att_Font>
+            <Name>Courier New</Name>
+            <Size>9</Size>
+          </Att_Font>
+          <Txt_Font>
+            <Bold>Y</Bold>
+          </Txt_Font>
+          <GridWidth>13</GridWidth>
+          <GridHeight>13</GridHeight>
+          <TemplateBased>N</TemplateBased>
+        </FormInfo>
+        <Block>
+          <CodeBlock>
+            <left>0</left>
+            <top>0</top>
+            <right>672</right>
+            <bottom>26</bottom>
+            <Brush>Y</Brush>
+            <ColorInfo>
+              <Foreground>Lime</Foreground>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <ForeColor>-2147483642</ForeColor>
+            <BackColor>-2147483633</BackColor>
+            <BorderWidth>0</BorderWidth>
+            <Shape>Frame</Shape>
+            <OutStyle>Single</OutStyle>
+            <GSGridWidth>7</GSGridWidth>
+            <GSGridHeight>15</GSGridHeight>
+            <DataLeft>0</DataLeft>
+            <DataTop>0</DataTop>
+            <DataRight>0</DataRight>
+            <DataBottom>0</DataBottom>
+            <Source><![CDATA[For Each // JCMA418: JCMA418
+Where JCMA418COR = &JCMA418COR
+Defined By JCMA418MSL
+	Delete
+EndFor
+]]></Source>
+          </CodeBlock>
+        </Block>
+        <Block>
+          <PrintBlockVer8>
+            <left>0</left>
+            <top>0</top>
+            <right>672</right>
+            <bottom>26</bottom>
+            <Brush>Y</Brush>
+            <ColorInfo>
+              <Foreground>Black</Foreground>
+              <Background>White</Background>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <ForeColor>-2147483642</ForeColor>
+            <BackColor>-2147483633</BackColor>
+            <Shape>Frame</Shape>
+            <OutStyle>Single</OutStyle>
+            <GSGridWidth>7</GSGridWidth>
+            <GSGridHeight>15</GSGridHeight>
+            <DataLeft>0</DataLeft>
+            <DataTop>0</DataTop>
+            <DataRight>0</DataRight>
+            <DataBottom>0</DataBottom>
+            <CommandLine>[Unreferenced]</CommandLine>
+            <PBPos>1</PBPos>
+          </PrintBlockVer8>
+        </Block>
+        <Block>
+          <CodeBlockVer8>
+            <left>0</left>
+            <top>0</top>
+            <right>672</right>
+            <bottom>26</bottom>
+            <Brush>Y</Brush>
+            <ColorInfo>
+              <Foreground>Lime</Foreground>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <ForeColor>-2147483642</ForeColor>
+            <BackColor>-2147483633</BackColor>
+            <BorderWidth>0</BorderWidth>
+            <Shape>Frame</Shape>
+            <OutStyle>Single</OutStyle>
+            <GSGridWidth>7</GSGridWidth>
+            <GSGridHeight>15</GSGridHeight>
+            <DataLeft>0</DataLeft>
+            <DataTop>0</DataTop>
+            <DataRight>0</DataRight>
+            <DataBottom>0</DataBottom>
+          </CodeBlockVer8>
+        </Block>
+        <Paper>
+          <PaperId>A4</PaperId>
+          <SizeX>11906</SizeX>
+          <SizeY>16838</SizeY>
+          <RightIndent>1811</RightIndent>
+        </Paper>
+      </Layout>
+      <Rules><![CDATA[Parm(&JCMA418COR);
+]]></Rules>
+      <Conditions><![CDATA[// -- HASH:250698cb2ebb9d659a81b1bb07e105e185ffedc1;]]></Conditions>
+    </Procedure>
+  </GXObject>
+</ExportFile>

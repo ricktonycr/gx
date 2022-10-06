@@ -1,0 +1,4014 @@
+<?xml version='1.0' encoding='iso-8859-1'?>
+<ExportFile>
+  <Model>
+    <Id>1</Id>
+    <Name>CoreJBR</Name>
+    <Stdfunc>N</Stdfunc>
+    <AttLen>10</AttLen>
+    <TblLen>8</TblLen>
+    <ObjLen>30</ObjLen>
+    <NullsBehavior>8_OR_LESS</NullsBehavior>
+    <EmptyAsNullBehavior>8_OR_LESS</EmptyAsNullBehavior>
+  </Model>
+  <Description>GxPublic Distribution</Description>
+  <KMW>
+    <MajorVersion>2</MajorVersion>
+    <MinorVersion>2</MinorVersion>
+    <Path>\\scoresvt\KBBantotal\Desarrollo\CapaBrouDesaF3</Path>
+    <MaxGxBuildSaved>2601</MaxGxBuildSaved>
+  </KMW>
+  <GXObject>
+    <Procedure>
+      <Info>
+        <Name>JBRA429</Name>
+        <Description>JBRA429</Description>
+        <Folder>BROU_CREDITO_SOCIAL</Folder>
+        <DWHTrn>4</DWHTrn>
+      </Info>
+      <ObjInfo>
+        <IsMain>Y</IsMain>
+      </ObjInfo>
+      <Documentation>
+        <Source><![CDATA[<P><FONT size=2 face=Tahoma>&lt;</FONT><FONT size=2 face=Tahoma>Historia&gt;&nbsp;&nbsp;&nbsp;&nbsp;<BR>&nbsp;&nbsp;&nbsp;&nbsp; &lt;Modificacion&gt;&nbsp; <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Fecha&gt;29/04/2020&lt;/Fecha&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Autor&gt;Mónica Iriart&lt;/Autor&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Solicitud&gt;96082&lt;/Solicitud&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Pais&gt;Uruguay&lt;/Pais&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Cliente&gt;BROU&lt;/Cliente&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Descripcion&gt;En el control de fecha de baja &lt; fecha primer pago, hay que considerar el mes y el año, no la fecha completa&lt;/Descripcion&gt;<BR>&nbsp;&nbsp;&nbsp; &lt;/Modificacion&gt;</FONT></P>
+<P><FONT size=2 face=Tahoma>&nbsp;&nbsp;&nbsp;&nbsp; &lt;Modificacion&gt;&nbsp; <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Fecha&gt;14/08/2020&lt;/Fecha&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Autor&gt;Leticia de los Reyes&lt;/Autor&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Solicitud&gt;97157&lt;/Solicitud&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Pais&gt;Uruguay&lt;/Pais&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Cliente&gt;BROU&lt;/Cliente&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Descripcion&gt;Ajustar controles para que se contemplen las cancelaciones totales anticipadas&lt;/Descripcion&gt;<BR>&nbsp;&nbsp;&nbsp; &lt;/Modificacion&gt;</FONT></P>
+<P><FONT size=2 face=Tahoma>&nbsp;&nbsp;&nbsp;&nbsp; &lt;Modificacion&gt;&nbsp; <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Fecha&gt;24/03/2021&lt;/Fecha&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Autor&gt;Enrique Martinez&lt;/Autor&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Solicitud&gt;98964&lt;/Solicitud&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Pais&gt;Uruguay&lt;/Pais&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Cliente&gt;BROU&lt;/Cliente&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Descripcion&gt;si &amp;jb420stat = 83 o 84 no se ejecuta 'Baja Relacion'&lt;/Descripcion&gt;<BR>&nbsp;&nbsp;&nbsp; &lt;/Modificacion&gt;</FONT></P>
+<P><FONT size=2 face=Tahoma>&nbsp;&nbsp;&nbsp;&nbsp; &lt;Modificacion&gt;&nbsp; <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Fecha&gt;21/07/2021&lt;/Fecha&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Autor&gt;Enrique Martinez&lt;/Autor&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Solicitud&gt;99996&lt;/Solicitud&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Pais&gt;Uruguay&lt;/Pais&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Cliente&gt;BROU&lt;/Cliente&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Descripcion&gt;&amp;CodError se inicializa en 0&lt;/Descripcion&gt;<BR>&nbsp;&nbsp;&nbsp; &lt;/Modificacion&gt;</FONT></P>
+<P><FONT size=2 face=Tahoma>&lt;/</FONT><FONT size=2 face=Tahoma>Historia&gt;&nbsp;&nbsp;</FONT></P>]]></Source>
+      </Documentation>
+      <LastUpdate>2021-07-21 13:28:16GMT</LastUpdate>
+      <Variable>
+        <Id>-134</Id>
+        <Name>aMotivoFallecido</Name>
+        <Title>a Motivo Fallecido</Title>
+        <Length>3</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-28</Id>
+        <Name>Cargar</Name>
+        <Title>Cargar</Title>
+        <Type>Character</Type>
+        <Length>1</Length>
+        <Decimals>0</Decimals>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-102</Id>
+        <Name>CobroConPuente</Name>
+        <Title>Cobro Con Puente</Title>
+        <Type>Character</Type>
+        <Length>1</Length>
+        <Decimals>0</Decimals>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-51</Id>
+        <Name>CodError</Name>
+        <Title>Cod Error</Title>
+        <Length>2</Length>
+        <Decimals>0</Decimals>
+        <Picture>Z9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>Z9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-41</Id>
+        <Name>cont</Name>
+        <Title>cont</Title>
+        <Length>3</Length>
+        <Decimals>0</Decimals>
+        <Sign>Y</Sign>
+        <Picture>ZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-63</Id>
+        <Name>D602fc</Name>
+        <Title>D602fc</Title>
+        <Type>Date</Type>
+        <Length>8</Length>
+        <Decimals>0</Decimals>
+        <Picture>9</Picture>
+        <BasedOn>D602fc</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-111</Id>
+        <Name>D602fcB</Name>
+        <Title>D602fc</Title>
+        <Type>Date</Type>
+        <Length>8</Length>
+        <Decimals>0</Decimals>
+        <Picture>9</Picture>
+        <BasedOn>D602fc</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-60</Id>
+        <Name>D602mo</Name>
+        <Title>D602mo</Title>
+        <Length>5</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZ9</Picture>
+        <BasedOn>D602mo</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-107</Id>
+        <Name>D602moB</Name>
+        <Title>D602mo</Title>
+        <Length>5</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZ9</Picture>
+        <BasedOn>D602mo</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-62</Id>
+        <Name>D602re</Name>
+        <Title>D602re</Title>
+        <Length>9</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZZZZ9</Picture>
+        <BasedOn>D602re</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-110</Id>
+        <Name>D602reB</Name>
+        <Title>D602re</Title>
+        <Length>9</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZZZZ9</Picture>
+        <BasedOn>D602re</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-59</Id>
+        <Name>D602su</Name>
+        <Title>D602su</Title>
+        <Length>5</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZ9</Picture>
+        <BasedOn>D602su</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-108</Id>
+        <Name>D602suB</Name>
+        <Title>D602su</Title>
+        <Length>5</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZ9</Picture>
+        <BasedOn>D602su</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-61</Id>
+        <Name>D602tr</Name>
+        <Title>D602tr</Title>
+        <Length>5</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZ9</Picture>
+        <BasedOn>D602tr</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-109</Id>
+        <Name>D602trB</Name>
+        <Title>D602tr</Title>
+        <Length>5</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZ9</Picture>
+        <BasedOn>D602tr</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-57</Id>
+        <Name>DbgTxt</Name>
+        <Title>Dbg Txt</Title>
+        <Type>Character</Type>
+        <Length>70</Length>
+        <Decimals>0</Decimals>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-56</Id>
+        <Name>debug</Name>
+        <Title>debug</Title>
+        <Type>Character</Type>
+        <Length>1</Length>
+        <Decimals>0</Decimals>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-83</Id>
+        <Name>EjecutoTRN</Name>
+        <Title>Ejecuto TRN</Title>
+        <Type>Character</Type>
+        <Length>1</Length>
+        <Decimals>0</Decimals>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-20</Id>
+        <Name>EmpCod</Name>
+        <Title>Emp Cod</Title>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZZZZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZZZZZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-22</Id>
+        <Name>Error</Name>
+        <Title>Error</Title>
+        <Picture>ZZZZZZ9.99</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZZZ9.99</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-40</Id>
+        <Name>ErrorAnu</Name>
+        <Title>Error Anu</Title>
+        <Type>Character</Type>
+        <Length>1</Length>
+        <Decimals>0</Decimals>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-24</Id>
+        <Name>ESTADOBaj</Name>
+        <Title>ESTADO</Title>
+        <Length>1</Length>
+        <Decimals>0</Decimals>
+        <Picture>9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-93</Id>
+        <Name>ExistePF</Name>
+        <Title>Existe PF</Title>
+        <Type>Character</Type>
+        <Length>1</Length>
+        <Decimals>0</Decimals>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-113</Id>
+        <Name>F1</Name>
+        <Title>F1</Title>
+        <Type>Character</Type>
+        <Length>1</Length>
+        <Decimals>0</Decimals>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-112</Id>
+        <Name>F2</Name>
+        <Title>F2</Title>
+        <Type>Character</Type>
+        <Length>1</Length>
+        <Decimals>0</Decimals>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-131</Id>
+        <Name>Faux</Name>
+        <Title>Faux</Title>
+        <Type>Date</Type>
+        <Length>8</Length>
+        <Decimals>0</Decimals>
+        <Picture>99/99/9999</Picture>
+        <BasedOn>FECHA</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-137</Id>
+        <Name>FchMigraFase3</Name>
+        <Title>Fch Migra Fase3</Title>
+        <Type>Date</Type>
+        <Length>8</Length>
+        <Decimals>0</Decimals>
+        <Picture>99/99/99</Picture>
+        <BasedOn>Ppfpag</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-45</Id>
+        <Name>Fec</Name>
+        <Title>Fec</Title>
+        <Type>Date</Type>
+        <Length>8</Length>
+        <Decimals>0</Decimals>
+        <Picture>99/99/99</Picture>
+        <BasedOn>Itfcon</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-81</Id>
+        <Name>FecAnu</Name>
+        <Title>Fec Anu</Title>
+        <Type>Date</Type>
+        <Length>8</Length>
+        <Decimals>0</Decimals>
+        <Picture>9</Picture>
+        <BasedOn>D602fc</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-19</Id>
+        <Name>FecFalle</Name>
+        <Title>Fec Falle</Title>
+        <Type>Date</Type>
+        <Length>8</Length>
+        <Decimals>0</Decimals>
+        <Picture>99/99/99</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>99/99/99</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-17</Id>
+        <Name>FECHABaja</Name>
+        <Title>FECHA</Title>
+        <Type>Date</Type>
+        <Length>8</Length>
+        <Decimals>0</Decimals>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-130</Id>
+        <Name>FECHACancelacion</Name>
+        <Title>FECHA</Title>
+        <Type>Date</Type>
+        <Length>8</Length>
+        <Decimals>0</Decimals>
+        <Picture>99/99/9999</Picture>
+        <BasedOn>FECHA</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-114</Id>
+        <Name>fechaDESDE</Name>
+        <Title>DESDE</Title>
+        <Type>Date</Type>
+        <Length>8</Length>
+        <Decimals>0</Decimals>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-96</Id>
+        <Name>fechaHASTA</Name>
+        <Title>HASTA</Title>
+        <Type>Date</Type>
+        <Length>8</Length>
+        <Decimals>0</Decimals>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-115</Id>
+        <Name>FechaPagoDESDE</Name>
+        <Title>DESDE</Title>
+        <Type>Date</Type>
+        <Length>8</Length>
+        <Decimals>0</Decimals>
+        <Picture>99/99/99</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>99/99/99</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-144</Id>
+        <Name>FECHAPrimerPago</Name>
+        <Title>FECHA</Title>
+        <Type>Date</Type>
+        <Length>8</Length>
+        <Decimals>0</Decimals>
+        <Picture>99/99/9999</Picture>
+        <BasedOn>FECHA</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-77</Id>
+        <Name>FECHAUltimoPF</Name>
+        <Title>FECHA</Title>
+        <Type>Date</Type>
+        <Length>8</Length>
+        <Decimals>0</Decimals>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-129</Id>
+        <Name>FECHAUltimoPresupuesto</Name>
+        <Title>FECHA</Title>
+        <Type>Date</Type>
+        <Length>8</Length>
+        <Decimals>0</Decimals>
+        <Picture>99/99/9999</Picture>
+        <BasedOn>FECHA</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-66</Id>
+        <Name>FECHAValRen</Name>
+        <Title>FECHA</Title>
+        <Type>Date</Type>
+        <Length>8</Length>
+        <Decimals>0</Decimals>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-106</Id>
+        <Name>filler</Name>
+        <Title>filler</Title>
+        <Type>Character</Type>
+        <Length>30</Length>
+        <Decimals>0</Decimals>
+        <Rows>999</Rows>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-135</Id>
+        <Name>FlagBajaRet</Name>
+        <Title>Flag Baja Ret</Title>
+        <Type>Character</Type>
+        <Length>1</Length>
+        <Decimals>0</Decimals>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-92</Id>
+        <Name>FlagExtorno</Name>
+        <Title>Flag Extorno</Title>
+        <Type>Character</Type>
+        <Length>1</Length>
+        <Decimals>0</Decimals>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-58</Id>
+        <Name>FlagPrimCuota</Name>
+        <Title>Flag Prim Cuota</Title>
+        <Type>Character</Type>
+        <Length>1</Length>
+        <Decimals>0</Decimals>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-117</Id>
+        <Name>FlagRen</Name>
+        <Title>Flag Ren</Title>
+        <Type>Character</Type>
+        <Length>1</Length>
+        <Decimals>0</Decimals>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-54</Id>
+        <Name>J</Name>
+        <Title>J</Title>
+        <Length>5</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-88</Id>
+        <Name>JB420ID</Name>
+        <Title>JB420 ID</Title>
+        <Length>9</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZZZZ9</Picture>
+        <BasedOn>JB420ID</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-97</Id>
+        <Name>JB420IDAux</Name>
+        <Title>JB420 ID</Title>
+        <Length>9</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZZZZ9</Picture>
+        <BasedOn>JB420ID</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-90</Id>
+        <Name>JB420Stat</Name>
+        <Title>Estado</Title>
+        <Length>3</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZ9</Picture>
+        <BasedOn>JB420Stat</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-91</Id>
+        <Name>JB421Corr</Name>
+        <Title>JB421 Corr</Title>
+        <Length>9</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZZZZ9</Picture>
+        <BasedOn>JB421Corr</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-26</Id>
+        <Name>K</Name>
+        <Title>K</Title>
+        <Length>3</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-4</Id>
+        <Name>Line</Name>
+        <Title>Line</Title>
+        <Length>6</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-39</Id>
+        <Name>MnCod</Name>
+        <Title>Código de mensaje</Title>
+        <Length>5</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZ9</Picture>
+        <BasedOn>MnCod</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-103</Id>
+        <Name>MnCodAux</Name>
+        <Title>Código de mensaje</Title>
+        <Length>5</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZ9</Picture>
+        <BasedOn>MnCod</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-53</Id>
+        <Name>MnIdiom</Name>
+        <Title>MnIdiom</Title>
+        <Type>Character</Type>
+        <Length>2</Length>
+        <Decimals>0</Decimals>
+        <BasedOn>MnIdiom</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-42</Id>
+        <Name>Mod</Name>
+        <Title>Mod</Title>
+        <Length>5</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZ9</Picture>
+        <BasedOn>Itmod</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-78</Id>
+        <Name>ModAnu</Name>
+        <Title>Mod Anu</Title>
+        <Length>5</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZ9</Picture>
+        <BasedOn>D602mo</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-119</Id>
+        <Name>ModCanT</Name>
+        <Title>Mod CanT</Title>
+        <Length>5</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZ9</Picture>
+        <BasedOn>Itmod</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-18</Id>
+        <Name>MotBaja</Name>
+        <Title>Mot Baja</Title>
+        <Length>3</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-89</Id>
+        <Name>NOMPROG</Name>
+        <Title>NOMPROG</Title>
+        <Type>Character</Type>
+        <Length>6</Length>
+        <Decimals>0</Decimals>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-75</Id>
+        <Name>Nrel</Name>
+        <Title>Nrel</Title>
+        <Length>9</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZZZZ9</Picture>
+        <BasedOn>Itnrel</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-86</Id>
+        <Name>Numerador</Name>
+        <Title>Numerador</Title>
+        <Length>3</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-21</Id>
+        <Name>NumLeg</Name>
+        <Title>Num Leg</Title>
+        <Type>Character</Type>
+        <Length>25</Length>
+        <Decimals>0</Decimals>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-55</Id>
+        <Name>OK</Name>
+        <Title>OK</Title>
+        <Type>Character</Type>
+        <Length>1</Length>
+        <Decimals>0</Decimals>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-104</Id>
+        <Name>OldESTADO</Name>
+        <Title>ESTADO</Title>
+        <Length>3</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZ9</Picture>
+        <BasedOn>JB420Stat</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-5</Id>
+        <Name>Output</Name>
+        <Title>Output</Title>
+        <Type>Character</Type>
+        <Length>3</Length>
+        <Decimals>0</Decimals>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-125</Id>
+        <Name>P</Name>
+        <Title>P</Title>
+        <Length>5</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-3</Id>
+        <Name>Page</Name>
+        <Title>Page</Title>
+        <Length>6</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-101</Id>
+        <Name>Pendoc</Name>
+        <Title>Documento</Title>
+        <Type>Character</Type>
+        <Length>25</Length>
+        <Decimals>0</Decimals>
+        <BasedOn>Pendoc</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-99</Id>
+        <Name>Pepais</Name>
+        <Title>Pais del documento</Title>
+        <Length>3</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZ9</Picture>
+        <BasedOn>Pepais</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-100</Id>
+        <Name>Petdoc</Name>
+        <Title>T/docum.</Title>
+        <Length>4</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZ9</Picture>
+        <BasedOn>Petdoc</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-8</Id>
+        <Name>Pgcod</Name>
+        <Title>Cod.</Title>
+        <Length>3</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZ9</Picture>
+        <BasedOn>Pgcod</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-25</Id>
+        <Name>Pgfape</Name>
+        <Title>Fecha de apertura</Title>
+        <Type>Date</Type>
+        <Length>8</Length>
+        <Decimals>0</Decimals>
+        <Picture>99/99/99</Picture>
+        <BasedOn>Pgfape</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-7</Id>
+        <Name>Pgmdesc</Name>
+        <Title>Pgmdesc</Title>
+        <Type>Character</Type>
+        <Length>30</Length>
+        <Decimals>0</Decimals>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-6</Id>
+        <Name>Pgmname</Name>
+        <Title>Pgmname</Title>
+        <Type>Character</Type>
+        <Length>31</Length>
+        <Decimals>0</Decimals>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-52</Id>
+        <Name>PgmNom</Name>
+        <Title>Programa standard</Title>
+        <Type>Character</Type>
+        <Decimals>0</Decimals>
+        <Picture>@!</Picture>
+        <BasedOn>PgmNom</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-136</Id>
+        <Name>Pgsuc</Name>
+        <Title>Pgsuc</Title>
+        <Length>5</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZ9</Picture>
+        <BasedOn>Pgsuc</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-76</Id>
+        <Name>PMnCod</Name>
+        <Title>Código de mensaje</Title>
+        <Length>5</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZ9</Picture>
+        <BasedOn>MnCod</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-116</Id>
+        <Name>Pp1nump</Name>
+        <Title>Número de pago a la cuota</Title>
+        <Length>9</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZZZZ9</Picture>
+        <BasedOn>Pp1nump</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-122</Id>
+        <Name>Ppcap</Name>
+        <Title>Capital de la cuota</Title>
+        <Length>18</Length>
+        <Sign>Y</Sign>
+        <Picture>ZZZ,ZZZ,ZZZ,ZZZ,ZZ9.99</Picture>
+        <BasedOn>Ppcap</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-65</Id>
+        <Name>Ppfpag</Name>
+        <Title>Fecha de pago prevista</Title>
+        <Type>Date</Type>
+        <Length>8</Length>
+        <Decimals>0</Decimals>
+        <Picture>99/99/99</Picture>
+        <BasedOn>Ppfpag</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-124</Id>
+        <Name>Ppiint</Name>
+        <Title>Impuesto sobre interés</Title>
+        <Length>18</Length>
+        <Sign>Y</Sign>
+        <Picture>ZZZ,ZZZ,ZZZ,ZZZ,ZZ9.99</Picture>
+        <BasedOn>Ppiint</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-123</Id>
+        <Name>Ppint</Name>
+        <Title>Interés de la cuota</Title>
+        <Length>18</Length>
+        <Sign>Y</Sign>
+        <Picture>ZZZ,ZZZ,ZZZ,ZZZ,ZZ9.99</Picture>
+        <BasedOn>Ppint</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-95</Id>
+        <Name>ProcesoBaja</Name>
+        <Title>Proces</Title>
+        <Type>Character</Type>
+        <Length>1</Length>
+        <Decimals>0</Decimals>
+        <BasedOn>Proces</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-50</Id>
+        <Name>Prosesar</Name>
+        <Title>Prosesar</Title>
+        <Type>Character</Type>
+        <Length>1</Length>
+        <Decimals>0</Decimals>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-98</Id>
+        <Name>Pwfdebug</Name>
+        <Title>Pwfdebug</Title>
+        <Type>Character</Type>
+        <Length>8</Length>
+        <Decimals>0</Decimals>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-44</Id>
+        <Name>Rel</Name>
+        <Title>Rel</Title>
+        <Length>9</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZZZZ9</Picture>
+        <BasedOn>Itnrel</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-80</Id>
+        <Name>RelAnu</Name>
+        <Title>Rel Anu</Title>
+        <Length>9</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZZZZ9</Picture>
+        <BasedOn>D602re</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-64</Id>
+        <Name>RelCV</Name>
+        <Title>Rel CV</Title>
+        <Length>9</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZZZZ9</Picture>
+        <BasedOn>Relcod</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-128</Id>
+        <Name>RelOk</Name>
+        <Title>Rel Ok</Title>
+        <Type>Character</Type>
+        <Length>1</Length>
+        <Decimals>0</Decimals>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-35</Id>
+        <Name>RelRefin</Name>
+        <Title>Referencia</Title>
+        <Length>9</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZZZZ9</Picture>
+        <BasedOn>Relcod</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-34</Id>
+        <Name>RelRenov</Name>
+        <Title>Rel Renov</Title>
+        <Length>9</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZZZZ9</Picture>
+        <BasedOn>Relcod</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-9</Id>
+        <Name>Sccta</Name>
+        <Title>Cuenta CC Gerencia</Title>
+        <Length>9</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZZZZ9</Picture>
+        <BasedOn>Sccta</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-68</Id>
+        <Name>ScctaEA</Name>
+        <Title>Cuenta CC Gerencia</Title>
+        <Length>9</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZZZZ9</Picture>
+        <BasedOn>Sccta</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-13</Id>
+        <Name>Scmda</Name>
+        <Title>Moneda CC Gerencia</Title>
+        <Length>4</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZ9</Picture>
+        <BasedOn>Scmda</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-71</Id>
+        <Name>ScmdaEA</Name>
+        <Title>Moneda CC Gerencia</Title>
+        <Length>4</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZ9</Picture>
+        <BasedOn>Scmda</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-11</Id>
+        <Name>Scmod</Name>
+        <Title>Modulo</Title>
+        <Length>5</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZ9</Picture>
+        <BasedOn>Scmod</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-94</Id>
+        <Name>ScmodEa</Name>
+        <Title>Modulo</Title>
+        <Length>5</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZ9</Picture>
+        <BasedOn>Scmod</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-74</Id>
+        <Name>ScoOperEA</Name>
+        <Title>Sco Oper EA</Title>
+        <Picture>ZZZZZZ9.99</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZZZ9.99</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-10</Id>
+        <Name>Scoper</Name>
+        <Title>Operacion CC Gerencia</Title>
+        <Length>9</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZZZZ9</Picture>
+        <BasedOn>Scoper</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-14</Id>
+        <Name>Scpap</Name>
+        <Title>Scpap</Title>
+        <Length>6</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZ9</Picture>
+        <BasedOn>Scpap</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-72</Id>
+        <Name>ScpapEA</Name>
+        <Title>Scpap</Title>
+        <Length>6</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZ9</Picture>
+        <BasedOn>Scpap</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-16</Id>
+        <Name>Scsbop</Name>
+        <Title>Sub.operacion</Title>
+        <Length>5</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZ9</Picture>
+        <BasedOn>Scsbop</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-70</Id>
+        <Name>ScsbopEA</Name>
+        <Title>Sub.operacion</Title>
+        <Length>5</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZ9</Picture>
+        <BasedOn>Scsbop</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-15</Id>
+        <Name>Scsuc</Name>
+        <Title>Sucursal</Title>
+        <Length>5</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZ9</Picture>
+        <BasedOn>Scsuc</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-73</Id>
+        <Name>ScsucEA</Name>
+        <Title>Sucursal</Title>
+        <Length>5</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZ9</Picture>
+        <BasedOn>Scsuc</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-12</Id>
+        <Name>Sctope</Name>
+        <Title>Tipo Operac. CC Gerencia</Title>
+        <Length>3</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZ9</Picture>
+        <BasedOn>Sctope</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-69</Id>
+        <Name>SctopeEA</Name>
+        <Title>Tipo Operac. CC Gerencia</Title>
+        <Length>3</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZ9</Picture>
+        <BasedOn>Sctope</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-87</Id>
+        <Name>Ser</Name>
+        <Title>Ser</Title>
+        <Type>Character</Type>
+        <Length>1</Length>
+        <Decimals>0</Decimals>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-46</Id>
+        <Name>Suc</Name>
+        <Title>Suc</Title>
+        <Length>5</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZ9</Picture>
+        <BasedOn>Itsuc</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-82</Id>
+        <Name>SucAnu</Name>
+        <Title>Suc Anu</Title>
+        <Length>5</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZ9</Picture>
+        <BasedOn>D602su</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-2</Id>
+        <Name>Time</Name>
+        <Title>Time</Title>
+        <Type>Character</Type>
+        <Length>8</Length>
+        <Decimals>0</Decimals>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Name>Today</Name>
+        <Title>Today</Title>
+        <Type>Date</Type>
+        <Length>8</Length>
+        <Decimals>0</Decimals>
+        <Picture>99/99/99</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>99/99/99</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-27</Id>
+        <Name>TopeAsientos</Name>
+        <Title>Tope Asientos</Title>
+        <Length>3</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-126</Id>
+        <Name>TopeCodRel</Name>
+        <Title>Tope Cod Rel</Title>
+        <Length>5</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-47</Id>
+        <Name>TopeTrn</Name>
+        <Title>Tope Trn</Title>
+        <Length>3</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-143</Id>
+        <Name>TopeTrnANU</Name>
+        <Title>Tope Trn ANU</Title>
+        <Length>4</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-140</Id>
+        <Name>TopeTrnREN</Name>
+        <Title>Tope Trn REN</Title>
+        <Length>5</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-36</Id>
+        <Name>Tp1cod1</Name>
+        <Title>Guía</Title>
+        <Length>9</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZZZZ9</Picture>
+        <BasedOn>Tp1cod1</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-37</Id>
+        <Name>Tp1corr1</Name>
+        <Title>Correlativo 1</Title>
+        <Length>9</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZZZZ9</Picture>
+        <BasedOn>Tp1corr1</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-38</Id>
+        <Name>Tp1corr2</Name>
+        <Title>Correlativo 2</Title>
+        <Length>9</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZZZZ9</Picture>
+        <BasedOn>Tp1corr2</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-67</Id>
+        <Name>Tp1corr3</Name>
+        <Title>Correlativo 3</Title>
+        <Length>9</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZZZZ9</Picture>
+        <BasedOn>Tp1corr3</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-43</Id>
+        <Name>Trn</Name>
+        <Title>Trn</Title>
+        <Length>5</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZ9</Picture>
+        <BasedOn>Ittran</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-79</Id>
+        <Name>TrnAnu</Name>
+        <Title>Trn Anu</Title>
+        <Length>5</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZ9</Picture>
+        <BasedOn>D602tr</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-118</Id>
+        <Name>TrnCanT</Name>
+        <Title>Trn CanT</Title>
+        <Length>5</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZ9</Picture>
+        <BasedOn>Ittran</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-120</Id>
+        <Name>Txcod</Name>
+        <Title>Tipo de Texto</Title>
+        <Length>5</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZ9</Picture>
+        <BasedOn>Txcod</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-121</Id>
+        <Name>Txreng</Name>
+        <Title>Renglon</Title>
+        <Length>3</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZ9</Picture>
+        <BasedOn>Txreng</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-132</Id>
+        <Name>Ubsuc</Name>
+        <Title>Sucursal</Title>
+        <Length>5</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZ9</Picture>
+        <BasedOn>Ubsuc</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-133</Id>
+        <Name>Usuario</Name>
+        <Title>Usuario</Title>
+        <Type>Character</Type>
+        <Length>30</Length>
+        <Decimals>0</Decimals>
+        <BasedOn>Usuario</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-84</Id>
+        <Name>VecAnulado</Name>
+        <Title>Vec Anulado</Title>
+        <Type>Character</Type>
+        <Length>1</Length>
+        <Decimals>0</Decimals>
+        <Rows>999</Rows>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-127</Id>
+        <Name>VecCodRelRefi</Name>
+        <Title>Vec Cod Rel Refi</Title>
+        <Length>3</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZ9</Picture>
+        <Rows>999</Rows>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-33</Id>
+        <Name>VecFC</Name>
+        <Title>Vec FC</Title>
+        <Type>Date</Type>
+        <Length>8</Length>
+        <Decimals>0</Decimals>
+        <Picture>9</Picture>
+        <Rows>999</Rows>
+        <BasedOn>D602fc</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-85</Id>
+        <Name>VecMnCod</Name>
+        <Title>Código de mensaje</Title>
+        <Length>5</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZ9</Picture>
+        <Rows>999</Rows>
+        <BasedOn>MnCod</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-30</Id>
+        <Name>VecMod</Name>
+        <Title>Vec Mod</Title>
+        <Length>5</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZ9</Picture>
+        <Rows>999</Rows>
+        <BasedOn>D602mo</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-141</Id>
+        <Name>VecModPagoANU</Name>
+        <Title>Vec Mod Pago ANU</Title>
+        <Length>5</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZ9</Picture>
+        <Rows>999</Rows>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-49</Id>
+        <Name>VecModPagoCR</Name>
+        <Title>Vec Mod Pago CR</Title>
+        <Length>5</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZ9</Picture>
+        <Rows>999</Rows>
+        <BasedOn>Itmod</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-138</Id>
+        <Name>VecModPagoREN</Name>
+        <Title>Vec Mod Pago REN</Title>
+        <Length>5</Length>
+        <Picture>Z9.99</Picture>
+        <Rows>999</Rows>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>Z9.99</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-32</Id>
+        <Name>VecNrel</Name>
+        <Title>Vec Nrel</Title>
+        <Length>9</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZZZZ9</Picture>
+        <Rows>999</Rows>
+        <BasedOn>D602re</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-29</Id>
+        <Name>VecSuc</Name>
+        <Title>Vec Suc</Title>
+        <Length>5</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZ9</Picture>
+        <Rows>999</Rows>
+        <BasedOn>D602su</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-31</Id>
+        <Name>VecTrn</Name>
+        <Title>Vec Trn</Title>
+        <Length>5</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZ9</Picture>
+        <Rows>999</Rows>
+        <BasedOn>D602tr</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-142</Id>
+        <Name>VecTrnPagoANU</Name>
+        <Title>Vec Trn Pago ANU</Title>
+        <Length>5</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZ9</Picture>
+        <Rows>999</Rows>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-48</Id>
+        <Name>VecTrnPagoCR</Name>
+        <Title>Vec Trn Pago CR</Title>
+        <Length>5</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZ9</Picture>
+        <Rows>999</Rows>
+        <BasedOn>Ittran</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-139</Id>
+        <Name>VecTrnPagoREN</Name>
+        <Title>Vec Trn Pago REN</Title>
+        <Length>5</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZ9</Picture>
+        <Rows>999</Rows>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-105</Id>
+        <Name>YaEjecuto</Name>
+        <Title>Ya Ejecuto</Title>
+        <Type>Character</Type>
+        <Length>1</Length>
+        <Decimals>0</Decimals>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-145</Id>
+        <Name>FechaAuxiliar</Name>
+        <Title>Fecha Auxiliar</Title>
+        <Type>Character</Type>
+        <Length>8</Length>
+        <Decimals>0</Decimals>
+      </Variable>
+      <Variable>
+        <Id>-146</Id>
+        <Name>aaAux</Name>
+        <Title>aa Aux</Title>
+        <Type>Character</Type>
+        <Length>2</Length>
+        <Decimals>0</Decimals>
+      </Variable>
+      <Variable>
+        <Id>-147</Id>
+        <Name>mmAux</Name>
+        <Title>mm Aux</Title>
+        <Type>Character</Type>
+        <Length>2</Length>
+        <Decimals>0</Decimals>
+      </Variable>
+      <Variable>
+        <Id>-148</Id>
+        <Name>aammPrimerPago</Name>
+        <Title>aamm Primer Pago</Title>
+        <Type>Character</Type>
+        <Length>4</Length>
+        <Decimals>0</Decimals>
+      </Variable>
+      <Variable>
+        <Id>-149</Id>
+        <Name>aSADbgTxt</Name>
+        <Title>a SADbg Txt</Title>
+        <Type>Character</Type>
+        <Length>100</Length>
+        <Decimals>0</Decimals>
+      </Variable>
+      <Variable>
+        <Id>-150</Id>
+        <Name>aammBaja</Name>
+        <Title>aamm Baja</Title>
+        <Type>Character</Type>
+        <Length>4</Length>
+        <Decimals>0</Decimals>
+      </Variable>
+      <Property>
+        <Type>string</Type>
+        <Name>USER_METADATA</Name>
+        <Value>&lt;extra-info format=&quot;compressed64&quot;&gt;H4sIAFXpn+YA/1XOsQrAIAwE0F8J2YsmGVRQ/6Wli2sL+f6iQ/HG43HcVT+ft1encTc+xIRpNGa6fEYtTOHXDGi2W8pgEXoRTMF0N9xLBXqyLKzDH9sf3NO3AAAA&lt;/extra-info&gt;</Value>
+      </Property>
+      <Layout>
+        <NextControlID>317</NextControlID>
+        <FormInfo>
+          <FormId>1</FormId>
+          <FormClass>Graphic</FormClass>
+          <IsDefault>N</IsDefault>
+          <HasGrid>Y</HasGrid>
+          <Att_Font>
+            <Name>Courier New</Name>
+            <Size>9</Size>
+          </Att_Font>
+          <Txt_Font>
+            <Bold>Y</Bold>
+          </Txt_Font>
+          <GridWidth>13</GridWidth>
+          <GridHeight>13</GridHeight>
+          <TemplateBased>N</TemplateBased>
+        </FormInfo>
+        <Block>
+          <CodeBlock>
+            <left>71</left>
+            <top>2</top>
+            <right>743</right>
+            <bottom>28</bottom>
+            <Brush>Y</Brush>
+            <ColorInfo>
+              <Foreground>Lime</Foreground>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <ForeColor>-2147483642</ForeColor>
+            <BackColor>-2147483633</BackColor>
+            <BorderWidth>0</BorderWidth>
+            <Shape>Frame</Shape>
+            <OutStyle>Single</OutStyle>
+            <GSGridWidth>7</GSGridWidth>
+            <GSGridHeight>15</GSGridHeight>
+            <DataLeft>0</DataLeft>
+            <DataTop>0</DataTop>
+            <DataRight>0</DataRight>
+            <DataBottom>0</DataBottom>
+            <Source><![CDATA[
+Do 'Inicio'
+
+If (&FechaBaja <= &FchMigraFase3)
+    //--- Baja contemplando Pagos Migrados
+    Call(PJBRA355,&Pgcod,&Sccta,&Scoper,&Scmod,&Sctope,&Scmda,&Scpap,&Scsuc,&Scsbop,&FECHABaja,&MotBaja,&FecFalle,&EmpCod,&NumLeg,&JB420ID,&CodError)
+    Return
+EndIf
+
+Do 'Estado Prestamo'
+
+
+
+If &debug = 'S'
+    &DbgTxt = 'JBRA429 Estado oper ' + Str(&ESTADOBaj)
+    Do 'Dbg'
+EndIf
+
+Do 'Controles'
+
+
+&JB420IDAux = &JB420ID
+
+Do 'JBRA420' // datos de la baja.
+&JB421Corr = 1
+
+//Si ya se ejecuto la baja, copio los asientos ya contabilizados al nuevo id.
+&YaEjecuto = 'N'
+If &JB420IDAux <> 0
+     Do 'Copio asientos anulados'
+EndIf
+
+
+
+Do Case
+    Case &ESTADOBaj  = 1 Or &ESTADOBaj  = 2  // Prestamos vijentes o cancelados.
+        Do 'Prestamo Vigente'
+    Case &ESTADOBaj  = 3 Or &ESTADOBaj  = 4 //Prestamos renovados o cancelados anticipadamente
+        Do 'Prestamo Renovado'
+EndCase
+
+For Each // JBRA420: Bajas de retencion
+	Where JB420ID = &JB420ID
+	    JB420Stat = &JB420Stat
+EndFor
+
+If &JB420Stat <> 80 And &JB420Stat <> 81 And &JB420Stat <> 0
+    and &JB420Stat <> 83 And &JB420Stat <> 84
+    Do 'Baja Relacion'
+EndIf
+
+
+If &MotBaja = &aMotivoFallecido And &FecFalle <> NullValue(&FecFalle) And &JB420Stat = 10 // si el motivo de baja es fallecido, y se completo la baja, marco la persona
+    
+
+    For Each  // HAB005
+        Where HAB001Cod = &EmpCod 
+        Where HAB005id = &NumLeg 
+        Defined By HAB005Dsc
+            &Pepais = HAB005Pais
+            &Petdoc = HAB005Tdoc
+            &Pendoc = HAB005Ndoc
+    EndFor  
+
+    
+   // Se actualiza la marca y fecha de fallecimiento. Si ya tiene la señal y fecha no hace nada
+   For Each // FSD002
+	  Where Pfpais = &Pepais
+      Where Pftdoc = &Petdoc
+      Where Pfndoc = &Pendoc
+	     If Pfffal = NullValue(Pfffal)
+            Pfffal = &FecFalle
+            Pffal = 'S'
+         EndIf
+   EndFor
+EndIf
+
+
+//*******************************************************************************************************//
+
+
+Sub 'Dbg'
+    &Pwfdebug = 'PWFDEBUG'
+    Call(&Pwfdebug,&DbgTxt)
+EndSub
+
+Sub 'Inicio'
+    
+    For Each // Fst017: [FACHADA]
+		Where Pgcod = &Pgcod    
+		    &Pgfape = Pgfape
+            &Pgsuc  = Pgsuc
+	EndFor
+    
+    &Usuario = Upper(UserId('SERVER'))
+    // Sucursal del usuario
+    For Each // Fst046: Fst046
+    Where Pgcod = &Pgcod
+    Where Ubuser = &Usuario
+    Defined By Ubsuc
+        &Ubsuc  = Ubsuc
+    EndFor
+    
+   &Tp1cod1  = 14050 //Reservar
+   &Tp1corr1 = 1
+   &Tp1corr2 = 1
+   &debug    = 'N'
+   
+   For Each // Fst198: [FACHADA]
+	   Where Tp1cod   = &Pgcod
+	   Where Tp1cod1  = &Tp1cod1
+	   Where Tp1corr1 = &Tp1corr1
+	   Where Tp1corr2 = &Tp1corr2
+            /*
+	        If Tp1corr3 = 10
+	            &RelRenov = Tp1nro1 
+	        EndIf
+            If Tp1corr3 = 11
+                &RelRefin = Tp1nro1 
+            EndIf
+            */
+            If Tp1corr3 = 15
+                &RelCV = Tp1nro1 
+            EndIf
+            If Tp1corr3 = 20
+                &Numerador = Tp1nro1 
+            EndIf
+            If Tp1corr3 = 30
+                &ModCanT = Tp1nro1
+                &TrnCanT = Tp1nro2
+            EndIf
+            
+            If Tp1corr3 = 70
+                If Trim(Tp1desc) = ''
+                    &FchMigraFase3 = NullValue(&FchMigraFase3)
+                Else
+                    &FchMigraFase3 = CtoD(Trim(Tp1desc))            //Fecha de Migración Fase 3.
+                EndIf
+            EndIf
+            
+            If Tp1corr3 = 999
+                &debug = 'S'
+            EndIf
+    EndFor
+    
+    If &FchMigraFase3 = NullValue(&FchMigraFase3)
+        &FchMigraFase3 = YMDtoD(2019,07,15)
+    EndIf
+    
+    &filler(999) = &debug
+    
+    If &debug = 'S'
+        &DbgTxt = 'JBRA429 Fecha Migra F3 ' + DtoC(&FchMigraFase3)
+        Do 'Dbg'
+        &DbgTxt = 'JBRA429 RELCV ' + Str(&RelCV) + ' RelRenov ' + Str(&RelRenov)
+        Do 'Dbg'
+    EndIf
+   
+   &Tp1cod1  = 14050 //Reservar
+   &Tp1corr1 = 30
+   &Tp1corr2 = 1
+   &Tp1corr3 = 1
+   For Each // Fst198: [FACHADA]
+	   Where Tp1cod   = &Pgcod
+	   Where Tp1cod1  = &Tp1cod1
+	   Where Tp1corr1 = &Tp1corr1
+       Where Tp1corr2 = &Tp1corr2
+       Where Tp1corr3 = &Tp1corr3
+            &Mod = Tp1nro1     
+            &Trn = Tp1nro2
+   EndFor
+   
+   //--- Ojo: 14050, Corr1=30, Corr2=1, Corr3=2 ya está usado.
+   //--- Ojo: 14050, Corr1=30, Corr2=1, Corr3=3 ya está usado.
+   
+   &Tp1cod1  = 14050 
+   &Tp1corr1 = 5
+   For Each // Fst198: [FACHADA]
+	   Where Tp1cod = &Pgcod
+	   Where Tp1cod1 = &Tp1cod1
+	   Where Tp1corr1 = &Tp1corr1
+            &TopeTrn = &TopeTrn + 1    
+            &VecModPagoCR(&TopeTrn) = Tp1corr2
+            &VecTrnPagoCR(&TopeTrn) = Tp1corr3
+   EndFor
+   
+   
+   //Transacciones de renovacion
+   &Tp1corr1 = 6
+   For Each // Fst198: [FACHADA]
+	   Where Tp1cod = &Pgcod
+	   Where Tp1cod1 = &Tp1cod1
+	   Where Tp1corr1 = &Tp1corr1
+            &TopeTrnANU = &TopeTrnANU + 1    
+            &VecModPagoANU(&TopeTrnANU) = Tp1corr2
+            &VecTrnPagoANU(&TopeTrnANU) = Tp1corr3
+   EndFor
+   
+   &Tp1cod1  = 14050 //Reservar
+   &Tp1corr1 = 40
+   &Tp1corr2 = 1
+   For Each // Fst198: [FACHADA]
+	   Where Tp1cod = &Pgcod
+	   Where Tp1cod1 = &Tp1cod1
+	   Where Tp1corr1 = &Tp1corr1
+            &TopeCodRel = &TopeCodRel + 1    
+            &VecCodRelRefi(&TopeCodRel) = Tp1nro1   
+   EndFor
+   
+     // Se obtiene el código del motivo de baja por fallecimiento
+    &aMotivoFallecido = 1
+    &Tp1cod1 = 14411
+    For Each    // FST198-01: Guías especiales de proceso
+        Where Tp1cod = &Pgcod
+        Where Tp1cod1 = &Tp1cod1
+        Where Tp1corr1 = 1
+        Where Tp1corr2 = 1
+        Where Tp1corr3 = 4
+    
+        &aMotivoFallecido = Tp1nro1
+    EndFor  // FST198     
+   
+EndSub // 'Inicio'
+
+//***********************************************************************//
+
+Sub 'Estado Prestamo'
+    
+    
+    If &debug = 'S'
+        &DbgTxt = 'JBRA429 Pgcod/Suc/Mod ' + Str(&Pgcod) + '/'+ Str(&Scsuc) + '/' + Str(&Scmod)
+        Do 'Dbg'
+        &DbgTxt = 'JBRA429 mda/pap/cta ' + Str(&Scmda) + '/'+ Str(&Scpap) + '/' + Str(&Sccta)
+        Do 'Dbg'
+        &DbgTxt = 'JBRA429 Oper/Sbop/Tope ' + Str(&Scoper) + '/'+ Str(&Scsbop) + '/' + Str(&Sctope)
+        Do 'Dbg'
+    EndIf
+    
+    &FechaPrimerPago = NullValue(&FechaPrimerPago)
+    For Each Pgcod, Ppmod, Ppsuc, Ppmda, Pppap, Ppcta, Ppoper, Ppsbop, Pptope, Ppfpag, Pptipo // Fsd601: Fsd601 - Op. a Plazo
+		Where Pgcod  = &Pgcod
+		Where Ppmod  = &scmod    
+		Where Ppsuc  = &scsuc
+		Where Ppmda  = &scmda
+		Where Pppap  = &Scpap
+		Where Ppcta  = &sccta
+		Where Ppoper = &scoper
+		Where Ppsbop = &scsbop
+		Where Pptope = &sctope
+            If D601co = 'S'
+                &FechaPrimerPago = Ppfpag
+                Exit
+            EndIf
+	EndFor       
+        
+    If &debug = 'S'
+         &DbgTxt = 'JBRA429 FechaPrimerPago ' + DtoC(&FechaPrimerPago)
+         Do 'Dbg'
+    EndIf
+            
+        
+    &EstadoBaj = 2
+    For Each // Fsd011: [FACHADA]
+		Where Pgcod  = &Pgcod
+		Where Scsuc  = &Scsuc
+		Where Scmod  = &Scmod
+		Where Scmda  = &Scmda
+		Where Scpap  = &Scpap
+		Where Sccta  = &Sccta
+		Where Scoper = &Scoper
+		Where Scsbop = &Scsbop
+		Where Sctope = &Sctope
+        
+		    If Scstat <> 99 And Scsdo <> 0
+		        &EstadoBaj = 1    
+            EndIf
+	EndFor
+    
+    
+    
+    
+    If &ESTADOBaj = 2
+        
+        &FechaCancelacion = NullValue(&FechaCancelacion)
+        For Each // Fsd010: Fsd010 - Operaciones
+			Where Pgcod = &Pgcod
+			Where Aomod = &scmod
+			Where Aosuc = &scsuc
+			Where Aomda = &Scmda
+			Where Aopap = &Scpap
+			Where Aocta = &Sccta
+			Where Aooper = &Scoper
+			Where Aosbop = &scsbop
+			Where Aotope = &sctope
+            
+                If Aofe99 > Aofvto
+                    &FechaCancelacion = Aofvto
+                Else
+                    &FechaCancelacion = Aofe99
+                EndIf
+		EndFor
+        
+        
+        
+       &FlagRen = 'N'
+       For Each   //FSR011
+          Where R2cod  = &Pgcod
+          Where R2mod  = &Scmod
+          Where R2suc  = &Scsuc
+          Where R2mda  = &Scmda
+          Where R2pap  = &scpap
+          Where R2cta  = &Sccta
+          Where R2oper = &Scoper
+          Where R2sbop = &Scsbop
+          Where R2tope = &Sctope
+          Where R011co = 'S'
+            Defined By R011co
+            
+              &P = 1  
+              &RelOk = 'N'
+              Do While  &P <= &TopeCodRel And &RelOk = 'N'
+                  If Relcod = &VecCodRelRefi(&P)
+                      &RelOk = 'S'
+                  EndIf
+                  &P = &P + 1
+              EndDo
+            
+              If &RelOK = 'S'
+                 
+                &FlagRen = 'S'  
+                If &debug = 'S'
+                    &DbgTxt = 'JBRA429 Relacion Ren ' + Str(Relcod) + '/Oper '+ Str(R1oper)
+                    Do 'Dbg'
+                EndIf
+                  
+                  &ESTADOBaj = 3 
+                  For Each // Fsd010: [FACHADA]
+					  Where Pgcod  = R1cod
+					  Where Aomod  = R1mod
+					  Where Aosuc  = R1suc
+					  Where Aomda  = R1mda
+					  Where Aopap  = R1pap
+					  Where Aocta  = R1cta
+					  Where Aooper = R1oper
+					  Where Aosbop = R1sbop
+					  Where Aotope = R1tope
+                        &FECHAValRen = Aofval
+				  EndFor
+              EndIf
+       EndFor
+       
+       If &FlagRen <> 'S' //busco si fue una cancelacion anticipada.
+           For Each // Fsd010: [FACHADA]
+			   Where Pgcod = &Pgcod
+			   Where Aomod = &Scmod
+			   Where Aosuc = &Scsuc
+			   Where Aomda = &Scmda
+			   Where Aopap = &scpap
+			   Where Aocta = &Sccta
+			   Where Aooper = &Scoper
+			   Where Aosbop = &Scsbop
+			   Where Aotope = &Sctope
+                If Aostat = 99 And Aofe99 < Aofvto
+                        //Busco pagos contabilizados con trn de transaccion total, para asegurar que fue una cancelacion total echa por el cliente y no por la EA
+                        For Each Pgcod, Ppmod, Ppsuc, Ppmda, Pppap, Ppcta, Ppoper, Ppsbop, Pptope, Ppfpag, Pptipo, Pp1nump // Fsd602: [FACHADA]
+                            Where Pgcod = &Pgcod
+                            Where Ppmod = &Scmod
+                            Where Ppsuc = &Scsuc
+                            Where Ppmda = &Scmda
+                            Where Pppap = &scpap
+                            Where Ppcta = &Sccta
+                            Where Ppoper = &Scoper
+                            Where Ppsbop = &Scsbop
+                            Where Pptope = &Sctope
+                                If D602co = 'S'
+                                    If(D602mo = &ModCanT And D602tr = &TrnCanT)
+                                        &ESTADOBaj = 4
+                                        Exit
+                                    EndIf
+                                    If Ppfpag > Aofe99 And D602mo = 0 And D602tr = 0 // Operaciones canceladas anticipadamente , migradas.
+                                        &ESTADOBaj = 4
+                                        Exit
+                                    EndIf
+                                EndIf    
+                        EndFor
+                        If &ESTADOBaj = 4
+                            &FECHAValRen = Aofe99
+                        EndIf
+                Else
+                    If Aostat = 99 And Aofe99 >= Aofvto // Controlo que no tenga cuota en vuelo, si tiene lo considero como cancelacion anticipada.
+                            For Each // Fsr011: [FACHADA]
+                                Where R1cod  = &Pgcod
+                                Where R1mod  = &Scmod
+                                Where R1suc  = &Scsuc
+                                Where R1mda  = &Scmda
+                                Where R1pap  = &Scpap
+                                Where R1cta  = &Sccta
+                                Where R1oper = &Scoper
+                                Where R1sbop = &Scsbop
+                                Where R1tope = &Sctope
+                                Where Relcod = &RelCV
+                                    If R011co = 'S'
+                                        &ESTADOBaj = 4
+                                        &FECHAValRen = Aofvto
+                                    EndIf
+                            EndFor
+                    EndIf
+                EndIf
+		   EndFor
+       EndIf
+    EndIf
+    
+    &FechaUltimoPresupuesto =  NullValue(&FechaUltimoPresupuesto)
+    If &ESTADOBaj = 3 Or &ESTADOBaj = 2 Or &ESTADOBaj = 4 //DPD 97157 agrega "Or &ESTADOBaj = 4"
+        
+        If &ESTADOBaj = 2
+            &Faux = &FECHACancelacion
+        Else 
+            //&Faux = &FechaUltimoPresupuesto
+            &Faux = &FECHAValRen
+        EndIf
+        
+        For Each Pgcod, Ppmod, Ppsuc, Ppmda, Pppap, Ppcta, Ppoper, Ppsbop, Pptope, Ppfpag, Pptipo // Fsd601: Fsd601 - Op. a Plazo
+			Where Pgcod  = &Pgcod
+			Where Ppmod  = &scmod    
+			Where Ppsuc  = &scsuc
+			Where Ppmda  = &scmda
+			Where Pppap  = &Scpap
+			Where Ppcta  = &sccta
+			Where Ppoper = &scoper
+			Where Ppsbop = &scsbop
+			Where Pptope = &sctope
+			Where Ppfpag >= &Faux
+                If D601co = 'S'
+                    &FechaUltimoPresupuesto = Ppfpag
+                    Exit
+                EndIf
+		EndFor        
+    EndIf
+
+    
+EndSub // 'Estado Prestamo'
+
+//*****************************************************************************************//
+
+Sub 'Prestamo Vigente'
+    
+    
+    &FlagPrimCuota = 'S'
+    &Prosesar = 'S'
+    &TopeAsientos = 0
+    
+    For Each Pgcod, Ppmod, Ppsuc, Ppmda, Pppap, Ppcta, Ppoper, Ppsbop, Pptope, Ppfpag, Pptipo, Pp1nump// Fsd602: [FACHADA]
+		Where Pgcod  = &Pgcod
+		Where Ppmod  = &Scmod
+		Where Ppsuc  = &Scsuc
+		Where Ppmda  = &Scmda
+		Where Pppap  = &Scpap
+		Where Ppcta  = &Sccta
+		Where Ppoper = &Scoper
+		Where Ppsbop = &Scsbop
+		Where Pptope = &Sctope
+            If D602co = 'S' And Ppfpag >= &FECHABaja
+                
+                &Cargar = 'S'  
+                &D602Su = D602su
+                &D602Mo = D602mo
+                &D602Tr = D602tr
+                &D602Re = D602re
+                &D602Fc = D602fc
+                
+                &K = 1 
+                Do While &K <= &TopeAsientos
+                    If &VecMod(&K) = D602mo And &VecTrn(&K) = D602tr And &VecNrel(&K) = D602re And &VecFc(&K) = D602fc
+                        &Cargar = 'N'
+                    EndIf
+                    &K = &K + 1 
+                EndDo
+                
+              
+                If &Cargar = 'S'
+                    &TopeAsientos = &TopeAsientos + 1       
+                    &VecSuc(&TopeAsientos) = D602su
+                    &VecMod(&TopeAsientos) = D602mo
+                    &VecTrn(&TopeAsientos) = D602tr
+                    &VecNrel(&TopeAsientos)= D602re
+                    &VecFC(&TopeAsientos)  = D602fc
+                    &VecMnCod(&TopeAsientos)  = 999
+                EndIf
+                
+                If &debug = 'S'
+                    &DbgTxt = 'JBRA429 I ' + Str(D602mo) +'/'+  Str(D602tr) + '/' + Str(D602re) + '/' + DtoC(D602fc)
+                    Do 'Dbg'
+                    &DbgTxt = 'JJBRA429 II cargar ' + &Cargar
+                    Do 'Dbg'
+                EndIf                
+            EndIf
+	EndFor 
+    
+    Do 'Controlo Movimientos'
+    
+    If &debug = 'S'
+        &DbgTxt = 'JJBRA429 II Procesar ' + &Prosesar
+        Do 'Dbg'
+        &DbgTxt = 'JJBRA429 II TopeAsientos ' + Str(&TopeAsientos)
+        Do 'Dbg'
+        &DbgTxt = 'JJBRA429 II YaEjecuto ' + &YaEjecuto
+        Do 'Dbg'
+    EndIf
+    
+    If &TopeAsientos =  0 And &YaEjecuto = 'N' // Si no existen pagos a devolver
+         &JB420Stat = 10
+    Else
+        If &Prosesar = 'S' 
+            &ErrorAnu = 'N'
+            Do 'Extornar movimientos'
+            Do 'Grabar Log Extorno'
+            If &ErrorAnu = 'S'
+                If &FlagExtorno = 'N'
+                    &JB420Stat = 81  // Con error, sin contabilizar nada.
+                Else
+                    &JB420Stat = 82 // Con error, con contabilizacion
+                EndIf
+            Else
+                &MnCodAux = 0
+                Call(PJBRA426,&Pgcod,&JB420ID,&JB421Corr,&EmpCod,&Scmda,&MncodAux,&filler())
+                If &MnCodAux <> 0
+                    &JB420Stat = 84 // Error en la ejecucion de la transaccion de devolucion.
+                Else
+                    &JB420Stat = 10 // Completada.
+                EndIf
+            EndIf
+        Else
+            &JB420Stat = 80 // Pagos fuera de las trn de con RETENCION (Ej Periodo ventana de cobro.)
+        EndIf
+    EndIf
+    
+    
+    If &debug = 'S'
+        &DbgTxt = 'JJBRA429 JB420Stat ' + Str(&JB420Stat)
+        Do 'Dbg'
+    EndIf
+    
+EndSub // 'Prestamo Vigente'
+
+Sub 'Extornar movimientos'
+    
+    &Cont =  &TopeAsientos
+    &FlagExtorno = 'N' // Marca para ver si se contabilizo un extorno. Si ya confirme uno, se da de baja la retencion y se deja estado 80 // baja incompleta
+    Do While &Cont > 0
+        
+        &ModAnu = &VecMod(&cont)
+        &TrnAnu = &VecTrn(&cont)
+        &RelAnu = &VecNrel(&cont)
+        &FecAnu = &VecFC(&cont)
+        &SucAnu = &VecSuc(&cont)
+    
+        Do 'Extorno'        
+        
+        If &ErrorAnu = 'S'
+            &cont = -1    
+        EndIf
+        
+        &cont = &cont - 1
+    EndDo
+    
+EndSub // 'Extornar movimientos'
+
+Sub 'Extorno'
+    
+    &Txcod = 514
+    &Txreng = 1
+    
+    New // Fsx015: [FACHADA]
+		Pgcod  = &Pgcod
+		Hcmod  = &ModAnu
+		Hsucor = &SucAnu
+		Htran  = &TrnAnu
+		Hnrel  = &RelAnu
+		Hfcon  = &FecAnu
+		Txcod  = &Txcod
+		Txreng = &Txreng
+		Txtext = 'Anulacion por baja de retencion'
+	EndNew
+
+    &ErrorAnu = 'N'
+    &PgmNom = 'PX150010'  // este es el programa que extorna las cuotas
+    Call(&PgmNom, &Pgcod,&ModAnu,&TrnAnu,&RelAnu,&FecAnu,&Pgfape,&SucAnu) 
+    
+    If &debug = 'S'
+        &DbgTxt = ('Extorno ' + Str(&ModAnu) + '/' + Str(&TrnAnu) + '/' + Str(&RelAnu) + '/' + Str(&SucAnu))
+        Do 'Dbg'
+    EndIf
+    
+    If &SucAnu <> 0
+        &ErrorAnu = 'S'
+        &VecMnCod(&cont) = &SucAnu
+    Else
+        &FlagExtorno = 'S'
+        &VecMnCod(&cont) = 0
+    EndIf
+    
+EndSub // 'Extorno'
+
+
+Sub 'Controlo Movimientos'
+    
+    &Prosesar = 'S'
+    &K = 1
+    Do While &K <= &TopeAsientos 
+        
+        &J = 1
+        &OK = 'N'
+        Do While &J <= &TopeTrnANU
+                
+            If &VecMod(&K) = &VecModPagoANU(&J) And &VecTrn(&K) = &VecTrnPagoANU(&J)
+                &OK = 'S'
+                &J = &TopeTrnANU + 1 //Exit
+            EndIf
+            &J = &J + 1   
+        EndDo
+        
+        If &Ok <> 'S'
+            &Prosesar = 'N'
+            &K = &TopeAsientos  + 1 //Exit
+        EndIf
+        &K = &K  + 1 
+    EndDo    
+
+EndSub // 'Controlo Movimientos'
+
+Sub 'Prestamo Renovado'
+    
+   Do 'Fecha Hasta'
+     
+   If &debug = 'S'
+        &DbgTxt = 'JBRA429 Fecha Desde ' + DtoC(&fechaDESDE)
+        Do 'Dbg'
+        &DbgTxt = 'JBRA429 Fecha Hasta ' + DtoC(&fechaHASTA)
+        Do 'Dbg'
+    EndIf
+    
+    
+    &EjecutoTRN = 'N'
+    For Each Pgcod, Ppmod, Ppsuc, Ppmda, Pppap, Ppcta, Ppoper, Ppsbop, Pptope, Ppfpag, Pptipo// Fsd601: [FACHADA]
+		Where Pgcod  = &Pgcod
+		Where Ppmod  = &Scmod
+		Where Ppsuc  = &Scsuc
+		Where Ppmda  = &Scmda
+		Where Pppap  = &Scpap
+		Where Ppcta  = &Sccta
+		Where Ppoper = &Scoper
+		Where Ppsbop = &Scsbop
+		Where Pptope = &Sctope
+		Where Ppfpag >= &fechaDESDE  
+        Where Ppfpag <= &fechaHASTA
+            If D601co = 'S'
+                //Busco plazos fijos generados desde la fecha de baja , si el plazo fijo tiene pagos, los anulo.
+                &Ppfpag = Ppfpag
+                &PPcap  = Ppcap
+                &PPint  = Ppint
+                &Ppiint = Ppiint
+                
+                
+                //Controlo que todas las cuotas a bajar se hayan pagado con trasnacciones de renovacion o cancelacion anticipada.
+                For Each Pgcod, Ppmod, Ppsuc, Ppmda, Pppap, Ppcta, Ppoper, Ppsbop, Pptope, Ppfpag, Pptipo, Pp1nump // Fsd602: [FACHADA]
+					Where Pptipo = Pptipo
+					Where Ppfpag = &Ppfpag
+                    Defined By D602co      
+                        If D602co = 'S'
+                            &J = 1    
+                            &OK = 'N'
+                            Do While &J <= &TopeTrn
+                                If D602mo = &VecModPagoCR(&J) And D602tr = &VecTrnPagoCR(&J)
+                                    &OK = 'S'
+                                    &J = &TopeTrn + 1   //Exit
+                                EndIf
+                                &J = &J + 1   
+                            EndDo
+                        endif
+				EndFor
+                
+                If &OK = 'S'    
+                    If &debug = 'S'
+                        &DbgTxt = 'PJBRA429  Busco PF para ' + DtoC(&Ppfpag)
+                        Do 'Dbg'
+                        &DbgTxt = 'PJBRA429  K/I/II ' + Str(&Ppcap,18,2) + '/' +  Str(&PPint,18,2) + '/'  + Str(&Ppiint,18,2)
+                        Do 'Dbg'
+                    EndIf
+                    Do 'Plazo fijo por cuota en vuelo'
+                    // Si encuentro una cuota sin pf para el periodo de baja, ejecuto trn para generar plazos fijos.
+                    If &ExistePF = 'N' 
+                        &EjecutoTRN = 'S' 
+                    EndIf
+                Else
+                    &EjecutoTRN = 'X'  //Existen pagos a bajar echos con transacciones q no se parmetrizaron como con retencion.
+                EndIf
+            EndIf         
+	EndFor
+    
+    
+    If &ErrorAnu = 'S'
+        &EjecutoTRN = 'N' 
+    EndIf
+    
+    If &debug = 'S'
+        &DbgTxt = 'PJBRA429  EjecutoTRN ' + (&EjecutoTRN)
+        Do 'Dbg'
+    EndIf
+        
+    If &EjecutoTRN = 'S'
+       
+        Do 'Genero Itnrel'
+        
+        If &debug = 'S'
+            &DbgTxt = 'PJBRA429  Nrel ' + Str(&Nrel)
+            Do 'Dbg'
+        EndIf
+        
+        if &Nrel > 0
+            Do 'Cuenta Empresa asociada'    
+            Do 'Grabo FSD603'
+
+            &Pmncod  = &Ubsuc
+            &PgmNom = 'PW103'
+            Call(&PgmNom,&pgcod,&Mod,&Trn,&Nrel,&Pgfape,&Pmncod) 
+        else
+             &PMnCod = 77077 
+        endif
+            
+       &JB421Corr = &JB421Corr + 1  
+       New // JBRA421: Anulacion de asientos por Baja
+		   JB420ID    = &JB420ID
+		   JB421Corr  = &JB421Corr 
+		   JB421Mod   = &Mod
+		   JB421Trn   = &Trn
+		   JB421Rel   = &Nrel
+		   JB421FC    = &Pgfape
+		   JB421Suc   = &Ubsuc
+		   JB421Mncod = &Pmncod
+		   JB421Tipo  = 2
+	   EndNew 
+       
+        If &PMnCod = 0 
+            
+            Call(PJBRA426,&Pgcod,&JB420ID,&JB421Corr,&EmpCod,&Scmda,&MncodAux,&filler()) 
+            If &MnCodAux = 0
+                &JB420Stat = 10
+            Else
+                &JB420Stat = 84
+            EndIf
+        Else
+            &JB420Stat = 83 // Error en transaccion de alta de plazo fijo.
+        EndIf 
+    Else
+    
+        If &EjecutoTRN = 'X'
+            &JB420Stat = 80
+        Else
+        
+            If  &TopeAsientos = 0// Si no se encontro nada a contabilizar y no hay errores en la anulacion de pagos de los plazos fijos, competo.
+                &JB420Stat = 10
+            Else
+                If &EjecutoTRN = 'N' And &ErrorAnu <> 'S' 
+                    Call(PJBRA426,&Pgcod,&JB420ID,&JB421Corr,&EmpCod,&Scmda,&MncodAux,&filler()) 
+                    If &MnCodAux = 0
+                        &JB420Stat = 10
+                    Else
+                        &JB420Stat = 84
+                    EndIf     
+                EndIf
+            EndIf
+        EndIf
+    EndIf
+    
+EndSub // 'Prestamo Renovado'
+
+Sub 'Plazo fijo por cuota en vuelo'
+    
+    &TopeAsientos = 0
+    &ExistePF = 'N'
+    For Each // Fsr011: [FACHADA]
+		Where R1cod  = &Pgcod
+		Where R1mod  = &Scmod
+		Where R1suc  = &Scsuc
+		Where R1mda  = &Scmda
+		Where R1pap  = &Scpap
+		Where R1cta  = &Sccta
+		Where R1oper = &Scoper
+		Where R1sbop = &Scsbop
+		Where R1tope = &Sctope
+		Where Relcod = &RelCV
+            If R011co = 'S'
+                
+                //Busco plazo fijo generado para la cuota que estoy procesando
+                For Each Pgcod, Ppmod, Ppsuc, Ppmda, Pppap, Ppcta, Ppoper, Ppsbop, Pptope, Ppfpag, Pptipo // Fsd601: [FACHADA]
+					Where Pgcod  = &Pgcod
+					Where Ppmod  = R2mod
+					Where Ppsuc  = R2suc
+					Where Ppmda  = R2mda
+					Where Pppap  = R2pap
+					Where Ppcta  = R2cta
+					Where Ppoper = R2oper
+					Where Ppsbop = R2sbop
+					Where Pptope = R2tope
+					Where Ppfpag = &Ppfpag
+                        If D601co = 'S'
+                            //Controlo que el plazo fijo sea por el total de la cuota
+                            If &Ppcap = Ppcap And &Ppint = Ppint And &Ppiint = Ppiint
+                                &ExistePF = 'S'     
+                            EndIf
+                            
+                            If &debug = 'S'
+                                &DbgTxt = 'PJBRA429 PLAZO Fijo SBOP ' + Str(Ppsbop) + '/' + DtoC(&Ppfpag) + '/' + &ExistePF
+                                Do 'Dbg'
+                                &DbgTxt = 'PJBRA429  K/I/II ' + Str(Ppcap,18,2) + '/' +  Str(Ppint,18,2) + '/'  + Str(Ppiint,18,2)
+                                Do 'Dbg'
+                            EndIf
+                            
+                            &FechaUltimoPF = &Ppfpag 
+                            For Each Pgcod, Ppmod, Ppsuc, Ppmda, Pppap, Ppcta, Ppoper, Ppsbop, Pptope, Ppfpag, Pptipo, Pp1nump // Fsd602: [FACHADA]
+                                Where Ppfpag = &Ppfpag
+								Where Pptipo = Pptipo
+                                Defined By D602co
+                                If D602co = 'S'
+                                    
+                                    &Cargar = 'S'
+                                    &K = 1 
+                                    Do While &K <= &TopeAsientos
+                                        If &VecMod(&K) = D602mo And &VecTrn(&K) = D602tr And &VecNrel(&K) = D602re And &VecFc(&K) = D602fc
+                                            &Cargar = 'N'
+                                        EndIf
+                                        &K = &K + 1 
+                                    EndDo
+                                    
+                                    
+                                    If &Ppfpag < &FECHABaja 
+                                        &Cargar = 'N'
+                                        If Pp1fech >= &FechaPagoDESDE
+                                            &Cargar = 'S'
+                                        EndIf 
+                                    EndIf
+                          
+                                    If &debug = 'S'
+                                        &DbgTxt = 'PJBRA429 Relacion ' + Str(D602re) + ' / ' + &Cargar
+                                         Do 'Dbg'
+                                    EndIf
+                                    
+                                    
+                                    If &Cargar = 'S'
+                                        &TopeAsientos = &TopeAsientos + 1       
+                                        &VecSuc(&TopeAsientos)   = D602su
+                                        &VecMod(&TopeAsientos)   = D602mo
+                                        &VecTrn(&TopeAsientos)   = D602tr
+                                        &VecNrel(&TopeAsientos)  = D602re
+                                        &VecFC(&TopeAsientos)    = D602fc
+                                        &VecMnCod(&TopeAsientos) = 999
+                                    EndIf
+                                EndIf
+							EndFor //FSD602
+                            Exit
+                        EndIf
+				EndFor //FSD601
+                
+                If &ExistePF = 'S'
+                    Exit
+                EndIf
+            EndIf
+	EndFor // FSR011
+    
+    If &debug = 'S'
+        &DbgTxt = 'PJBRA429 TopeAsientos ' + Str(&TopeAsientos)
+        Do 'Dbg'
+    EndIf
+    
+    If &TopeAsientos > 0 // Si tiene movimientos anulo.
+        
+        Do 'Controlo Movimientos'
+        
+        If &Prosesar = 'S'
+            Do 'Extornar movimientos'
+            If &ErrorAnu = 'S'
+                If &FlagExtorno = 'N'
+                   &JB420Stat = 81
+                Else
+                   &JB420Stat = 82
+                EndIf 
+            EndIf
+            Do 'Grabar Log Extorno'
+        Else
+            &JB420Stat = 80
+            &EjecutoTRN = 'N'
+            &ErrorAnu = 'S'
+        EndIf
+    EndIf
+    
+    
+    If &debug = 'S'
+        &DbgTxt = 'PJBRA429 ErrorAnu/EjecutoTRN ' + &ErrorAnu + '/' + &EjecutoTRN
+        Do 'Dbg'
+    EndIf
+    
+    
+EndSub // 'Plazo fijo por cuota en vuelo'
+
+Sub 'Genero Itnrel'
+    &PgmNom = 'PRg0010'
+    Call(&PgmNom , &PgCod, &Ubsuc, &Mod, &Trn,&Nrel)    
+EndSub // 'Genero Itnrel'
+
+Sub 'Grabo FSD603'
+    New // FSD603
+          Pgcod  = &Pgcod    
+          Itsuc  = &Ubsuc
+          Itmod  = &Mod
+          Ittran = &Trn
+          Itnrel = &NRel
+          PfdId  = 0
+          PfdFva1= &fechaDESDE     // fecha que nos manda la empresa en la que se dio la baja
+          PfdFva2= &FECHAValRen    // fecha en que se renovó el préstamo
+          PfdFva3= &FECHAUltimoPF  //Fecha vencimiento del ultimo plazo fijo encontrado.
+          PfdFva4= &FECHABaja
+          PfdPer5= &Pp1nump
+          PfdCt01= &Sccta
+          PfdTo01= &Sctope
+          PfdSo01= &Scsbop
+          PfdMo01= &Scmda
+          PfdPa01= &scpap
+          PfdSu01= &Scsuc
+          PfdPlz5= &Scmod
+          PfdIm01= 1
+          PfdOp01= &ScOper
+          PfdCt02= &ScctaEA
+          PfdTo02= &SctopeEA
+          PfdSo02= &ScsbopEA
+          PfdMo02= &ScmdaEA
+          PfdPa02= &ScpapEA
+          PfdSu02= &ScsucEA
+          PfdOp04 = &EmpCod
+    EndNew
+EndSub // 'Grabo FSD603'
+
+Sub 'Cuenta Empresa asociada'
+    
+    For Each // HAB003: Instrucciones de Déb. x Empresa
+		Where HAB001Cod = &EmpCod
+		    If HAB003Mon = &Scmda
+                &ScctaEa  = HAB003Cta
+                &SctopeEA = HAB003Top
+                &ScsbopEA = HAB003Sbo
+                &ScmdaEa  = HAB003Mon
+                &ScpapEA  = 0
+                &ScsucEa  = HAB003Suc
+                &ScmodEa  = HAB003Mod
+            EndIf	
+	EndFor
+    
+EndSub // 'Cuenta Empresa asociada'
+
+Sub 'Grabar Log Extorno'
+    
+    &K = 1
+    Do While &K <= &TopeAsientos
+        &JB421Corr = &JB421Corr + 1
+        New // JBRA421: Anulacion de asientos por Baja
+			JB420ID    = &JB420ID
+			JB421Corr  = &JB421Corr
+			JB421Mod   = &VecMod(&K)
+			JB421Trn   = &VecTrn(&K)
+			JB421Rel   = &VecNrel(&K)
+			JB421FC    = &VecFC(&K)
+			JB421Suc   = &VecSuc(&K)
+			JB421Mncod = &VecMnCod(&K)
+            JB421Tipo  = 1
+		EndNew
+        &K = &K + 1 
+    EndDo
+    
+    
+EndSub // 'Grabar Log Extorno'
+
+Sub 'JBRA420'
+    
+    &NOMPROG = 'APr005'
+   	Call(&NOMPROG, &Pgcod, &Pgsuc, &Numerador, &Ser, &JB420ID)
+    
+    New // JBRA420: Bajas de retencion
+		JB420ID     = &JB420ID
+		JB420Pgcod  = &Pgcod
+		JB420Mod    = &Scmod
+		JB420Suc    = &Scsuc
+		JB420Mda    = &Scmda
+		JB420Pap    = &Scpap
+		JB420Cta    = &Sccta
+		JB420Oper   = &Scoper
+		JB420Scop   = &Scsbop
+		JB420Tope   = &Sctope
+		JB420EACod  = &EmpCod
+		JB420Leg    = &NumLeg
+		JB420FBaj   = &FECHABaja
+		JB420FCon   = &Pgfape
+        JB420FDef   = &FecFalle
+		JB420CodBa  = &MotBaja
+		JB420TipoB  = &ESTADOBaj
+        JB420UltEj = 'S'
+	EndNew
+    
+EndSub // 'JBRA420'
+
+Sub 'Baja Relacion'
+    
+    &FlagBajaRet = 'N'
+    For Each // FSR311: FSR311 con historia
+		Where R311cod = &Pgcod
+		Where R311mod = &Scmod
+		Where R311suc = &Scsuc
+		Where R311mda = &Scmda
+		Where R311pap = &Scpap
+		Where R311cta = &Sccta
+		Where R311oper = &Scoper
+		Where R311sbop = &Scsbop
+		Where R311tope = &Sctope
+            If R311co = 'S'
+                
+                &Pepais = R311Aux3
+                &Petdoc = R311Aux4
+                &Pendoc = Trim(R311Aux5)
+                
+                R311FBaj = &FECHABaja
+                R311MotBaj = &MotBaja
+                if &FECHABaja <= &Pgfape
+                    &FlagBajaRet = 'S'
+                    R311Stat = 0
+                endif
+
+            EndIf
+	EndFor
+    
+   For Each  // HAB005
+        Where HAB001Cod = &EmpCod 
+        Where HAB005id = &NumLeg 
+        Defined By HAB005Dsc
+            HAB005FBaj = &FECHABaja
+    EndFor  
+
+If &FlagBajaRet = 'S'
+    //Actualizo cuotas en vuelo
+    For Each Pgcod, Ppmod, Ppsuc, Ppmda, Pppap, Ppcta, Ppoper, Ppsbop, Pptope, Ppfpag, Pptipo // Fsd601: Fsd601 - Op. a Plazo
+		Where Pgcod  = &Pgcod
+		Where Ppmod  = &Scmod
+		Where Ppsuc  = &Scsuc
+		Where Ppmda  = &Scmda
+		Where Pppap  = &Scpap
+		Where Ppcta  = &Sccta
+		Where Ppoper = &Scoper
+		Where Ppsbop = &Scsbop
+		Where Pptope = &Sctope
+        Defined By D601co
+		    If D601co = 'S' And Ppstat = 'V'
+		        Ppstat = ' '
+		    EndIf
+	EndFor
+endif
+
+EndSub // 'Baja Relacion'
+
+Sub 'Controles'
+    
+    &CodError = 0
+    &ProcesoBaja = 'S'    
+    If &FECHABaja > &FECHAUltimoPresupuesto And (&ESTADOBaj = 2 Or &ESTADOBaj = 3 Or &ESTADOBaj = 4) //En  prestamos cancelados o renovados no se admite baja con fecha futura.
+                                                                                                     // DPD 97157 agrega "Or &ESTADOBaj = 4"
+        &CodError = 1
+        &ProcesoBaja = 'N'        
+    EndIf
+// dpd-96082-Mónica Iriart-12/03/20- If &FechaBaja < &FECHAPrimerPago
+     &FechaAuxiliar = Dtoc(&FechaBaja)
+     &aaAux = SubStr(&FechaAuxiliar, 7,2)
+     &mmAux = SubStr(&FechaAuxiliar, 4,2)
+     &aammBaja = Trim(&aaAux) + Trim(&mmAux)
+   // &aSADbgTxt = 'aammBaja ' + &aammBaja
+   // Do 'Debug'
+   // &aSADbgTxt = 'JBRA355 Fecha Baja ' + DtoC(&FECHABaja)
+   // Do 'Debug'
+   
+     &FechaAuxiliar = Dtoc(&FechaPrimerPago)
+     &aaAux = SubStr(&FechaAuxiliar, 7,2)
+     &mmAux = SubStr(&FechaAuxiliar, 4,2)
+     &aammPrimerPago = Trim(&aaAux) + Trim(&mmAux)
+   //  &aSADbgTxt = 'aammPrimerPago ' + &aammPrimerPago
+   // Do 'Debug'
+   // &aSADbgTxt = 'JBRA355 Fecha Primer Pago ' + DtoC(&FECHAPrimerPago)
+   // Do 'Debug'
+    //
+    if &aammBaja < &aammPrimerPago      // dpd-96082-Mónica Iriart-12/03/20- If &FechaBaja < &FECHAPrimerPago
+        &CodError = 2
+        &ProcesoBaja = 'N'        
+    EndIf
+    
+    If &ProcesoBaja = 'N'
+        Return
+    EndIf
+   
+EndSub // 'Controles'
+
+Sub 'Fecha Hasta'
+    
+    //Busco el vencimiento inmediato posterior a la fecha de renovacion.
+    //Fecha del ultimo plazo fijo generado en la renovacion (No nesesariamente se genero el pf)
+    &fechaHasta = &FECHAValRen
+    &fechaDESDE = &FECHABaja
+    &Pp1nump = 0
+    
+    // Busco el primer pago de el presupuesto de baja, para ver que en ese movimiento no se hauan pagado cuotas anteriores
+    &D602moB = 0
+    &D602suB = 0
+    &D602trB = 0
+    &D602reB = 0
+    &D602fcB = NullValue(&D602fcB)
+    For Each Pgcod, Ppmod, Ppsuc, Ppmda, Pppap, Ppcta, Ppoper, Ppsbop, Pptope, Ppfpag, Pptipo, Pp1nump // Fsd602: [FACHADA]
+		Where Pgcod  = &Pgcod
+		Where Ppmod  = &Scmod
+		Where Ppsuc  = &Scsuc
+		Where Ppmda  = &Scmda
+		Where Pppap  = &Scpap
+		Where Ppcta  = &Sccta
+		Where Ppoper = &Scoper
+		Where Ppsbop = &Scsbop
+		Where Pptope = &Sctope
+		Where Ppfpag = &FECHABaja
+        Defined By D602co
+            If D602co = 'S'
+                &D602moB = D602mo 
+                &D602suB = D602su
+                &D602trB = D602tr
+                &D602reB = D602re
+                &D602fcB = D602fc   
+                &FechaPagoDesde = Pp1fech
+                &Pp1nump        = Pp1nump
+                Exit            
+            EndIf
+	EndFor
+    
+    &F1 = 'N' 
+    &F2 = 'N' 
+    For Each Pgcod, Ppmod, Ppsuc, Ppmda, Pppap, Ppcta, Ppoper, Ppsbop, Pptope, Ppfpag, Pptipo// Fsd601: [FACHADA]
+		Where Pgcod  = &Pgcod
+		Where Ppmod  = &Scmod
+		Where Ppsuc  = &Scsuc
+		Where Ppmda  = &Scmda
+		Where Pppap  = &Scpap
+		Where Ppcta  = &Sccta
+		Where Ppoper = &Scoper
+		Where Ppsbop = &Scsbop
+		Where Pptope = &Sctope
+        
+            If D601co = 'S'
+                
+                If Ppfpag >= &fechaHasta And &F1 = 'N'
+                    &fechaHasta = Ppfpag
+                    &F1 = 'S'
+                EndIf
+                
+                If &D602moB = 0 And &D602trB = 0 And &D602reB = 0
+                    &F2 = 'S'
+                EndIf
+                
+                If Ppfpag < &FECHABaja And &F2 = 'N'
+                    For Each Pgcod, Ppmod, Ppsuc, Ppmda, Pppap, Ppcta, Ppoper, Ppsbop, Pptope, Ppfpag, Pptipo, Pp1nump // Fsd602: [FACHADA]
+                        Where Pptipo = Pptipo
+                        Where Ppfpag = Ppfpag
+                        Defined By D602co      
+                            If D602co = 'S'
+                                If D602mo = &D602moB And D602su = &D602suB And  D602tr = &D602trB  And  D602re = &D602reB And D602fc  = &D602fcB
+                                    &fechaDesde     = Ppfpag
+                                    &FechaPagoDesde = Pp1fech
+                                    &Pp1nump        = Pp1nump
+                                    &F2             = 'S'
+                                EndIf                                
+                            EndIf
+	    			EndFor
+                EndIf 
+                
+                If &F1 = 'S' And &F2 = 'S'
+                    Exit
+                EndIf
+          EndIf
+	EndFor
+    
+    
+EndSub // 'Fecha Hasta'
+
+Sub 'Copio asientos anulados'
+   
+   
+    //Siempre copio los asientos ya contabilizados de la ultima ejcucion.
+    For Each // JBRA421: Anulacion de asientos por Baja
+		Where JB420ID = &JB420IDAux
+        Defined By JB421Mncod 
+                       
+            &YaEjecuto = 'S'     
+            
+		    If JB421Mncod = 0   // contabilizado.
+		        &JB421Corr = &JB421Corr + 1
+                New // JBRA421: Anulacion de asientos por Baja
+					JB420ID    = &JB420ID
+					JB421Corr  = &JB421Corr 
+				EndNew
+		    EndIf        
+	EndFor
+
+    For Each // 
+		Where JB420ID = &JB420IDAux
+        Defined By JB420Cta
+            JB420UltEj = 'N' 
+    endfor
+
+    
+EndSub // 'Copio asientos anulados'
+]]></Source>
+          </CodeBlock>
+        </Block>
+        <Block>
+          <PrintBlockVer8>
+            <left>71</left>
+            <top>2</top>
+            <right>743</right>
+            <bottom>28</bottom>
+            <Brush>Y</Brush>
+            <ColorInfo>
+              <Foreground>Black</Foreground>
+              <Background>White</Background>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <ForeColor>-2147483642</ForeColor>
+            <BackColor>-2147483633</BackColor>
+            <Shape>Frame</Shape>
+            <OutStyle>Single</OutStyle>
+            <GSGridWidth>7</GSGridWidth>
+            <GSGridHeight>15</GSGridHeight>
+            <DataLeft>0</DataLeft>
+            <DataTop>0</DataTop>
+            <DataRight>0</DataRight>
+            <DataBottom>0</DataBottom>
+            <CommandLine>[Unreferenced]</CommandLine>
+            <PBPos>1</PBPos>
+          </PrintBlockVer8>
+        </Block>
+        <Block>
+          <CodeBlockVer8>
+            <left>71</left>
+            <top>2</top>
+            <right>743</right>
+            <bottom>28</bottom>
+            <Brush>Y</Brush>
+            <ColorInfo>
+              <Foreground>Lime</Foreground>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <ForeColor>-2147483642</ForeColor>
+            <BackColor>-2147483633</BackColor>
+            <BorderWidth>0</BorderWidth>
+            <Shape>Frame</Shape>
+            <OutStyle>Single</OutStyle>
+            <GSGridWidth>7</GSGridWidth>
+            <GSGridHeight>15</GSGridHeight>
+            <DataLeft>0</DataLeft>
+            <DataTop>0</DataTop>
+            <DataRight>0</DataRight>
+            <DataBottom>0</DataBottom>
+          </CodeBlockVer8>
+        </Block>
+        <Paper>
+          <PaperId>A4</PaperId>
+          <SizeX>11906</SizeX>
+          <SizeY>16838</SizeY>
+          <RightIndent>1811</RightIndent>
+        </Paper>
+      </Layout>
+      <Rules><![CDATA[Parm(&Pgcod,&Sccta,&Scoper,&Scmod,&Sctope,&Scmda,&Scpap,&Scsuc,&Scsbop,&FECHABaja,&MotBaja,&FecFalle,&EmpCod,&NumLeg,&JB420ID,&CodError);
+
+
+
+/*
+
+JB420Stat = 10 Completada.
+JB420Stat = 80 //Se encontraron pagos sin retencion, no se da de baja la retencion
+JB420Stat = 81 //Error en la anulacion de pagos, no se baja la retencion ya que no se anulo nada.
+JB420Stat = 82 //Error en la anulacion de pagos, se baja retencion
+JB420Stat = 83 //Error en la transaccion de alta de plzos fijos, se baja retencion
+JB420Stat = 84 //Error en la transaccion de devolucion a CV de la empresa asociada.
+
+
+JBRA421 Tipo - 1 - Extorno
+               2 - Alta trn plazo fijo  
+*/
+
+
+/*
+&CodError = 1, No se puede procesar una baja con fecha futura en un prestamo cancelado o renovado.
+*/
+]]></Rules>
+      <Conditions><![CDATA[// -- HASH:3408369804db05298098a1683efa9cf8ca0816ad;
+]]></Conditions>
+    </Procedure>
+  </GXObject>
+  <Attributes>
+    <GXAtt>
+      <Attribute>
+        <Id>13881</Id>
+        <Name>D602fc</Name>
+        <Title>D602fc</Title>
+        <Type>Date</Type>
+        <Length>8</Length>
+        <Picture>9</Picture>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>9</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>13877</Id>
+        <Name>D602mo</Name>
+        <Title>D602mo</Title>
+        <Length>5</Length>
+        <Picture>ZZZZ9</Picture>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>Y</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZ9</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>13880</Id>
+        <Name>D602re</Name>
+        <Title>D602re</Title>
+        <Length>9</Length>
+        <Picture>ZZZZZZZZ9</Picture>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>Y</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZZZZZ9</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>13878</Id>
+        <Name>D602su</Name>
+        <Title>D602su</Title>
+        <Length>5</Length>
+        <Picture>ZZZZ9</Picture>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>Y</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZ9</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>13879</Id>
+        <Name>D602tr</Name>
+        <Title>D602tr</Title>
+        <Length>5</Length>
+        <Picture>ZZZZ9</Picture>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>Y</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZ9</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>23020</Id>
+        <Name>FECHA</Name>
+        <Title>FECHA</Title>
+        <Type>Date</Type>
+        <Length>8</Length>
+        <Picture>99/99/9999</Picture>
+      </Attribute>
+      <AttInfo>
+        <Domain>Date</Domain>
+        <ControlInfoFromDomain>Y</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>99/99/9999</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>30</Id>
+        <Name>_Date</Name>
+        <Title>Date</Title>
+        <Type>Date</Type>
+        <Length>8</Length>
+        <Picture>99/99/9999</Picture>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>99/99/9999</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>7775</Id>
+        <Name>Ppfpag</Name>
+        <Title>Fecha de pago prevista</Title>
+        <Type>Date</Type>
+        <Length>8</Length>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>12669</Id>
+        <Name>Itfcon</Name>
+        <Title>Fecha de contabilización</Title>
+        <Type>Date</Type>
+        <Length>8</Length>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>18199</Id>
+        <Name>JB420ID</Name>
+        <Title>JB420 ID</Title>
+        <Length>9</Length>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>18195</Id>
+        <Name>JB420Stat</Name>
+        <Title>Estado</Title>
+        <Length>3</Length>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>18207</Id>
+        <Name>JB421Corr</Name>
+        <Title>JB421 Corr</Title>
+        <Length>9</Length>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>2521</Id>
+        <Name>MnCod</Name>
+        <Title>Código de mensaje</Title>
+        <Length>5</Length>
+        <Picture>ZZZZ9</Picture>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZ9</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>16700</Id>
+        <Name>MnIdiom</Name>
+        <Title>MnIdiom</Title>
+        <Type>Character</Type>
+        <Length>2</Length>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>3355</Id>
+        <Name>Itmod</Name>
+        <Title>Modulo</Title>
+        <Length>5</Length>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZ9</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>3356</Id>
+        <Name>Itnrel</Name>
+        <Title>Nro.relacion</Title>
+        <Length>9</Length>
+      </Attribute>
+      <AttInfo>
+        <Domain>dNrtrel</Domain>
+        <ControlInfoFromDomain>Y</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZZZZZ9</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>20</Id>
+        <Name>_dNrtrel</Name>
+        <Title>Dominio Numeradores</Title>
+        <Length>9</Length>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>146</Id>
+        <Name>Pendoc</Name>
+        <Title>Documento</Title>
+        <Type>Character</Type>
+        <Length>25</Length>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>Y</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>144</Id>
+        <Name>Pepais</Name>
+        <Title>Pais del documento</Title>
+        <Length>3</Length>
+        <Picture>ZZ9</Picture>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZ9</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>145</Id>
+        <Name>Petdoc</Name>
+        <Title>T/docum.</Title>
+        <Length>4</Length>
+        <Picture>ZZZ9</Picture>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZ9</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>51</Id>
+        <Name>Pgcod</Name>
+        <Title>Cod.</Title>
+        <Length>3</Length>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZ9</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>52</Id>
+        <Name>Pgfape</Name>
+        <Title>Fecha de apertura</Title>
+        <Type>Date</Type>
+        <Length>8</Length>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>8693</Id>
+        <Name>PgmNom</Name>
+        <Title>Programa standard</Title>
+        <Type>Character</Type>
+        <Length>10</Length>
+        <Picture>@!</Picture>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>@!</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>12750</Id>
+        <Name>Pgsuc</Name>
+        <Title>Pgsuc</Title>
+        <Length>5</Length>
+      </Attribute>
+      <AttInfo>
+        <Domain>dSucurs</Domain>
+        <ControlInfoFromDomain>Y</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZ9</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>7</Id>
+        <Name>_dSucurs</Name>
+        <Title>Dominio Sucursal</Title>
+        <Length>5</Length>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>13885</Id>
+        <Name>Pp1nump</Name>
+        <Title>Número de pago a la cuota</Title>
+        <Length>9</Length>
+        <Picture>ZZZZZZZZ9</Picture>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZZZZZ9</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>13842</Id>
+        <Name>Ppcap</Name>
+        <Title>Capital de la cuota</Title>
+        <Length>18</Length>
+        <Decimals>2</Decimals>
+        <Sign>Y</Sign>
+        <Picture>ZZZ,ZZZ,ZZZ,ZZZ,ZZ9.99</Picture>
+      </Attribute>
+      <AttInfo>
+        <Domain>Importe</Domain>
+        <ControlInfoFromDomain>Y</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZ,ZZZ,ZZZ,ZZZ,ZZ9.99</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>27</Id>
+        <Name>_Importe</Name>
+        <Title>Importe</Title>
+        <Length>18</Length>
+        <Decimals>2</Decimals>
+        <Sign>Y</Sign>
+        <Picture>ZZZ,ZZZ,ZZZ,ZZZ,ZZ9.99</Picture>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZ,ZZZ,ZZZ,ZZZ,ZZ9.99</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>13846</Id>
+        <Name>Ppiint</Name>
+        <Title>Impuesto sobre interés</Title>
+        <Length>18</Length>
+        <Decimals>2</Decimals>
+        <Sign>Y</Sign>
+        <Picture>ZZZ,ZZZ,ZZZ,ZZZ,ZZ9.99</Picture>
+      </Attribute>
+      <AttInfo>
+        <Domain>Importe</Domain>
+        <ControlInfoFromDomain>Y</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZ,ZZZ,ZZZ,ZZZ,ZZ9.99</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>13843</Id>
+        <Name>Ppint</Name>
+        <Title>Interés de la cuota</Title>
+        <Length>18</Length>
+        <Decimals>2</Decimals>
+        <Sign>Y</Sign>
+        <Picture>ZZZ,ZZZ,ZZZ,ZZZ,ZZ9.99</Picture>
+      </Attribute>
+      <AttInfo>
+        <Domain>Importe</Domain>
+        <ControlInfoFromDomain>Y</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZ,ZZZ,ZZZ,ZZZ,ZZ9.99</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>23050</Id>
+        <Name>Proces</Name>
+        <Title>Proces</Title>
+        <Type>Character</Type>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>15453</Id>
+        <Name>Relcod</Name>
+        <Title>Cod.Rel.de Operac.</Title>
+        <Length>9</Length>
+        <Picture>ZZZZZZZZ9</Picture>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZZZZZ9</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>11184</Id>
+        <Name>Sccta</Name>
+        <Title>Cuenta</Title>
+        <Length>9</Length>
+        <Picture>ZZZZZZZZ9</Picture>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZZZZZ9</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>11182</Id>
+        <Name>Scmda</Name>
+        <Title>Moneda</Title>
+        <Length>4</Length>
+        <Picture>ZZZ9</Picture>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZ9</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>11181</Id>
+        <Name>Scmod</Name>
+        <Title>Modulo</Title>
+        <Length>5</Length>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZ9</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>11186</Id>
+        <Name>Scoper</Name>
+        <Title>Operacion</Title>
+        <Length>9</Length>
+        <Picture>ZZZZZZZZ9</Picture>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZZZZZ9</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>11183</Id>
+        <Name>Scpap</Name>
+        <Title>Scpap</Title>
+        <Length>6</Length>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZZ9</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>3947</Id>
+        <Name>Scsbop</Name>
+        <Title>Sub.operacion</Title>
+        <Length>5</Length>
+      </Attribute>
+      <AttInfo>
+        <Domain>Lclsbop</Domain>
+        <ControlInfoFromDomain>Y</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZ9</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>33</Id>
+        <Name>_Lclsbop</Name>
+        <Title>Lclsbop</Title>
+        <Length>5</Length>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>11185</Id>
+        <Name>Scsuc</Name>
+        <Title>Sucursal</Title>
+        <Length>5</Length>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZ9</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>2558</Id>
+        <Name>Sctope</Name>
+        <Title>Tipo Operac.</Title>
+        <Length>3</Length>
+        <Picture>ZZ9</Picture>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZ9</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>3359</Id>
+        <Name>Itsuc</Name>
+        <Title>Sucursal</Title>
+        <Length>5</Length>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZ9</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>16365</Id>
+        <Name>Tp1cod1</Name>
+        <Title>Guía</Title>
+        <Length>9</Length>
+        <Picture>ZZZZZZZZ9</Picture>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZZZZZ9</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>16366</Id>
+        <Name>Tp1corr1</Name>
+        <Title>Correlativo 1</Title>
+        <Length>9</Length>
+        <Picture>ZZZZZZZZ9</Picture>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZZZZZ9</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>16367</Id>
+        <Name>Tp1corr2</Name>
+        <Title>Correlativo 2</Title>
+        <Length>9</Length>
+        <Picture>ZZZZZZZZ9</Picture>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZZZZZ9</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>16368</Id>
+        <Name>Tp1corr3</Name>
+        <Title>Correlativo 3</Title>
+        <Length>9</Length>
+        <Picture>ZZZZZZZZ9</Picture>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZZZZZ9</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>3360</Id>
+        <Name>Ittran</Name>
+        <Title>Transaccion</Title>
+        <Length>5</Length>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZ9</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>15405</Id>
+        <Name>Txcod</Name>
+        <Title>Tipo de Texto</Title>
+        <Length>5</Length>
+        <Picture>ZZ9</Picture>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZ9</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>16790</Id>
+        <Name>Txreng</Name>
+        <Title>Renglon</Title>
+        <Length>3</Length>
+        <Picture>ZZ9</Picture>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZ9</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>15996</Id>
+        <Name>Ubsuc</Name>
+        <Title>Sucursal</Title>
+        <Length>5</Length>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZ9</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>16749</Id>
+        <Name>Usuario</Name>
+        <Title>Usuario</Title>
+        <Type>Character</Type>
+        <Length>30</Length>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>Y</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+      </AttDoc>
+    </GXAtt>
+  </Attributes>
+  <GXObject>
+    <Folder>
+      <Info>
+        <Name>BROU_CREDITO_SOCIAL</Name>
+        <Description>BROU_ CREDITO_ SOCIAL</Description>
+      </Info>
+      <ObjInfo>
+      </ObjInfo>
+      <LastUpdate>2021-11-05 21:40:56GMT</LastUpdate>
+    </Folder>
+  </GXObject>
+</ExportFile>

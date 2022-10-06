@@ -1,0 +1,1318 @@
+<?xml version='1.0' encoding='iso-8859-1'?>
+<ExportFile>
+  <Model>
+    <Id>5</Id>
+    <Name>JavaAs400 [Q]</Name>
+    <Type>Production</Type>
+    <Stdfunc>N</Stdfunc>
+    <AttLen>10</AttLen>
+    <TblLen>8</TblLen>
+    <ObjLen>30</ObjLen>
+    <NullsBehavior>8_OR_LESS</NullsBehavior>
+    <EmptyAsNullBehavior>8_OR_LESS</EmptyAsNullBehavior>
+  </Model>
+  <KMW>
+    <MajorVersion>2</MajorVersion>
+    <MinorVersion>2</MinorVersion>
+    <Path>C:\Users\RCRUZ\OneDrive - dlya\Documentos\workspace\KBs\ActivasGx9</Path>
+    <MaxGxBuildSaved>2494</MaxGxBuildSaved>
+  </KMW>
+  <GXObject>
+    <Procedure>
+      <Info>
+        <Name>JEFN020</Name>
+        <Description>Confirmación de talonarios</Description>
+        <DWHTrn>4</DWHTrn>
+      </Info>
+      <ObjInfo>
+        <IsMain>Y</IsMain>
+      </ObjInfo>
+      <Documentation>
+        <Source><![CDATA[<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style='FONT-SIZE: 10pt; FONT-FAMILY: "Tahoma",sans-serif; LINE-HEIGHT: 107%' Caption='<Historia><?xml:namespace prefix = "o" ns = "urn:schemas-microsoft-com:office:office" />'><SPAN style='FONT-SIZE: 10pt; FONT-FAMILY: "Tahoma",sans-serif; LINE-HEIGHT: 107%' Caption='<Historia><?xml:namespace prefix = "o" ns = "urn:schemas-microsoft-com:office:office" />'><SPAN style='FONT-SIZE: 10pt; FONT-FAMILY: "Tahoma",sans-serif; LINE-HEIGHT: 107%' Caption='<Historia><?xml:namespace prefix = "o" ns = "urn:schemas-microsoft-com:office:office" />'><SPAN style='FONT-SIZE: 10pt; FONT-FAMILY: "Tahoma",sans-serif; LINE-HEIGHT: 107%' Caption='<Historia><?xml:namespace prefix = "o" ns = "urn:schemas-microsoft-com:office:office" />'>&lt;Historia&gt;<?xml:namespace prefix = "o" ns = "urn:schemas-microsoft-com:office:office" /><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style='FONT-SIZE: 10pt; FONT-FAMILY: "Tahoma",sans-serif; LINE-HEIGHT: 107%' Caption="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Nuevo>"><SPAN style="mso-tab-count: 1" Caption="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>&lt;Nuevo&gt;<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style='FONT-SIZE: 10pt; FONT-FAMILY: "Tahoma",sans-serif; LINE-HEIGHT: 107%' Caption="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "><SPAN style="mso-tab-count: 1" Caption="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN><SPAN style="mso-tab-count: 1" Caption="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN></SPAN><SPAN lang=ES-PE style='FONT-SIZE: 10pt; FONT-FAMILY: "Tahoma",sans-serif; LINE-HEIGHT: 107%; mso-ansi-language: ES-PE' Caption="<Fecha>11/10/19</Fecha>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Autor>PLarico</Autor>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Solicitud> WI 122</Solicitud>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Pais>Chile</Pais>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Cliente>Forum</Cliente>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Descripcion>Solicitudes de cambio de fecha</Descripcion>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </Nuevo>">&lt;Fecha&gt;11/02/20&lt;/Fecha&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <SPAN style="mso-tab-count: 1" Caption="&nbsp;&nbsp;&nbsp; ">&nbsp;&nbsp;&nbsp; </SPAN><SPAN style="mso-tab-count: 1" Caption="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>&lt;Autor&gt;PLarico&lt;/Autor&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <SPAN style="mso-tab-count: 1" Caption="&nbsp;&nbsp;&nbsp; ">&nbsp;&nbsp;&nbsp; </SPAN><SPAN style="mso-tab-count: 1" Caption="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>&lt;Solicitud&gt; WI 42&lt;/Solicitud&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <SPAN style="mso-tab-count: 1" Caption="&nbsp;&nbsp;&nbsp; ">&nbsp;&nbsp;&nbsp; </SPAN><SPAN style="mso-tab-count: 1" Caption="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>&lt;Pais&gt;Perú&lt;/Pais&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <SPAN style="mso-tab-count: 1" Caption="&nbsp;&nbsp;&nbsp; ">&nbsp;&nbsp;&nbsp; </SPAN><SPAN style="mso-tab-count: 1" Caption="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>&lt;Cliente&gt;Efectiva&lt;/Cliente&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <SPAN style="mso-tab-count: 1" Caption="&nbsp;&nbsp;&nbsp; ">&nbsp;&nbsp;&nbsp; </SPAN><SPAN style="mso-tab-count: 1" Caption="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>&lt;Descripcion&gt;Confirmación de&nbsp;talonarios&lt;/Descripcion&gt;<BR><SPAN style="mso-tab-count: 1" Caption="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>&lt;/Nuevo&gt;</SPAN></P><SPAN lang=ES-PE style='FONT-SIZE: 10pt; FONT-FAMILY: "Tahoma",sans-serif; LINE-HEIGHT: 107%; mso-ansi-language: ES-PE' Caption="<Fecha>11/10/19</Fecha>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Autor>PLarico</Autor>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Solicitud> WI 122</Solicitud>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Pais>Chile</Pais>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Cliente>Forum</Cliente>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Descripcion>Solicitudes de cambio de fecha</Descripcion>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </Nuevo>"><o:p>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style='FONT-SIZE: 10pt; FONT-FAMILY: "Tahoma",sans-serif; LINE-HEIGHT: 107%' Caption="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Nuevo>"><SPAN style="mso-tab-count: 1" Caption="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>&lt;Modificación&gt;<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style='FONT-SIZE: 10pt; FONT-FAMILY: "Tahoma",sans-serif; LINE-HEIGHT: 107%' Caption="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "><SPAN style="mso-tab-count: 1" Caption="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN><SPAN style="mso-tab-count: 1" Caption="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN></SPAN><SPAN lang=ES-PE style='FONT-SIZE: 10pt; FONT-FAMILY: "Tahoma",sans-serif; LINE-HEIGHT: 107%; mso-ansi-language: ES-PE' Caption="<Fecha>11/10/19</Fecha>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Autor>PLarico</Autor>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Solicitud> WI 122</Solicitud>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Pais>Chile</Pais>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Cliente>Forum</Cliente>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Descripcion>Solicitudes de cambio de fecha</Descripcion>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </Nuevo>">&lt;Fecha&gt;05/11/21&lt;/Fecha&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <SPAN style="mso-tab-count: 1" Caption="&nbsp;&nbsp;&nbsp; ">&nbsp;&nbsp;&nbsp; </SPAN><SPAN style="mso-tab-count: 1" Caption="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>&lt;Autor&gt;RCRUZ&lt;/Autor&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <SPAN style="mso-tab-count: 1" Caption="&nbsp;&nbsp;&nbsp; ">&nbsp;&nbsp;&nbsp; </SPAN><SPAN style="mso-tab-count: 1" Caption="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>&lt;Solicitud&gt; WEB 196820&lt;/Solicitud&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <SPAN style="mso-tab-count: 1" Caption="&nbsp;&nbsp;&nbsp; ">&nbsp;&nbsp;&nbsp; </SPAN><SPAN style="mso-tab-count: 1" Caption="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>&lt;Pais&gt;Perú&lt;/Pais&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <SPAN style="mso-tab-count: 1" Caption="&nbsp;&nbsp;&nbsp; ">&nbsp;&nbsp;&nbsp; </SPAN><SPAN style="mso-tab-count: 1" Caption="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>&lt;Cliente&gt;Efectiva&lt;/Cliente&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <SPAN style="mso-tab-count: 1" Caption="&nbsp;&nbsp;&nbsp; ">&nbsp;&nbsp;&nbsp; </SPAN><SPAN style="mso-tab-count: 1" Caption="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>&lt;Descripcion&gt;Se pasa a Sentencia el ingreso de datos a la JEFN005&lt;/Descripcion&gt;<BR><SPAN style="mso-tab-count: 1" Caption="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>&lt;/Modificación&gt;</SPAN></P></o:p></SPAN>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style='FONT-SIZE: 10pt; FONT-FAMILY: "Tahoma",sans-serif; LINE-HEIGHT: 107%' Caption="</Historia>">&lt;/Historia&gt;<o:p></o:p></SPAN></P></SPAN></SPAN></SPAN>]]></Source>
+      </Documentation>
+      <LastUpdate>2021-11-06 00:44:44GMT</LastUpdate>
+      <Variable>
+        <Id>-9</Id>
+        <Name>agencia</Name>
+        <Title>agencia</Title>
+        <Length>5</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-11</Id>
+        <Name>cantidad</Name>
+        <Title>cantidad</Title>
+        <Length>3</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-41</Id>
+        <Name>ErrDsc</Name>
+        <Title>Err Dsc</Title>
+        <Type>Character</Type>
+        <Length>100</Length>
+        <Decimals>0</Decimals>
+        <BasedOn>_ErrDsc</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-40</Id>
+        <Name>ErrId</Name>
+        <Title>Err Id</Title>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZZZZZ9</Picture>
+        <BasedOn>_ErrId</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-57</Id>
+        <Name>estenv</Name>
+        <Title>estenv</Title>
+        <Type>Character</Type>
+        <Length>3</Length>
+        <Decimals>0</Decimals>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-53</Id>
+        <Name>estreg</Name>
+        <Title>estreg</Title>
+        <Type>Character</Type>
+        <Length>3</Length>
+        <Decimals>0</Decimals>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-43</Id>
+        <Name>i</Name>
+        <Title>i</Title>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZZZZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZZZZZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-44</Id>
+        <Name>j</Name>
+        <Title>j</Title>
+        <Length>7</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZZZZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZZZZZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-59</Id>
+        <Name>JEFN002NTLt</Name>
+        <Title>Número de talonario</Title>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZZZZZ9</Picture>
+      </Variable>
+      <Variable>
+        <Id>-17</Id>
+        <Name>JEFN005EMP</Name>
+        <Title>Empresa</Title>
+        <Length>3</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZ9</Picture>
+        <BasedOn>JEFN005EMP</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-21</Id>
+        <Name>JEFN005FCB</Name>
+        <Title>Fecha contable</Title>
+        <Type>Date</Type>
+        <Length>8</Length>
+        <Decimals>0</Decimals>
+        <Picture>99/99/9999</Picture>
+        <BasedOn>JEFN005FCB</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-19</Id>
+        <Name>JEFN005MOD</Name>
+        <Title>Módulo</Title>
+        <Length>5</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZ9</Picture>
+        <BasedOn>JEFN005MOD</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-22</Id>
+        <Name>JEFN005NRC</Name>
+        <Title>Número de caja</Title>
+        <Length>3</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZ9</Picture>
+        <BasedOn>JEFN005NRC</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-39</Id>
+        <Name>JEFN005REL</Name>
+        <Title>Relación</Title>
+        <Length>9</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZZZZ9</Picture>
+        <BasedOn>JEFN005REL</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-18</Id>
+        <Name>JEFN005SUC</Name>
+        <Title>Sucursal</Title>
+        <Length>5</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZ9</Picture>
+        <BasedOn>JEFN005SUC</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-20</Id>
+        <Name>JEFN005TRN</Name>
+        <Title>Transacción</Title>
+        <Length>5</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZ9</Picture>
+        <BasedOn>JEFN005TRN</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-23</Id>
+        <Name>JEFN005UCB</Name>
+        <Title>Usuario contable</Title>
+        <Type>Character</Type>
+        <Length>30</Length>
+        <Decimals>0</Decimals>
+        <BasedOn>JEFN005UCB</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-33</Id>
+        <Name>JFEN005CH1</Name>
+        <Title>Auxiliar boleano 1</Title>
+        <Type>Character</Type>
+        <Length>1</Length>
+        <Decimals>0</Decimals>
+        <BasedOn>JFEN005CH1</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-34</Id>
+        <Name>JFEN005CH2</Name>
+        <Title>Auxiliar boleano 2</Title>
+        <Type>Character</Type>
+        <Length>1</Length>
+        <Decimals>0</Decimals>
+        <BasedOn>JFEN005CH2</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-35</Id>
+        <Name>JFEN005CH3</Name>
+        <Title>Auxiliar boleano 3</Title>
+        <Type>Character</Type>
+        <Length>1</Length>
+        <Decimals>0</Decimals>
+        <BasedOn>JFEN005CH3</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-30</Id>
+        <Name>JFEN005FE1</Name>
+        <Title>Auxiliar fecha 1</Title>
+        <Type>Date</Type>
+        <Length>8</Length>
+        <Decimals>0</Decimals>
+        <Picture>99/99/9999</Picture>
+        <BasedOn>JFEN005FE1</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-31</Id>
+        <Name>JFEN005FE2</Name>
+        <Title>Auxiliar fecha 2</Title>
+        <Type>Date</Type>
+        <Length>8</Length>
+        <Decimals>0</Decimals>
+        <Picture>99/99/9999</Picture>
+        <BasedOn>JFEN005FE2</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-32</Id>
+        <Name>JFEN005FE3</Name>
+        <Title>Auxiliar fecha 3</Title>
+        <Type>Date</Type>
+        <Length>8</Length>
+        <Decimals>0</Decimals>
+        <Picture>99/99/9999</Picture>
+        <BasedOn>JFEN005FE3</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-27</Id>
+        <Name>JFEN005IM1</Name>
+        <Title>Auxiliar importe 1</Title>
+        <Length>18</Length>
+        <Picture>ZZZZZZZZZZZZZZ9.99</Picture>
+        <BasedOn>JFEN005IM1</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-28</Id>
+        <Name>JFEN005IM2</Name>
+        <Title>Auxiliar importe 2</Title>
+        <Length>18</Length>
+        <Picture>ZZZZZZZZZZZZZZ9.99</Picture>
+        <BasedOn>JFEN005IM2</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-29</Id>
+        <Name>JFEN005IM3</Name>
+        <Title>Auxiliar importe 3</Title>
+        <Length>18</Length>
+        <Picture>ZZZZZZZZZZZZZZ9.99</Picture>
+        <BasedOn>JFEN005IM3</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-24</Id>
+        <Name>JFEN005NU1</Name>
+        <Title>Auxiliar numérico 1</Title>
+        <Length>9</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZZZZ9</Picture>
+        <BasedOn>JFEN005NU1</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-25</Id>
+        <Name>JFEN005NU2</Name>
+        <Title>Auxiliar numérico 2</Title>
+        <Length>9</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZZZZ9</Picture>
+        <BasedOn>JFEN005NU2</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-26</Id>
+        <Name>JFEN005NU3</Name>
+        <Title>Auxiliar numérico 3</Title>
+        <Length>9</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZZZZ9</Picture>
+        <BasedOn>JFEN005NU3</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-36</Id>
+        <Name>JFEN005VA1</Name>
+        <Title>Auxiliar varchar 1</Title>
+        <Type>ShortVarChar</Type>
+        <Length>250</Length>
+        <Decimals>0</Decimals>
+        <BasedOn>JFEN005VA1</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-37</Id>
+        <Name>JFEN005VA2</Name>
+        <Title>Auxiliar varchar 2</Title>
+        <Type>ShortVarChar</Type>
+        <Length>250</Length>
+        <Decimals>0</Decimals>
+        <BasedOn>JFEN005VA2</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-38</Id>
+        <Name>JFEN005VA3</Name>
+        <Title>Auxiliar varchar 3</Title>
+        <Type>ShortVarChar</Type>
+        <Length>250</Length>
+        <Decimals>0</Decimals>
+        <BasedOn>JFEN005VA3</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-4</Id>
+        <Name>Line</Name>
+        <Title>Line</Title>
+        <Length>6</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-15</Id>
+        <Name>Mode</Name>
+        <Title>Mode</Title>
+        <Type>Character</Type>
+        <Length>3</Length>
+        <Decimals>0</Decimals>
+        <Picture>@!</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>@!</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-5</Id>
+        <Name>Output</Name>
+        <Title>Output</Title>
+        <Type>Character</Type>
+        <Length>3</Length>
+        <Decimals>0</Decimals>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-3</Id>
+        <Name>Page</Name>
+        <Title>Page</Title>
+        <Length>6</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-45</Id>
+        <Name>Pgcod</Name>
+        <Title>Cod.</Title>
+        <Length>3</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZ9</Picture>
+        <BasedOn>Pgcod</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-7</Id>
+        <Name>Pgmdesc</Name>
+        <Title>Pgmdesc</Title>
+        <Type>Character</Type>
+        <Length>30</Length>
+        <Decimals>0</Decimals>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-6</Id>
+        <Name>Pgmname</Name>
+        <Title>Pgmname</Title>
+        <Type>Character</Type>
+        <Length>31</Length>
+        <Decimals>0</Decimals>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-55</Id>
+        <Name>rangosdesde</Name>
+        <Title>rangosdesde</Title>
+        <Length>7</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZZ9</Picture>
+        <Rows>999</Rows>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-56</Id>
+        <Name>rangoshasta</Name>
+        <Title>rangoshasta</Title>
+        <Length>7</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZZ9</Picture>
+        <Rows>999</Rows>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-8</Id>
+        <Name>solicitud</Name>
+        <Title>solicitud</Title>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZZZZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZZZZZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-58</Id>
+        <Name>sql</Name>
+        <Title>sql</Title>
+        <Type>VarChar</Type>
+        <Length>-30144</Length>
+        <Decimals>0</Decimals>
+      </Variable>
+      <Variable>
+        <Id>-54</Id>
+        <Name>talonarios</Name>
+        <Title>talonarios</Title>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZZZZZ9</Picture>
+        <Rows>999</Rows>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZZZZZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-2</Id>
+        <Name>Time</Name>
+        <Title>Time</Title>
+        <Type>Character</Type>
+        <Length>8</Length>
+        <Decimals>0</Decimals>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value/>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-10</Id>
+        <Name>tipo</Name>
+        <Title>tipo</Title>
+        <Length>3</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Name>Today</Name>
+        <Title>Today</Title>
+        <Type>Date</Type>
+        <Length>8</Length>
+        <Decimals>0</Decimals>
+        <Picture>99/99/99</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>99/99/99</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-46</Id>
+        <Name>Tp1cod1</Name>
+        <Title>Guía</Title>
+        <Length>9</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZZZZ9</Picture>
+        <BasedOn>Tp1cod1</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-47</Id>
+        <Name>Tp1corr1</Name>
+        <Title>Correlativo 1</Title>
+        <Length>9</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZZZZ9</Picture>
+        <BasedOn>Tp1corr1</BasedOn>
+      </Variable>
+      <Variable>
+        <Id>-48</Id>
+        <Name>Tp1corr2</Name>
+        <Title>Correlativo 2</Title>
+        <Length>9</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZZZZ9</Picture>
+        <BasedOn>Tp1corr2</BasedOn>
+      </Variable>
+      <Layout>
+        <NextControlID>23</NextControlID>
+        <FormInfo>
+          <FormId>1</FormId>
+          <FormClass>Graphic</FormClass>
+          <IsDefault>N</IsDefault>
+          <Att_Font>
+            <Name>Courier New</Name>
+            <Size>9</Size>
+          </Att_Font>
+          <Txt_Font>
+            <Bold>Y</Bold>
+          </Txt_Font>
+          <GridWidth>13</GridWidth>
+          <GridHeight>13</GridHeight>
+          <TemplateBased>N</TemplateBased>
+        </FormInfo>
+        <Block>
+          <CodeBlock>
+            <left>71</left>
+            <top>2</top>
+            <right>743</right>
+            <bottom>28</bottom>
+            <Brush>Y</Brush>
+            <ColorInfo>
+              <Foreground>Lime</Foreground>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <ForeColor>-2147483642</ForeColor>
+            <BackColor>-2147483633</BackColor>
+            <BorderWidth>0</BorderWidth>
+            <Shape>Frame</Shape>
+            <OutStyle>Single</OutStyle>
+            <GSGridWidth>7</GSGridWidth>
+            <GSGridHeight>15</GSGridHeight>
+            <DataLeft>0</DataLeft>
+            <DataTop>0</DataTop>
+            <DataRight>0</DataRight>
+            <DataBottom>0</DataBottom>
+            <Source><![CDATA[//Estado de talonario 
+//buscamos el estado de registrado
+   
+&Tp1cod1  = 4201
+&Tp1corr1 = 2
+&Tp1corr2 = 1
+For Each Tp1cod, Tp1cod1, Tp1corr1, Tp1corr2, Tp1corr3 // Fst198: Fst198
+Where Tp1cod    = &Pgcod
+Where Tp1cod1   = &Tp1cod1
+Where Tp1corr1  = &Tp1corr1
+Where Tp1corr2  = &Tp1corr2
+Defined By Tp1nro3	
+    If Tp1corr3     = 2
+        &estreg  = Trim(Tp1desc)    
+    EndIf
+EndFor
+
+//Estado de recibo
+//buscamos el estado de enviado
+&Tp1cod1  = 4201
+&Tp1corr1 = 2
+&Tp1corr2 = 2
+For Each Tp1cod, Tp1cod1, Tp1corr1, Tp1corr2, Tp1corr3 // Fst198: Fst198
+Where Tp1cod    = &Pgcod
+Where Tp1cod1   = &Tp1cod1
+Where Tp1corr1  = &Tp1corr1
+Where Tp1corr2  = &Tp1corr2
+Defined By Tp1nro3	
+    If Tp1corr3     = 2
+        &estenv  = Trim(Tp1desc)    
+    EndIf
+EndFor
+
+//buscamos talonarios disponibles
+&i = 1 
+For Each JEFN002NTL, JEFN002RCM // JEFN002: JEFN002
+Where JEFN002RCM = &Tipo
+Where JEFN002EST = &estreg
+Defined By JEFN002CH1
+    If &i <= &Cantidad
+        &talonarios(&i)  =  JEFN002NTL
+        &rangosdesde(&i) =  JEFN002RIN
+        &rangoshasta(&i) =  JEFN002RFN
+        &i = &i + 1
+    EndIf
+EndFor
+// RCRUZ - WEB 196820 - 05/11/2021 - Se pasa a Sentencia el ingreso de datos a la JEFN005
+&sql = "INSERT INTO JEFN005 (JEFN005NST, JEFN005NTL, JEFN005NRB, JEFN005EST) VALUES "
+
+If &i <= &Cantidad
+    &ErrId  = 1
+    &ErrDsc = 'No hay suficientes talonarios para la solicitud.'
+Else
+    &MODE = 'INS'
+    &i = 1
+    
+    Do While &i <= &cantidad
+        &j = &rangosdesde(&i)
+        Do While &j <= &rangoshasta(&i)
+            &sql = &sql + "(" + Trim(Str(&solicitud)) + "," + Trim(Str(&talonarios(&i))) + "," + Str(&j) + ",'" + &estenv + "')" 
+            &j = &j + 1
+            If &j <= &rangoshasta(&i)
+                &sql = &sql + ","
+            EndIf
+        EndDo
+        &i = &i + 1
+    EndDo
+    sql [!&sql!]
+    Commit
+    
+    &i = 1
+    Do While &i <= &cantidad
+        &JEFN002NTLt = &talonarios(&i)
+        Do 'estado talonarios'        
+        &i = &i + 1
+    EndDo  
+EndIf
+
+
+Sub 'estado talonarios'
+      
+    For Each JEFN002NTL // JEFN002: Registro de talonarios
+	Where JEFN002NTL = &JEFN002NTLt 
+	Defined By JEFN002CH1	
+	    JEFN002EST = &estenv
+        JEFN002VA3 = Str(&solicitud)
+	EndFor
+    
+EndSub
+]]></Source>
+          </CodeBlock>
+        </Block>
+        <Block>
+          <PrintBlockVer8>
+            <left>71</left>
+            <top>2</top>
+            <right>743</right>
+            <bottom>28</bottom>
+            <Brush>Y</Brush>
+            <ColorInfo>
+              <Foreground>Black</Foreground>
+              <Background>White</Background>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <ForeColor>-2147483642</ForeColor>
+            <BackColor>-2147483633</BackColor>
+            <Shape>Frame</Shape>
+            <OutStyle>Single</OutStyle>
+            <GSGridWidth>7</GSGridWidth>
+            <GSGridHeight>15</GSGridHeight>
+            <DataLeft>0</DataLeft>
+            <DataTop>0</DataTop>
+            <DataRight>0</DataRight>
+            <DataBottom>0</DataBottom>
+            <CommandLine>[Unreferenced]</CommandLine>
+            <PBPos>1</PBPos>
+          </PrintBlockVer8>
+        </Block>
+        <Block>
+          <CodeBlockVer8>
+            <left>71</left>
+            <top>2</top>
+            <right>743</right>
+            <bottom>28</bottom>
+            <Brush>Y</Brush>
+            <ColorInfo>
+              <Foreground>Lime</Foreground>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <ForeColor>-2147483642</ForeColor>
+            <BackColor>-2147483633</BackColor>
+            <BorderWidth>0</BorderWidth>
+            <Shape>Frame</Shape>
+            <OutStyle>Single</OutStyle>
+            <GSGridWidth>7</GSGridWidth>
+            <GSGridHeight>15</GSGridHeight>
+            <DataLeft>0</DataLeft>
+            <DataTop>0</DataTop>
+            <DataRight>0</DataRight>
+            <DataBottom>0</DataBottom>
+          </CodeBlockVer8>
+        </Block>
+        <Paper>
+          <PaperId>A4</PaperId>
+          <SizeX>11906</SizeX>
+          <SizeY>16838</SizeY>
+          <RightIndent>1811</RightIndent>
+        </Paper>
+      </Layout>
+      <Rules><![CDATA[Parm(&Pgcod,&solicitud,&agencia,&tipo,&cantidad,&ErrId,&ErrDsc,&talonarios());
+]]></Rules>
+      <Conditions><![CDATA[// -- HASH:d7e790dfded662e8c3de6d7e9e7c4efae08b5801;
+]]></Conditions>
+    </Procedure>
+  </GXObject>
+  <Attributes>
+    <GXAtt>
+      <Attribute>
+        <Id>8482</Id>
+        <Name>_ErrDsc</Name>
+        <Title>Err Dsc</Title>
+        <Type>Character</Type>
+        <Length>100</Length>
+        <LastUpdate>2012-05-02 20:12:50GMT</LastUpdate>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>8462</Id>
+        <Name>_ErrId</Name>
+        <Title>Err Id</Title>
+        <Length>10</Length>
+        <LastUpdate>2012-05-02 20:12:50GMT</LastUpdate>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>20467</Id>
+        <Name>JEFN005EMP</Name>
+        <Title>Empresa</Title>
+        <Length>3</Length>
+        <LastUpdate>2021-10-04 22:07:30GMT</LastUpdate>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>20472</Id>
+        <Name>JEFN005FCB</Name>
+        <Title>Fecha contable</Title>
+        <Type>Date</Type>
+        <Length>8</Length>
+        <Picture>99/99/9999</Picture>
+        <LastUpdate>2021-10-04 22:07:30GMT</LastUpdate>
+      </Attribute>
+      <AttInfo>
+        <Domain>Date</Domain>
+        <ControlInfoFromDomain>Y</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>99/99/9999</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>9989</Id>
+        <Name>_Date</Name>
+        <Title>Date</Title>
+        <Type>Date</Type>
+        <Length>8</Length>
+        <Picture>99/99/9999</Picture>
+        <LastUpdate>2019-12-02 22:42:58GMT</LastUpdate>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>99/99/9999</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>20469</Id>
+        <Name>JEFN005MOD</Name>
+        <Title>Módulo</Title>
+        <Length>5</Length>
+        <LastUpdate>2021-10-04 22:07:30GMT</LastUpdate>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>20473</Id>
+        <Name>JEFN005NRC</Name>
+        <Title>Número de caja</Title>
+        <Length>3</Length>
+        <LastUpdate>2021-10-04 22:07:30GMT</LastUpdate>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>20471</Id>
+        <Name>JEFN005REL</Name>
+        <Title>Relación</Title>
+        <Length>9</Length>
+        <LastUpdate>2021-10-04 22:07:30GMT</LastUpdate>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>20468</Id>
+        <Name>JEFN005SUC</Name>
+        <Title>Sucursal</Title>
+        <Length>5</Length>
+        <LastUpdate>2021-10-04 22:07:30GMT</LastUpdate>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>20470</Id>
+        <Name>JEFN005TRN</Name>
+        <Title>Transacción</Title>
+        <Length>5</Length>
+        <LastUpdate>2021-10-04 22:07:30GMT</LastUpdate>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>20474</Id>
+        <Name>JEFN005UCB</Name>
+        <Title>Usuario contable</Title>
+        <Type>Character</Type>
+        <Length>30</Length>
+        <LastUpdate>2021-10-04 22:07:30GMT</LastUpdate>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>20484</Id>
+        <Name>JFEN005CH1</Name>
+        <Title>Auxiliar boleano 1</Title>
+        <Type>Character</Type>
+        <LastUpdate>2021-10-04 22:07:30GMT</LastUpdate>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>20485</Id>
+        <Name>JFEN005CH2</Name>
+        <Title>Auxiliar boleano 2</Title>
+        <Type>Character</Type>
+        <LastUpdate>2021-10-04 22:07:30GMT</LastUpdate>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>20486</Id>
+        <Name>JFEN005CH3</Name>
+        <Title>Auxiliar boleano 3</Title>
+        <Type>Character</Type>
+        <LastUpdate>2021-10-04 22:07:30GMT</LastUpdate>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>20481</Id>
+        <Name>JFEN005FE1</Name>
+        <Title>Auxiliar fecha 1</Title>
+        <Type>Date</Type>
+        <Length>8</Length>
+        <Picture>99/99/9999</Picture>
+        <LastUpdate>2021-10-04 22:07:30GMT</LastUpdate>
+      </Attribute>
+      <AttInfo>
+        <Domain>Date</Domain>
+        <ControlInfoFromDomain>Y</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>99/99/9999</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>20482</Id>
+        <Name>JFEN005FE2</Name>
+        <Title>Auxiliar fecha 2</Title>
+        <Type>Date</Type>
+        <Length>8</Length>
+        <Picture>99/99/9999</Picture>
+        <LastUpdate>2021-10-04 22:07:30GMT</LastUpdate>
+      </Attribute>
+      <AttInfo>
+        <Domain>Date</Domain>
+        <ControlInfoFromDomain>Y</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>99/99/9999</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>20483</Id>
+        <Name>JFEN005FE3</Name>
+        <Title>Auxiliar fecha 3</Title>
+        <Type>Date</Type>
+        <Length>8</Length>
+        <Picture>99/99/9999</Picture>
+        <LastUpdate>2021-10-04 22:07:30GMT</LastUpdate>
+      </Attribute>
+      <AttInfo>
+        <Domain>Date</Domain>
+        <ControlInfoFromDomain>Y</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>99/99/9999</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>20478</Id>
+        <Name>JFEN005IM1</Name>
+        <Title>Auxiliar importe 1</Title>
+        <Length>18</Length>
+        <Decimals>2</Decimals>
+        <LastUpdate>2021-10-04 22:07:30GMT</LastUpdate>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>20479</Id>
+        <Name>JFEN005IM2</Name>
+        <Title>Auxiliar importe 2</Title>
+        <Length>18</Length>
+        <Decimals>2</Decimals>
+        <LastUpdate>2021-10-04 22:07:30GMT</LastUpdate>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>20480</Id>
+        <Name>JFEN005IM3</Name>
+        <Title>Auxiliar importe 3</Title>
+        <Length>18</Length>
+        <Decimals>2</Decimals>
+        <LastUpdate>2021-10-04 22:07:30GMT</LastUpdate>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>20475</Id>
+        <Name>JFEN005NU1</Name>
+        <Title>Auxiliar numérico 1</Title>
+        <Length>9</Length>
+        <LastUpdate>2021-10-04 22:07:30GMT</LastUpdate>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>20476</Id>
+        <Name>JFEN005NU2</Name>
+        <Title>Auxiliar numérico 2</Title>
+        <Length>9</Length>
+        <LastUpdate>2021-10-04 22:07:30GMT</LastUpdate>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>20477</Id>
+        <Name>JFEN005NU3</Name>
+        <Title>Auxiliar numérico 3</Title>
+        <Length>9</Length>
+        <LastUpdate>2021-10-04 22:07:30GMT</LastUpdate>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>20487</Id>
+        <Name>JFEN005VA1</Name>
+        <Title>Auxiliar varchar 1</Title>
+        <Type>ShortVarChar</Type>
+        <Length>250</Length>
+        <LastUpdate>2021-10-04 22:07:30GMT</LastUpdate>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>20488</Id>
+        <Name>JFEN005VA2</Name>
+        <Title>Auxiliar varchar 2</Title>
+        <Type>ShortVarChar</Type>
+        <Length>250</Length>
+        <LastUpdate>2021-10-04 22:07:30GMT</LastUpdate>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>20489</Id>
+        <Name>JFEN005VA3</Name>
+        <Title>Auxiliar varchar 3</Title>
+        <Type>ShortVarChar</Type>
+        <Length>250</Length>
+        <LastUpdate>2021-10-04 22:07:30GMT</LastUpdate>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>7</Id>
+        <Name>Pgcod</Name>
+        <Title>Cod.</Title>
+        <Length>3</Length>
+        <LastUpdate>2016-12-16 21:35:40GMT</LastUpdate>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZ9</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>1260</Id>
+        <Name>Tp1cod1</Name>
+        <Title>Guía</Title>
+        <Length>9</Length>
+        <Picture>ZZZZZZZZ9</Picture>
+        <LastUpdate>2012-03-07 13:02:30GMT</LastUpdate>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZZZZZ9</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>1261</Id>
+        <Name>Tp1corr1</Name>
+        <Title>Correlativo 1</Title>
+        <Length>9</Length>
+        <Picture>ZZZZZZZZ9</Picture>
+        <LastUpdate>2012-03-07 13:02:30GMT</LastUpdate>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZZZZZ9</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+    <GXAtt>
+      <Attribute>
+        <Id>1262</Id>
+        <Name>Tp1corr2</Name>
+        <Title>Correlativo 2</Title>
+        <Length>9</Length>
+        <Picture>ZZZZZZZZ9</Picture>
+        <LastUpdate>2012-03-07 13:02:30GMT</LastUpdate>
+      </Attribute>
+      <AttInfo>
+        <ControlInfoFromDomain>N</ControlInfoFromDomain>
+        <EditInfo>
+        </EditInfo>
+      </AttInfo>
+      <AttDoc>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZZZZZ9</Value>
+        </Property>
+      </AttDoc>
+    </GXAtt>
+  </Attributes>
+</ExportFile>
