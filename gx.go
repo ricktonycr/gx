@@ -13,7 +13,7 @@ import (
 	"os"
 	"strconv"
 	"strings"
-
+	"flag"
 	"github.com/SebastiaanKlippert/go-wkhtmltopdf"
 
 	"golang.org/x/text/encoding/charmap"
@@ -29,7 +29,7 @@ type Usuarios struct {
 	Usuarios []Book `xml:"CodeBlock"`
 }
 
-const path = "/usr/local/bin/wkhtmltopdf"
+const path = "/bin/wkhtmltopdf"
 
 type Book struct {
 	LeftT   string `xml:"left"`
@@ -951,10 +951,16 @@ func buscarCod(textoSource string) string {
 }
 
 func handleRequests() {
+
+	var dir string
+	flag.StringVar(&dir, "dir", "http", "the directory to serve files from. Defaults to the current dir")
+    flag.Parse()
+	fmt.Println("Iniciando servidor")
 	myRouter := mux.NewRouter().StrictSlash(true)
-	myRouter.HandleFunc("/", homePage)
 	myRouter.HandleFunc("/code", code).Methods("POST")
 	myRouter.HandleFunc("/upload", upload).Methods("POST")
+	fmt.Println("------")
+	myRouter.PathPrefix("/").Handler(http.StripPrefix("/", http.FileServer(http.Dir(dir))))
 	log.Fatal(http.ListenAndServe(":4000", myRouter))
 }
 

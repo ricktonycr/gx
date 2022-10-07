@@ -1,0 +1,212 @@
+
+&Ubuser = UserId('server')
+Call(PPr008,&Ubuser,&Pgcod)
+
+For Each // Fst017: Fst017 - Empresas
+Where &Pgcod = Pgcod
+Defined By Pgpomn
+	&Pgfape = Pgfape
+	For Each // Fst198: Guías especiales de proceso
+	Where Tp1cod   = &Pgcod
+	Where Tp1cod1  = &Tp1cod1
+	Where Tp1corr1 = &Tp1corr1
+	Where Tp1corr2 = &Tp1corr2
+	Where Tp1corr3 = &Tp1corr3
+	Defined By Tp1imp2
+		&CodGer = Tp1nro1
+	EndFor
+EndFor
+
+// Extraigo código de gerente de agencia
+&Tp1cod1  = 21200
+&Tp1corr1 = 1
+&Tp1corr2 = 20
+&Tp1corr3 = 2
+&CodGer   = 0
+For Each Tp1cod1, Tp1cod2, Tp1cod3 // Fst198: Guías especiales de proceso
+Where Tp1cod   = &Pgcod
+Where Tp1cod1  = &Tp1cod1
+Where Tp1corr1 = &Tp1corr1
+Where Tp1corr2 = &Tp1corr2
+Where Tp1corr3 = &Tp1corr3
+Defined By Tp1imp2
+	&CodGer = Tp1nro1
+EndFor
+
+// Obtengo sucursal del usuario
+For Each // Fst046: Fst046 - Códigos de Usuario
+Where Pgcod  = &Pgcod
+Where Ubuser = &Ubuser
+Defined By UbMnu
+	&Ubsuc1 = Ubsuc
+EndFor
+
+// Obtengo el repositorio
+&Tp1cod1  = 21200
+&Tp1corr1 = 1
+&Tp1corr2 = 20
+&Tp1corr3 = 1
+For Each // Fst198: Guías especiales de proceso
+Where Tp1cod   = &Pgcod
+Where Tp1cod1  = &Tp1cod1
+Where Tp1corr1 = &Tp1corr1
+Where Tp1corr2 = &Tp1corr2
+Where Tp1corr3 = &Tp1corr3
+Defined By Tp1imp3
+	&repo = Trim(Tp1desc)
+EndFor
+
+
+
+For &anterior = 1 To 20
+	If &pertenece = 'N'
+			&error      = 'S'
+			&ResMsg     = 'El documento o pertenece a la caja de ahorros seleccionada.'
+			&GP_Mensaje = Udp(PFRRepMsg,&ResMsg,'E')
+			Do 'GP: Reportar mensaje'
+		EndIf
+EndFor
+
+For &BBTIndividual In &BBTSolIndBIM
+	If &JCMA10Sol = &BBTIndividual.CodIndividual
+		&EsBIM = 'S'  
+		Exit
+	EndIf
+EndFor
+
+New //-- FSN003
+	Pgcod  = &PPgcod 
+	Nrsuc  = 222  
+	Trmod  = 222  
+	Trnro  = 222  
+	Nrtope = NullValue(Nrtope)  
+	Nrtcor = NullValue(Nrtcor)
+	Nrtcoi = NullValue(Nrtcoi) 
+	Nrtrel = 1 
+EndNew
+
+Sub 'Verificar modulo'
+    &j       = 1
+    &parteDe = 'N'
+    Do While &j <= &modsValC And &parteDe = 'N'//>	el módulo
+        If &modsVal(&j) = &I1mod  //> El valor es igual al esperado
+            &parteDe = 'S'
+        EndIf
+        &j = &j + 1
+    EndDo
+EndSub // 'Verificar modulo'
+
+Do Case
+Case &BTCDNType = 'INS'
+	&g_accion = 'Alta'
+Case &BTCDNType = 'UPD'                                
+	&g_accion = 'Modificación'
+Case &BTCDNType = 'DLT'
+	&g_accion = 'Baja'
+Otherwise
+	&g_accion = ''
+EndCase
+// Agrega el registro a la grilla
+Do 'GP: Agregar registro a Bandeja'
+
+// Realiza el control de carga. Termina la carga si se cargó
+// completamente la página actual
+If &GP_CargaTerminada = 'S'
+	Exit
+EndIf
+
+/*&parteDe = 'N'
+Do While &j <= &modsValC And &parteDe = 'N' 
+	If &modsVal(&j) = &I1mod //-- El valor es igual al esperado
+		&parteDe = 'S'
+	EndIf
+	&j = &j + 1
+EndDo-*/
+
+&PgmNom = 'PJBRA401'
+&Debug  = 'N'
+For Each // Fst900: Fst900 - Programas
+Where Pgcod  = &Ppgcod
+Where PgmNom = &PgmNom
+Defined By PgmCd1
+	&Debug = 'S'
+EndFor
+&PgmNom = 'PJBRA4s1'
+For Each // Fst900: Fst900 - Programas
+Where Pgcod  = &Ppgcod
+Where PgmNom = &PgmNom
+Defined By PgmCd1
+	&Debug = 'S'
+EndFor
+&PgmNom = 'PJBRW401'
+For Each // Fst900: Fst900 - Programas
+Where Pgcod  = &Ppgcod
+Where PgmNom = &PgmNom
+Defined By PgmCd1
+	&Debug = 'S'
+EndFor
+&PgmNom = 'PJBQA401'
+For Each // Fst900: Fst900 - Programas
+Where Pgcod  = &Ppgcod
+Where PgmNom = &PgmNom
+Defined By PgmCd1
+	&Debug = 'S'
+EndFor
+
+&OpgCod = 232
+For Each // Fst200: Fst200 - Opciones Generales
+Where Pgcod = &Pgcod
+Where OpgCod = &OpgCod
+Defined By OpgVal
+	&OpgTxt = OpgTxt
+EndFor
+
+&OpgCod = 233
+For Each // Fst200: Fst200 - Opciones Generales
+Where Pgcod = &Pgcod
+Where OpgCod = &OpgCod
+Defined By OpgVal
+	&OpgTxt = OpgTxt
+EndFor
+
+&Tpcod = 234
+&Tpcorr = 4
+For Each // Fst098: Fst098 - Datos Procesos
+Where Pgcod = &Pgcod
+Where Tpcod = &Tpcod
+Where Tpcorr = &Tpcorr
+Defined By Tpdesc
+	&Tpnro  = Tpnro
+	&Tpimp  = Tpimp
+EndFor
+
+//@fst098 12,'hoa>'
+
+
+//> Agregamos nueva parametría
+
+&Tpcorr = 5
+/// Modifico algo
+For Each // Fst098: Fst098 - Datos Procesos
+Where Pgcod = &Pgcod
+Where Tpcod = &Tpcod
+Where Tpcorr = &Tpcorr
+Defined By Tpdesc
+	&Tpnro  = Tpnro
+	&Tpimp  = Tpimp
+	/// filtro por algo
+	For Each // Fst098: Fst098 - Datos Procesos
+	Where Pgcod = &Pgcod
+	Where Tpcod = &Tpcod
+	Where Tpcorr = &Tpcorr
+	Defined By Tpdesc
+		&Tpnro  = Tpnro
+		&Tpimp  = Tpimp
+	EndFor
+EndFor
+
+/**
+ * This is a description text with {@see InlineTag inline tags}.
+ * It can also contain <b>HTML</b>.
+ * @return Lines beginning with an @ sign start the tag section.
+ */

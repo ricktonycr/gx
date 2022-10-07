@@ -6,7 +6,7 @@ For Each // Fst017: Fst017 - Empresas
 Where &Pgcod = Pgcod
 Defined By Pgpomn
 	&Pgfape = Pgfape
-	For Each // Fst198: Guías especiales de proceso
+	For Each // Fst198: GuÃ­as especiales de proceso
 	Where Tp1cod   = &Pgcod
 	Where Tp1cod1  = &Tp1cod1
 	Where Tp1corr1 = &Tp1corr1
@@ -17,13 +17,13 @@ Defined By Pgpomn
 	EndFor
 EndFor
 
-// Extraigo código de gerente de agencia
+// Extraigo cÃ³digo de gerente de agencia
 &Tp1cod1  = 21200
 &Tp1corr1 = 1
 &Tp1corr2 = 20
 &Tp1corr3 = 2
 &CodGer   = 0
-For Each // Fst198: Guías especiales de proceso
+For Each Tp1cod1, Tp1cod2, Tp1cod3 // Fst198: GuÃ­as especiales de proceso
 Where Tp1cod   = &Pgcod
 Where Tp1cod1  = &Tp1cod1
 Where Tp1corr1 = &Tp1corr1
@@ -34,7 +34,7 @@ Defined By Tp1imp2
 EndFor
 
 // Obtengo sucursal del usuario
-For Each // Fst046: Fst046 - Códigos de Usuario
+For Each // Fst046: Fst046 - CÃ³digos de Usuario
 Where Pgcod  = &Pgcod
 Where Ubuser = &Ubuser
 Defined By UbMnu
@@ -46,7 +46,7 @@ EndFor
 &Tp1corr1 = 1
 &Tp1corr2 = 20
 &Tp1corr3 = 1
-For Each // Fst198: Guías especiales de proceso
+For Each // Fst198: GuÃ­as especiales de proceso
 Where Tp1cod   = &Pgcod
 Where Tp1cod1  = &Tp1cod1
 Where Tp1corr1 = &Tp1corr1
@@ -62,10 +62,17 @@ For &anterior = 1 To 20
 	If &pertenece = 'N'
 			&error      = 'S'
 			&ResMsg     = 'El documento o pertenece a la caja de ahorros seleccionada.'
-			&Mensaje = Udp(PFRRepMsg,&ResMsg,'E')
+			&GP_Mensaje = Udp(PFRRepMsg,&ResMsg,'E')
+			Do 'GP: Reportar mensaje'
 		EndIf
 EndFor
 
+For &BBTIndividual In &BBTSolIndBIM
+	If &JCMA10Sol = &BBTIndividual.CodIndividual
+		&EsBIM = 'S'  
+		Exit
+	EndIf
+EndFor
 
 New //-- FSN003
 	Pgcod  = &PPgcod 
@@ -78,7 +85,35 @@ New //-- FSN003
 	Nrtrel = 1 
 EndNew
 
+Sub 'Verificar modulo'
+    &j       = 1
+    &parteDe = 'N'
+    Do While &j <= &modsValC And &parteDe = 'N'//>	el mÃ³dulo
+        If &modsVal(&j) = &I1mod  //> El valor es igual al esperado
+            &parteDe = 'S'
+        EndIf
+        &j = &j + 1
+    EndDo
+EndSub // 'Verificar modulo'
 
+Do Case
+Case &BTCDNType = 'INS'
+	&g_accion = 'Alta'
+Case &BTCDNType = 'UPD'                                
+	&g_accion = 'ModificaciÃ³n'
+Case &BTCDNType = 'DLT'
+	&g_accion = 'Baja'
+Otherwise
+	&g_accion = ''
+EndCase
+// Agrega el registro a la grilla
+Do 'GP: Agregar registro a Bandeja'
+
+// Realiza el control de carga. Termina la carga si se cargÃ³
+// completamente la pÃ¡gina actual
+If &GP_CargaTerminada = 'S'
+	Exit
+EndIf
 
 /*&parteDe = 'N'
 Do While &j <= &modsValC And &parteDe = 'N' 
@@ -90,6 +125,20 @@ EndDo-*/
 
 &PgmNom = 'PJBRA401'
 &Debug  = 'N'
+For Each // Fst900: Fst900 - Programas
+Where Pgcod  = &Ppgcod
+Where PgmNom = &PgmNom
+Defined By PgmCd1
+	&Debug = 'S'
+EndFor
+&PgmNom = 'PJBRA4s1'
+For Each // Fst900: Fst900 - Programas
+Where Pgcod  = &Ppgcod
+Where PgmNom = &PgmNom
+Defined By PgmCd1
+	&Debug = 'S'
+EndFor
+&PgmNom = 'PJBRW401'
 For Each // Fst900: Fst900 - Programas
 Where Pgcod  = &Ppgcod
 Where PgmNom = &PgmNom
@@ -131,24 +180,13 @@ Defined By Tpdesc
 	&Tpimp  = Tpimp
 EndFor
 
-&Tpcod = 345
-&Tpcorr = 4
-For Each // Fst098: Fst098 - Datos Procesos
-Where Pgcod = &Pgcod
-Where Tpcod = &Tpcod
-Where Tpcorr = &Tpcorr
-Defined By Tpdesc
-	&Tpnro  = Tpnro
-	&Tpimp  = Tpimp
-EndFor
-
 //@fst098 12,'hoa>'
 
 
-//> Agregamos nueva parametría
+//> Agregamos nueva parametrÃ­a
 
-
-// Ingresamos a la tabla FSD010 mediante el modulo y tipo de operación
+&Tpcorr = 5
+/// Modifico algo
 For Each // Fst098: Fst098 - Datos Procesos
 Where Pgcod = &Pgcod
 Where Tpcod = &Tpcod
@@ -156,7 +194,7 @@ Where Tpcorr = &Tpcorr
 Defined By Tpdesc
 	&Tpnro  = Tpnro
 	&Tpimp  = Tpimp
-	// Ingresamos a la tabla FSD011 filtrando por saldo diferente de 0
+	/// filtro por algo
 	For Each // Fst098: Fst098 - Datos Procesos
 	Where Pgcod = &Pgcod
 	Where Tpcod = &Tpcod
@@ -164,49 +202,11 @@ Defined By Tpdesc
 	Defined By Tpdesc
 		&Tpnro  = Tpnro
 		&Tpimp  = Tpimp
-        // Llamamos al programa PJCMA333 para realizar la cancelación del producto
 	EndFor
 EndFor
-
-/// Ingresamos a la tabla FSD010 mediante el modulo y tipo de operación
-For Each // Fst098: Fst098 - Datos Procesos
-Where Pgcod = &Pgcod
-Where Tpcod = &Tpcod
-Where Tpcorr = &Tpcorr
-Defined By Tpdesc
-	&Tpnro  = Tpnro
-	&Tpimp  = Tpimp
-	/// Ingresamos a la tabla FSD011 filtrando por saldo diferente de 0
-	For Each // Fst098: Fst098 - Datos Procesos
-	Where Pgcod = &Pgcod
-	Where Tpcod = &Tpcod
-	Where Tpcorr = &Tpcorr
-	Defined By Tpdesc
-		&Tpnro  = Tpnro
-		&Tpimp  = Tpimp
-        
-        //> Llamamos al programa PJCMA333 para realizar la cancelación del producto
-	EndFor
-EndFor
-
 
 /**
  * This is a description text with {@see InlineTag inline tags}.
  * It can also contain <b>HTML</b>.
  * @return Lines beginning with an @ sign start the tag section.
  */
- 
-
-Sub 'Verificar modulo'
-    &j       = 1
-    &parteDe = 'N'
-    
-    If &Line > 10 And &Page = 1 // La persona tiene los documentos en orden
-        // Se imprime la información en el documento
-    EndIf
-    
-    If &Line > 10 And &Page = 1 /// la persona tiene los documentos en orden
-        //> Se imprime la información en el documento
-    EndIf
-EndSub // 'Verificar modulo'
-

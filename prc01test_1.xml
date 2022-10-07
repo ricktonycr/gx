@@ -26,73 +26,34 @@
       </Info>
       <ObjInfo>
       </ObjInfo>
-      <LastUpdate>2021-11-11 04:24:36GMT</LastUpdate>
+      <LastUpdate>2021-11-04 04:05:48GMT</LastUpdate>
       <Variable>
-        <Id>-18</Id>
-        <Name>anterior</Name>
-        <Title>anterior</Title>
-        <Length>1</Length>
+        <Name>Today</Name>
+        <Title>Today</Title>
+        <Type>Date</Type>
+        <Length>8</Length>
         <Decimals>0</Decimals>
-        <Picture>9</Picture>
+        <Picture>99/99/99</Picture>
+      </Variable>
+      <Variable>
+        <Id>-2</Id>
+        <Name>Time</Name>
+        <Title>Time</Title>
+        <Type>Character</Type>
+        <Length>8</Length>
+        <Decimals>0</Decimals>
+      </Variable>
+      <Variable>
+        <Id>-3</Id>
+        <Name>Page</Name>
+        <Title>Page</Title>
+        <Length>6</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZ9</Picture>
         <Property>
           <Type>string</Type>
           <Name>ATT_PICTURE</Name>
-          <Value>9</Value>
-        </Property>
-      </Variable>
-      <Variable>
-        <Id>-23</Id>
-        <Name>BTCDNType</Name>
-        <Title>News type</Title>
-        <Type>Character</Type>
-        <Length>3</Length>
-        <Decimals>0</Decimals>
-        <BasedOn>BTCDNType</BasedOn>
-      </Variable>
-      <Variable>
-        <Id>-15</Id>
-        <Name>CodGer</Name>
-        <Title>Cod Ger</Title>
-        <Length>9</Length>
-        <Decimals>0</Decimals>
-        <Picture>ZZZZZZZZ9</Picture>
-        <BasedOn>Tp1nro1</BasedOn>
-      </Variable>
-      <Variable>
-        <Id>-26</Id>
-        <Name>Debug</Name>
-        <Title>Debug</Title>
-        <Type>Character</Type>
-        <Length>1</Length>
-        <Decimals>0</Decimals>
-      </Variable>
-      <Variable>
-        <Id>-20</Id>
-        <Name>error</Name>
-        <Title>error</Title>
-        <Type>Character</Type>
-        <Length>1</Length>
-        <Decimals>0</Decimals>
-      </Variable>
-      <Variable>
-        <Id>-24</Id>
-        <Name>g_accion</Name>
-        <Title>g_accion</Title>
-        <Type>Character</Type>
-        <Length>4</Length>
-        <Decimals>0</Decimals>
-      </Variable>
-      <Variable>
-        <Id>-33</Id>
-        <Name>j</Name>
-        <Title>j</Title>
-        <Length>1</Length>
-        <Decimals>0</Decimals>
-        <Picture>9</Picture>
-        <Property>
-          <Type>string</Type>
-          <Name>ATT_PICTURE</Name>
-          <Value>9</Value>
+          <Value>ZZZZZ9</Value>
         </Property>
       </Variable>
       <Variable>
@@ -109,116 +70,12 @@
         </Property>
       </Variable>
       <Variable>
-        <Id>-36</Id>
-        <Name>Mensaje</Name>
-        <Title>Mensaje</Title>
-        <Type>Character</Type>
-        <Length>120</Length>
-        <Decimals>0</Decimals>
-        <BasedOn>Mensaje</BasedOn>
-      </Variable>
-      <Variable>
-        <Id>-35</Id>
-        <Name>NewVariable</Name>
-        <Title/>
-        <Picture>ZZZZZZ9.99</Picture>
-        <Property>
-          <Type>string</Type>
-          <Name>ATT_PICTURE</Name>
-          <Value>ZZZZZZ9.99</Value>
-        </Property>
-      </Variable>
-      <Variable>
-        <Id>-27</Id>
-        <Name>OpgCod</Name>
-        <Title>C骴igo de opci髇 general</Title>
-        <Length>5</Length>
-        <Decimals>0</Decimals>
-        <Picture>ZZZZ9</Picture>
-        <BasedOn>OpgCod</BasedOn>
-      </Variable>
-      <Variable>
-        <Id>-28</Id>
-        <Name>OpgTxt</Name>
-        <Title>Descripci髇 de opci髇 general</Title>
-        <Type>Character</Type>
-        <Length>30</Length>
-        <Decimals>0</Decimals>
-        <BasedOn>OpgTxt</BasedOn>
-      </Variable>
-      <Variable>
         <Id>-5</Id>
         <Name>Output</Name>
         <Title>Output</Title>
         <Type>Character</Type>
         <Length>3</Length>
         <Decimals>0</Decimals>
-        <Property>
-          <Type>string</Type>
-          <Name>ATT_PICTURE</Name>
-          <Value/>
-        </Property>
-      </Variable>
-      <Variable>
-        <Id>-3</Id>
-        <Name>Page</Name>
-        <Title>Page</Title>
-        <Length>6</Length>
-        <Decimals>0</Decimals>
-        <Picture>ZZZZZ9</Picture>
-        <Property>
-          <Type>string</Type>
-          <Name>ATT_PICTURE</Name>
-          <Value>ZZZZZ9</Value>
-        </Property>
-      </Variable>
-      <Variable>
-        <Id>-34</Id>
-        <Name>parteDe</Name>
-        <Title>parte De</Title>
-        <Type>Character</Type>
-        <Length>1</Length>
-        <Decimals>0</Decimals>
-      </Variable>
-      <Variable>
-        <Id>-19</Id>
-        <Name>pertenece</Name>
-        <Title>pertenece</Title>
-        <Type>Character</Type>
-        <Length>1</Length>
-        <Decimals>0</Decimals>
-      </Variable>
-      <Variable>
-        <Id>-9</Id>
-        <Name>Pgcod</Name>
-        <Title>Cod.</Title>
-        <Length>3</Length>
-        <Decimals>0</Decimals>
-        <Picture>ZZ9</Picture>
-        <BasedOn>Pgcod</BasedOn>
-      </Variable>
-      <Variable>
-        <Id>-10</Id>
-        <Name>Pgfape</Name>
-        <Title>Fecha de apertura</Title>
-        <Type>Date</Type>
-        <Length>8</Length>
-        <Decimals>0</Decimals>
-        <Picture>99/99/99</Picture>
-        <BasedOn>Pgfape</BasedOn>
-      </Variable>
-      <Variable>
-        <Id>-7</Id>
-        <Name>Pgmdesc</Name>
-        <Title>Pgmdesc</Title>
-        <Type>Character</Type>
-        <Length>30</Length>
-        <Decimals>0</Decimals>
-        <Property>
-          <Type>string</Type>
-          <Name>ATT_PICTURE</Name>
-          <Value/>
-        </Property>
       </Variable>
       <Variable>
         <Id>-6</Id>
@@ -227,168 +84,16 @@
         <Type>Character</Type>
         <Length>31</Length>
         <Decimals>0</Decimals>
-        <Property>
-          <Type>string</Type>
-          <Name>ATT_PICTURE</Name>
-          <Value/>
-        </Property>
       </Variable>
       <Variable>
-        <Id>-25</Id>
-        <Name>PgmNom</Name>
-        <Title>Programa standard</Title>
-        <Type>Character</Type>
-        <Decimals>0</Decimals>
-        <Picture>@!</Picture>
-        <BasedOn>PgmNom</BasedOn>
-      </Variable>
-      <Variable>
-        <Id>-22</Id>
-        <Name>PPgcod</Name>
-        <Title>C骴igo</Title>
-        <Length>3</Length>
-        <Decimals>0</Decimals>
-        <Picture>ZZ9</Picture>
-        <BasedOn>PPgcod</BasedOn>
-      </Variable>
-      <Variable>
-        <Id>-17</Id>
-        <Name>repo</Name>
-        <Title>repo</Title>
-        <Picture>ZZZZZZ9.99</Picture>
-        <Property>
-          <Type>string</Type>
-          <Name>ATT_PICTURE</Name>
-          <Value>ZZZZZZ9.99</Value>
-        </Property>
-      </Variable>
-      <Variable>
-        <Id>-21</Id>
-        <Name>ResMsg</Name>
-        <Title>Res Msg</Title>
-        <Type>Character</Type>
-        <Length>59</Length>
-        <Decimals>0</Decimals>
-      </Variable>
-      <Variable>
-        <Id>-2</Id>
-        <Name>Time</Name>
-        <Title>Time</Title>
-        <Type>Character</Type>
-        <Length>8</Length>
-        <Decimals>0</Decimals>
-        <Property>
-          <Type>string</Type>
-          <Name>ATT_PICTURE</Name>
-          <Value/>
-        </Property>
-      </Variable>
-      <Variable>
-        <Name>Today</Name>
-        <Title>Today</Title>
-        <Type>Date</Type>
-        <Length>8</Length>
-        <Decimals>0</Decimals>
-        <Picture>99/99/99</Picture>
-        <Property>
-          <Type>string</Type>
-          <Name>ATT_PICTURE</Name>
-          <Value>99/99/99</Value>
-        </Property>
-      </Variable>
-      <Variable>
-        <Id>-11</Id>
-        <Name>Tp1cod1</Name>
-        <Title>Gu韆</Title>
-        <Length>9</Length>
-        <Decimals>0</Decimals>
-        <Picture>ZZZZZZZZ9</Picture>
-        <BasedOn>Tp1cod1</BasedOn>
-      </Variable>
-      <Variable>
-        <Id>-12</Id>
-        <Name>Tp1corr1</Name>
-        <Title>Correlativo 1</Title>
-        <Length>9</Length>
-        <Decimals>0</Decimals>
-        <Picture>ZZZZZZZZ9</Picture>
-        <BasedOn>Tp1corr1</BasedOn>
-      </Variable>
-      <Variable>
-        <Id>-13</Id>
-        <Name>Tp1corr2</Name>
-        <Title>Correlativo 2</Title>
-        <Length>9</Length>
-        <Decimals>0</Decimals>
-        <Picture>ZZZZZZZZ9</Picture>
-        <BasedOn>Tp1corr2</BasedOn>
-      </Variable>
-      <Variable>
-        <Id>-14</Id>
-        <Name>Tp1corr3</Name>
-        <Title>Correlativo 3</Title>
-        <Length>9</Length>
-        <Decimals>0</Decimals>
-        <Picture>ZZZZZZZZ9</Picture>
-        <BasedOn>Tp1corr3</BasedOn>
-      </Variable>
-      <Variable>
-        <Id>-29</Id>
-        <Name>Tpcod</Name>
-        <Title>C骴igo de valor</Title>
-        <Length>5</Length>
-        <Decimals>0</Decimals>
-        <Picture>ZZZZ9</Picture>
-        <BasedOn>Tpcod</BasedOn>
-      </Variable>
-      <Variable>
-        <Id>-30</Id>
-        <Name>Tpcorr</Name>
-        <Title>Correlativo</Title>
-        <Length>3</Length>
-        <Decimals>0</Decimals>
-        <Picture>ZZ9</Picture>
-        <BasedOn>Tpcorr</BasedOn>
-      </Variable>
-      <Variable>
-        <Id>-32</Id>
-        <Name>Tpimp</Name>
-        <Title>Importe espec韋ico</Title>
-        <Length>18</Length>
-        <Sign>Y</Sign>
-        <Picture>ZZZ,ZZZ,ZZZ,ZZZ,ZZ9.99</Picture>
-        <BasedOn>Tpimp</BasedOn>
-      </Variable>
-      <Variable>
-        <Id>-31</Id>
-        <Name>Tpnro</Name>
-        <Title>Valor espec韋ico</Title>
-        <Length>9</Length>
-        <Decimals>0</Decimals>
-        <Picture>ZZZZZZZZ9</Picture>
-        <BasedOn>Tpnro</BasedOn>
-      </Variable>
-      <Variable>
-        <Id>-16</Id>
-        <Name>Ubsuc1</Name>
-        <Title>Sucursal</Title>
-        <Length>5</Length>
-        <Decimals>0</Decimals>
-        <Picture>ZZZZ9</Picture>
-        <BasedOn>Ubsuc</BasedOn>
-      </Variable>
-      <Variable>
-        <Id>-8</Id>
-        <Name>Ubuser</Name>
-        <Title>Usuario</Title>
+        <Id>-7</Id>
+        <Name>Pgmdesc</Name>
+        <Title>Pgmdesc</Title>
         <Type>Character</Type>
         <Length>30</Length>
         <Decimals>0</Decimals>
-        <Picture>@!</Picture>
-        <BasedOn>Ubuser</BasedOn>
       </Variable>
       <Layout>
-        <NextControlID>4</NextControlID>
         <FormInfo>
           <FormId>1</FormId>
           <FormClass>Graphic</FormClass>
@@ -436,7 +141,7 @@ For Each // Fst017: Fst017 - Empresas
 Where &Pgcod = Pgcod
 Defined By Pgpomn
 	&Pgfape = Pgfape
-	For Each // Fst198: Gu韆s especiales de proceso
+	For Each // Fst198: Gu铆as especiales de proceso
 	Where Tp1cod   = &Pgcod
 	Where Tp1cod1  = &Tp1cod1
 	Where Tp1corr1 = &Tp1corr1
@@ -447,13 +152,13 @@ Defined By Pgpomn
 	EndFor
 EndFor
 
-// Extraigo c骴igo de gerente de agencia
+// Extraigo c贸digo de gerente de agencia
 &Tp1cod1  = 21200
 &Tp1corr1 = 1
 &Tp1corr2 = 20
 &Tp1corr3 = 2
 &CodGer   = 0
-For Each // Fst198: Gu韆s especiales de proceso
+For Each Tp1cod1, Tp1cod2, Tp1cod3 // Fst198: Gu铆as especiales de proceso
 Where Tp1cod   = &Pgcod
 Where Tp1cod1  = &Tp1cod1
 Where Tp1corr1 = &Tp1corr1
@@ -464,7 +169,7 @@ Defined By Tp1imp2
 EndFor
 
 // Obtengo sucursal del usuario
-For Each // Fst046: Fst046 - C骴igos de Usuario
+For Each // Fst046: Fst046 - C贸digos de Usuario
 Where Pgcod  = &Pgcod
 Where Ubuser = &Ubuser
 Defined By UbMnu
@@ -476,7 +181,7 @@ EndFor
 &Tp1corr1 = 1
 &Tp1corr2 = 20
 &Tp1corr3 = 1
-For Each // Fst198: Gu韆s especiales de proceso
+For Each // Fst198: Gu铆as especiales de proceso
 Where Tp1cod   = &Pgcod
 Where Tp1cod1  = &Tp1cod1
 Where Tp1corr1 = &Tp1corr1
@@ -492,10 +197,17 @@ For &anterior = 1 To 20
 	If &pertenece = 'N'
 			&error      = 'S'
 			&ResMsg     = 'El documento o pertenece a la caja de ahorros seleccionada.'
-			&Mensaje = Udp(PFRRepMsg,&ResMsg,'E')
+			&GP_Mensaje = Udp(PFRRepMsg,&ResMsg,'E')
+			Do 'GP: Reportar mensaje'
 		EndIf
 EndFor
 
+For &BBTIndividual In &BBTSolIndBIM
+	If &JCMA10Sol = &BBTIndividual.CodIndividual
+		&EsBIM = 'S'  
+		Exit
+	EndIf
+EndFor
 
 New //-- FSN003
 	Pgcod  = &PPgcod 
@@ -508,7 +220,35 @@ New //-- FSN003
 	Nrtrel = 1 
 EndNew
 
+Sub 'Verificar modulo'
+    &j       = 1
+    &parteDe = 'N'
+    Do While &j <= &modsValC And &parteDe = 'N'//>	el m贸dulo
+        If &modsVal(&j) = &I1mod  //> El valor es igual al esperado
+            &parteDe = 'S'
+        EndIf
+        &j = &j + 1
+    EndDo
+EndSub // 'Verificar modulo'
 
+Do Case
+Case &BTCDNType = 'INS'
+	&g_accion = 'Alta'
+Case &BTCDNType = 'UPD'                                
+	&g_accion = 'Modificaci贸n'
+Case &BTCDNType = 'DLT'
+	&g_accion = 'Baja'
+Otherwise
+	&g_accion = ''
+EndCase
+// Agrega el registro a la grilla
+Do 'GP: Agregar registro a Bandeja'
+
+// Realiza el control de carga. Termina la carga si se carg贸
+// completamente la p谩gina actual
+If &GP_CargaTerminada = 'S'
+	Exit
+EndIf
 
 /*&parteDe = 'N'
 Do While &j <= &modsValC And &parteDe = 'N' 
@@ -520,6 +260,20 @@ EndDo-*/
 
 &PgmNom = 'PJBRA401'
 &Debug  = 'N'
+For Each // Fst900: Fst900 - Programas
+Where Pgcod  = &Ppgcod
+Where PgmNom = &PgmNom
+Defined By PgmCd1
+	&Debug = 'S'
+EndFor
+&PgmNom = 'PJBRA4s1'
+For Each // Fst900: Fst900 - Programas
+Where Pgcod  = &Ppgcod
+Where PgmNom = &PgmNom
+Defined By PgmCd1
+	&Debug = 'S'
+EndFor
+&PgmNom = 'PJBRW401'
 For Each // Fst900: Fst900 - Programas
 Where Pgcod  = &Ppgcod
 Where PgmNom = &PgmNom
@@ -561,24 +315,13 @@ Defined By Tpdesc
 	&Tpimp  = Tpimp
 EndFor
 
-&Tpcod = 345
-&Tpcorr = 4
-For Each // Fst098: Fst098 - Datos Procesos
-Where Pgcod = &Pgcod
-Where Tpcod = &Tpcod
-Where Tpcorr = &Tpcorr
-Defined By Tpdesc
-	&Tpnro  = Tpnro
-	&Tpimp  = Tpimp
-EndFor
-
 //@fst098 12,'hoa>'
 
 
-//> Agregamos nueva parametr韆
+//> Agregamos nueva parametr铆a
 
-
-// Ingresamos a la tabla FSD010 mediante el modulo y tipo de operaci髇
+&Tpcorr = 5
+/// Modifico algo
 For Each // Fst098: Fst098 - Datos Procesos
 Where Pgcod = &Pgcod
 Where Tpcod = &Tpcod
@@ -586,7 +329,7 @@ Where Tpcorr = &Tpcorr
 Defined By Tpdesc
 	&Tpnro  = Tpnro
 	&Tpimp  = Tpimp
-	// Ingresamos a la tabla FSD011 filtrando por saldo diferente de 0
+	/// filtro por algo
 	For Each // Fst098: Fst098 - Datos Procesos
 	Where Pgcod = &Pgcod
 	Where Tpcod = &Tpcod
@@ -594,52 +337,14 @@ Defined By Tpdesc
 	Defined By Tpdesc
 		&Tpnro  = Tpnro
 		&Tpimp  = Tpimp
-        // Llamamos al programa PJCMA333 para realizar la cancelaci髇 del producto
 	EndFor
 EndFor
-
-/// Ingresamos a la tabla FSD010 mediante el modulo y tipo de operaci髇
-For Each // Fst098: Fst098 - Datos Procesos
-Where Pgcod = &Pgcod
-Where Tpcod = &Tpcod
-Where Tpcorr = &Tpcorr
-Defined By Tpdesc
-	&Tpnro  = Tpnro
-	&Tpimp  = Tpimp
-	/// Ingresamos a la tabla FSD011 filtrando por saldo diferente de 0
-	For Each // Fst098: Fst098 - Datos Procesos
-	Where Pgcod = &Pgcod
-	Where Tpcod = &Tpcod
-	Where Tpcorr = &Tpcorr
-	Defined By Tpdesc
-		&Tpnro  = Tpnro
-		&Tpimp  = Tpimp
-        
-        //> Llamamos al programa PJCMA333 para realizar la cancelaci髇 del producto
-	EndFor
-EndFor
-
 
 /**
  * This is a description text with {@see InlineTag inline tags}.
  * It can also contain <b>HTML</b>.
  * @return Lines beginning with an @ sign start the tag section.
- */
- 
-
-Sub 'Verificar modulo'
-    &j       = 1
-    &parteDe = 'N'
-    
-    If &Line > 10 And &Page = 1 // La persona tiene los documentos en orden
-        // Se imprime la informaci髇 en el documento
-    EndIf
-    
-    If &Line > 10 And &Page = 1 /// la persona tiene los documentos en orden
-        //> Se imprime la informaci髇 en el documento
-    EndIf
-EndSub // 'Verificar modulo'
-]]></Source>
+ */]]></Source>
           </CodeBlock>
         </Block>
         <Block>
@@ -707,453 +412,4 @@ EndSub // 'Verificar modulo'
       </Layout>
     </Procedure>
   </GXObject>
-  <Attributes>
-    <GXAtt>
-      <Attribute>
-        <Id>14289</Id>
-        <Name>BTCDNType</Name>
-        <Title>News type</Title>
-        <Type>Character</Type>
-        <Length>3</Length>
-        <LastUpdate>2021-06-04 14:17:06GMT</LastUpdate>
-      </Attribute>
-      <AttInfo>
-        <ControlInfoFromDomain>N</ControlInfoFromDomain>
-        <EditInfo>
-        </EditInfo>
-      </AttInfo>
-      <AttDoc>
-      </AttDoc>
-    </GXAtt>
-    <GXAtt>
-      <Attribute>
-        <Id>1264</Id>
-        <Name>Tp1nro1</Name>
-        <Title>Valor espec韋ico 1</Title>
-        <Length>9</Length>
-        <Picture>ZZZZZZZZ9</Picture>
-        <LastUpdate>2012-03-07 13:02:30GMT</LastUpdate>
-      </Attribute>
-      <AttInfo>
-        <ControlInfoFromDomain>N</ControlInfoFromDomain>
-        <EditInfo>
-        </EditInfo>
-      </AttInfo>
-      <AttDoc>
-        <Property>
-          <Type>string</Type>
-          <Name>ATT_PICTURE</Name>
-          <Value>ZZZZZZZZ9</Value>
-        </Property>
-      </AttDoc>
-    </GXAtt>
-    <GXAtt>
-      <Attribute>
-        <Id>15582</Id>
-        <Name>Mensaje</Name>
-        <Title>Mensaje</Title>
-        <Type>Character</Type>
-        <Length>120</Length>
-        <LastUpdate>2021-11-04 16:32:36GMT</LastUpdate>
-      </Attribute>
-      <AttInfo>
-        <ControlInfoFromDomain>N</ControlInfoFromDomain>
-        <EditInfo>
-        </EditInfo>
-      </AttInfo>
-      <AttDoc>
-      </AttDoc>
-    </GXAtt>
-    <GXAtt>
-      <Attribute>
-        <Id>1061</Id>
-        <Name>OpgCod</Name>
-        <Title>C骴igo de opci髇 general</Title>
-        <Length>5</Length>
-        <Picture>ZZZZ9</Picture>
-        <LastUpdate>2012-03-07 13:02:30GMT</LastUpdate>
-      </Attribute>
-      <AttInfo>
-        <ControlInfoFromDomain>N</ControlInfoFromDomain>
-        <EditInfo>
-        </EditInfo>
-      </AttInfo>
-      <AttDoc>
-        <Property>
-          <Type>string</Type>
-          <Name>ATT_PICTURE</Name>
-          <Value>ZZZZ9</Value>
-        </Property>
-      </AttDoc>
-    </GXAtt>
-    <GXAtt>
-      <Attribute>
-        <Id>1271</Id>
-        <Name>OpgTxt</Name>
-        <Title>Descripci髇 de opci髇 general</Title>
-        <Type>Character</Type>
-        <Length>30</Length>
-        <LastUpdate>2012-03-07 13:02:14GMT</LastUpdate>
-      </Attribute>
-      <AttInfo>
-        <ControlInfoFromDomain>N</ControlInfoFromDomain>
-        <EditInfo>
-        </EditInfo>
-      </AttInfo>
-      <AttDoc>
-      </AttDoc>
-    </GXAtt>
-    <GXAtt>
-      <Attribute>
-        <Id>7</Id>
-        <Name>Pgcod</Name>
-        <Title>Cod.</Title>
-        <Length>3</Length>
-        <LastUpdate>2016-12-16 21:35:40GMT</LastUpdate>
-      </Attribute>
-      <AttInfo>
-        <ControlInfoFromDomain>N</ControlInfoFromDomain>
-        <EditInfo>
-        </EditInfo>
-      </AttInfo>
-      <AttDoc>
-        <Property>
-          <Type>string</Type>
-          <Name>ATT_PICTURE</Name>
-          <Value>ZZ9</Value>
-        </Property>
-      </AttDoc>
-    </GXAtt>
-    <GXAtt>
-      <Attribute>
-        <Id>505</Id>
-        <Name>Pgfape</Name>
-        <Title>Fecha de apertura</Title>
-        <Type>Date</Type>
-        <Length>8</Length>
-        <LastUpdate>2012-03-07 13:01:50GMT</LastUpdate>
-      </Attribute>
-      <AttInfo>
-        <ControlInfoFromDomain>N</ControlInfoFromDomain>
-        <EditInfo>
-        </EditInfo>
-      </AttInfo>
-      <AttDoc>
-      </AttDoc>
-    </GXAtt>
-    <GXAtt>
-      <Attribute>
-        <Id>1634</Id>
-        <Name>PgmNom</Name>
-        <Title>Programa standard</Title>
-        <Type>Character</Type>
-        <Length>10</Length>
-        <Picture>@!</Picture>
-        <LastUpdate>2012-03-07 13:02:32GMT</LastUpdate>
-      </Attribute>
-      <AttInfo>
-        <ControlInfoFromDomain>N</ControlInfoFromDomain>
-        <EditInfo>
-        </EditInfo>
-      </AttInfo>
-      <AttDoc>
-        <Property>
-          <Type>string</Type>
-          <Name>ATT_PICTURE</Name>
-          <Value>@!</Value>
-        </Property>
-      </AttDoc>
-    </GXAtt>
-    <GXAtt>
-      <Attribute>
-        <Id>897</Id>
-        <Name>PPgcod</Name>
-        <Title>C骴igo</Title>
-        <Length>3</Length>
-        <Picture>ZZ9</Picture>
-        <LastUpdate>2012-03-07 13:11:50GMT</LastUpdate>
-      </Attribute>
-      <AttInfo>
-        <ControlInfoFromDomain>N</ControlInfoFromDomain>
-        <EditInfo>
-        </EditInfo>
-      </AttInfo>
-      <AttDoc>
-        <Property>
-          <Type>string</Type>
-          <Name>ATT_PICTURE</Name>
-          <Value>ZZ9</Value>
-        </Property>
-      </AttDoc>
-    </GXAtt>
-    <GXAtt>
-      <Attribute>
-        <Id>1260</Id>
-        <Name>Tp1cod1</Name>
-        <Title>Gu韆</Title>
-        <Length>9</Length>
-        <Picture>ZZZZZZZZ9</Picture>
-        <LastUpdate>2012-03-07 13:02:30GMT</LastUpdate>
-      </Attribute>
-      <AttInfo>
-        <ControlInfoFromDomain>N</ControlInfoFromDomain>
-        <EditInfo>
-        </EditInfo>
-      </AttInfo>
-      <AttDoc>
-        <Property>
-          <Type>string</Type>
-          <Name>ATT_PICTURE</Name>
-          <Value>ZZZZZZZZ9</Value>
-        </Property>
-      </AttDoc>
-    </GXAtt>
-    <GXAtt>
-      <Attribute>
-        <Id>1261</Id>
-        <Name>Tp1corr1</Name>
-        <Title>Correlativo 1</Title>
-        <Length>9</Length>
-        <Picture>ZZZZZZZZ9</Picture>
-        <LastUpdate>2012-03-07 13:02:30GMT</LastUpdate>
-      </Attribute>
-      <AttInfo>
-        <ControlInfoFromDomain>N</ControlInfoFromDomain>
-        <EditInfo>
-        </EditInfo>
-      </AttInfo>
-      <AttDoc>
-        <Property>
-          <Type>string</Type>
-          <Name>ATT_PICTURE</Name>
-          <Value>ZZZZZZZZ9</Value>
-        </Property>
-      </AttDoc>
-    </GXAtt>
-    <GXAtt>
-      <Attribute>
-        <Id>1262</Id>
-        <Name>Tp1corr2</Name>
-        <Title>Correlativo 2</Title>
-        <Length>9</Length>
-        <Picture>ZZZZZZZZ9</Picture>
-        <LastUpdate>2012-03-07 13:02:30GMT</LastUpdate>
-      </Attribute>
-      <AttInfo>
-        <ControlInfoFromDomain>N</ControlInfoFromDomain>
-        <EditInfo>
-        </EditInfo>
-      </AttInfo>
-      <AttDoc>
-        <Property>
-          <Type>string</Type>
-          <Name>ATT_PICTURE</Name>
-          <Value>ZZZZZZZZ9</Value>
-        </Property>
-      </AttDoc>
-    </GXAtt>
-    <GXAtt>
-      <Attribute>
-        <Id>1263</Id>
-        <Name>Tp1corr3</Name>
-        <Title>Correlativo 3</Title>
-        <Length>9</Length>
-        <Picture>ZZZZZZZZ9</Picture>
-        <LastUpdate>2012-03-07 13:02:30GMT</LastUpdate>
-      </Attribute>
-      <AttInfo>
-        <ControlInfoFromDomain>N</ControlInfoFromDomain>
-        <EditInfo>
-        </EditInfo>
-      </AttInfo>
-      <AttDoc>
-        <Property>
-          <Type>string</Type>
-          <Name>ATT_PICTURE</Name>
-          <Value>ZZZZZZZZ9</Value>
-        </Property>
-      </AttDoc>
-    </GXAtt>
-    <GXAtt>
-      <Attribute>
-        <Id>939</Id>
-        <Name>Tpcod</Name>
-        <Title>C骴igo de valor</Title>
-        <Length>5</Length>
-        <Picture>ZZZZ9</Picture>
-        <LastUpdate>2012-03-07 13:02:28GMT</LastUpdate>
-      </Attribute>
-      <AttInfo>
-        <ControlInfoFromDomain>N</ControlInfoFromDomain>
-        <EditInfo>
-        </EditInfo>
-      </AttInfo>
-      <AttDoc>
-        <Property>
-          <Type>string</Type>
-          <Name>ATT_PICTURE</Name>
-          <Value>ZZZZ9</Value>
-        </Property>
-      </AttDoc>
-    </GXAtt>
-    <GXAtt>
-      <Attribute>
-        <Id>501</Id>
-        <Name>Tpcorr</Name>
-        <Title>Correlativo</Title>
-        <Length>3</Length>
-        <Picture>ZZ9</Picture>
-        <LastUpdate>2012-03-07 13:02:28GMT</LastUpdate>
-      </Attribute>
-      <AttInfo>
-        <ControlInfoFromDomain>N</ControlInfoFromDomain>
-        <EditInfo>
-        </EditInfo>
-      </AttInfo>
-      <AttDoc>
-        <Property>
-          <Type>string</Type>
-          <Name>ATT_PICTURE</Name>
-          <Value>ZZ9</Value>
-        </Property>
-      </AttDoc>
-    </GXAtt>
-    <GXAtt>
-      <Attribute>
-        <Id>942</Id>
-        <Name>Tpimp</Name>
-        <Title>Importe espec韋ico</Title>
-        <Length>18</Length>
-        <Decimals>2</Decimals>
-        <Sign>Y</Sign>
-        <Picture>ZZZ,ZZZ,ZZZ,ZZZ,ZZ9.99</Picture>
-        <LastUpdate>2012-03-07 13:02:28GMT</LastUpdate>
-      </Attribute>
-      <AttInfo>
-        <Domain>Importe</Domain>
-        <ControlInfoFromDomain>Y</ControlInfoFromDomain>
-        <EditInfo>
-        </EditInfo>
-      </AttInfo>
-      <AttDoc>
-        <Property>
-          <Type>string</Type>
-          <Name>ATT_PICTURE</Name>
-          <Value>ZZZ,ZZZ,ZZZ,ZZZ,ZZ9.99</Value>
-        </Property>
-      </AttDoc>
-    </GXAtt>
-    <GXAtt>
-      <Attribute>
-        <Id>4</Id>
-        <Name>_Importe</Name>
-        <Title>Importe</Title>
-        <Length>18</Length>
-        <Decimals>2</Decimals>
-        <Sign>Y</Sign>
-        <Picture>ZZZ,ZZZ,ZZZ,ZZZ,ZZ9.99</Picture>
-        <LastUpdate>2019-09-30 22:31:10GMT</LastUpdate>
-      </Attribute>
-      <AttInfo>
-        <ControlInfoFromDomain>N</ControlInfoFromDomain>
-        <EditInfo>
-        </EditInfo>
-      </AttInfo>
-      <AttDoc>
-        <Property>
-          <Type>string</Type>
-          <Name>ATT_PICTURE</Name>
-          <Value>ZZZ,ZZZ,ZZZ,ZZZ,ZZ9.99</Value>
-        </Property>
-      </AttDoc>
-    </GXAtt>
-    <GXAtt>
-      <Attribute>
-        <Id>940</Id>
-        <Name>Tpnro</Name>
-        <Title>Valor espec韋ico</Title>
-        <Length>9</Length>
-        <Picture>ZZZZZZZZ9</Picture>
-        <LastUpdate>2012-03-07 13:02:28GMT</LastUpdate>
-      </Attribute>
-      <AttInfo>
-        <ControlInfoFromDomain>N</ControlInfoFromDomain>
-        <EditInfo>
-        </EditInfo>
-      </AttInfo>
-      <AttDoc>
-        <Property>
-          <Type>string</Type>
-          <Name>ATT_PICTURE</Name>
-          <Value>ZZZZZZZZ9</Value>
-        </Property>
-      </AttDoc>
-    </GXAtt>
-    <GXAtt>
-      <Attribute>
-        <Id>823</Id>
-        <Name>Ubsuc</Name>
-        <Title>Sucursal</Title>
-        <Length>5</Length>
-        <LastUpdate>2012-10-08 15:38:36GMT</LastUpdate>
-      </Attribute>
-      <AttInfo>
-        <ControlInfoFromDomain>N</ControlInfoFromDomain>
-        <EditInfo>
-        </EditInfo>
-      </AttInfo>
-      <AttDoc>
-        <Property>
-          <Type>string</Type>
-          <Name>ATT_PICTURE</Name>
-          <Value>ZZZZ9</Value>
-        </Property>
-      </AttDoc>
-    </GXAtt>
-    <GXAtt>
-      <Attribute>
-        <Id>504</Id>
-        <Name>Ubuser</Name>
-        <Title>Usuario</Title>
-        <Type>Character</Type>
-        <Length>30</Length>
-        <LastUpdate>2012-10-08 15:38:34GMT</LastUpdate>
-      </Attribute>
-      <AttInfo>
-        <Domain>dUbuser</Domain>
-        <ControlInfoFromDomain>Y</ControlInfoFromDomain>
-        <EditInfo>
-        </EditInfo>
-      </AttInfo>
-      <AttDoc>
-        <Property>
-          <Type>string</Type>
-          <Name>ATT_PICTURE</Name>
-          <Value>@!</Value>
-        </Property>
-      </AttDoc>
-    </GXAtt>
-    <GXAtt>
-      <Attribute>
-        <Id>500</Id>
-        <Name>_dUbuser</Name>
-        <Title>C骴igo Usuario</Title>
-        <Type>Character</Type>
-        <Length>30</Length>
-        <LastUpdate>2019-11-04 19:30:28GMT</LastUpdate>
-      </Attribute>
-      <AttInfo>
-        <ControlInfoFromDomain>N</ControlInfoFromDomain>
-        <EditInfo>
-        </EditInfo>
-      </AttInfo>
-      <AttDoc>
-        <Property>
-          <Type>string</Type>
-          <Name>ATT_PICTURE</Name>
-          <Value/>
-        </Property>
-      </AttDoc>
-    </GXAtt>
-  </Attributes>
 </ExportFile>

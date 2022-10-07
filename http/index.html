@@ -1,0 +1,45 @@
+
+
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <title>Reiche</title>
+  </head>
+  <body>
+    <main class="container">
+        <div class="grid">
+            <div></div>
+            <div><img src="reiche1.png" style="display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 57px;"></div>
+            <div></div>
+        </div>
+        <div class="grid">
+            <div></div>
+            <div><form
+                enctype="multipart/form-data"
+                action="http://localhost:4000/upload"
+                method="post"
+              >
+              
+                <label for="myFile">Ingrese XPZ</label>
+                <input type="file" name="myFile" accept="*.xpz" />
+                <br>
+                <label for="objetivo">Objetivo</label>
+                <input type="text" name="objetivo"/>
+                <br>
+                <label for="funcional">Especificación Funcional</label>
+                <input type="text" name="funcional"/>
+                <br>
+                <input type="submit" value="Enviar" />
+              </form></div>
+            <div></div>
+        </div>
+        
+    </main>
+  </body>
+</html>
